@@ -6,7 +6,7 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 ## Grupo {N}
 
 * **Jose Manuel Dieguez** - [Perfil](https://github.com/jmdieguez)
-* **Integrante 2** - [integrante2](https://github.com/integrante2)
+* **Santiago Testa** - [integrante2](https://github.com/stesta1)
 * **Integrante 3** - [integrante3](https://github.com/integrante3)
 * **Integrante 4** - [integrante4](https://github.com/integrante4)
 
