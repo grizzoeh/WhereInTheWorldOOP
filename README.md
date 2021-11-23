@@ -8,7 +8,7 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 * **Jose Manuel Dieguez** - [Perfil](https://github.com/jmdieguez)
 * **Santiago Testa** - [Perfil](https://github.com/stesta1)
 * **Ignacio Ezequiel Vetrano** - [Perfil](https://github.com/IVetrano)
-* **Integrante 4** - [integrante4](https://github.com/integrante4)
+* **Gonzalo Daniel Rizzo Ehrenbock** - [Perfil](https://github.com/grizzoeh)
 
 Corrector: **{Corrector}**
 
