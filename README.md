@@ -9,6 +9,7 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 * **Santiago Testa** - [Perfil](https://github.com/stesta1)
 * **Ignacio Ezequiel Vetrano** - [Perfil](https://github.com/IVetrano)
 * **Gonzalo Daniel Rizzo Ehrenbock** - [Perfil](https://github.com/grizzoeh)
+* **Fabrizio Alejandro Busto** - [Perfil](https://github.com/Lagshadow)
 
 Corrector: **{Corrector}**
 
