@@ -39,15 +39,45 @@ public class Ciudad {
         this.edificios.add(new Puerto());
         this.edificios.add(new Banco());
         this.edificios.add(new Biblioteca());
-        this.edificios.add(new Bolsa());
+        //this.edificios.add(new Bolsa());
 
     }
 
     public int distanciaA(Ciudad otraCiudad){
         return None;
+    } //TO DO
+
+    public String pistaFacilAeropuerto(){
+        return ("La bandera es de color" + this.bandera);
     }
 
-    //public pistaFacil
+    public String pistaMediaAeropuerto(){
+        return ("El lenguaje del pais es" + this.lenguaje);
+    }
+    public String pistaDificilAeropuerto(){
+        return ("Los landmarks son" + this.landmarks);
+    }
+    public String pistaFacilBanco(){
+        return ("La moneda es " + this.moneda);
+    }
+    public String pistaMediaBanco(){
+        return ("Las industrias son" + this.industrias);
+    }
+
+    public String pistaDificilBanco(){
+        return ("Los animales son" + this.animales);
+    }
+
+    public String pistaFacilBiblioteca(){
+        return ("La gente es" + this.gente);
+    }
+    public String pistaMediaBiblioteca(){
+        return ("La religion principal es" + this.religion);
+    }
+
+    public String pistaDificilBiblioteca(){
+        return ("El lider es" + this.lider);
+    }
 
 
 }
