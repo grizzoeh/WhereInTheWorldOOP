@@ -47,7 +47,7 @@ public class Ciudad {
         return None;
     }
 
-    public pistaFacil
+    //public pistaFacil
 
 
 }
