@@ -10,7 +10,7 @@ public class Ladron {
     private String cabello;
     private String senia;
     private String vehiculo;
-    private Descripciones descripciones;
+    private Descripcion descripcion;
 
     public Ladron(String nombre, String sexo, String hobby, String cabello, String senia, String vehiculo, ArrayList<String> descripciones) {
         this.nombre = nombre;
@@ -19,6 +19,10 @@ public class Ladron {
         this.cabello = cabello;
         this.senia = senia;
         this.vehiculo = vehiculo;
-        this.descripciones = new Descripciones(descripciones);
+        this.descripcion = new Descripcion(descripciones);
+    }
+
+    public String obtenerDescripcion() {
+        return this.descripcion.obtenerDescripcionRandom();
     }
 }

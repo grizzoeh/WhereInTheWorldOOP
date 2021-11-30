@@ -1,13 +1,13 @@
 package edu.fiuba.algo3.modelo;
 
-public class Novato implements Rango {
+public class Detective implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
     private int kmPorHora;
 
-    public Novato(){
-        this.obtenedorDePistas = new ObtenedorDePistasFaciles();
-        this.kmPorHora = 900;
+    public Detective(){
+        this.obtenedorDePistas = new ObtenedorDePistasMedias();
+        this.kmPorHora = 1100;
     }
 
     @Override
@@ -17,7 +17,7 @@ public class Novato implements Rango {
 
     @Override
     public Rango proximoRango(){
-        return new Detective();
+        return new Investigador();
     }
 
     @Override
