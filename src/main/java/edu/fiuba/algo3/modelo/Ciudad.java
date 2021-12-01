@@ -43,33 +43,33 @@ public class Ciudad {
     }
 
     public String pistaFacilAeropuerto(){
-        return ("La bandera es de color" + this.bandera);
+        return ("La bandera es de color " + this.bandera);
     }
     public String pistaMediaAeropuerto(){
-        return ("El lenguaje del pais es" + this.lenguaje);
+        return ("El lenguaje del pais es " + this.lenguaje);
     }
     public String pistaDificilAeropuerto(){
-        return ("Los landmarks son" + this.landmarks);
+        return ("Los landmarks son " + this.landmarks);
     }
 
     public String pistaFacilBanco(){
         return ("La moneda es " + this.moneda);
     }
     public String pistaMediaBanco(){
-        return ("Las industrias son" + this.industrias);
+        return ("Las industrias son " + this.industrias);
     }
     public String pistaDificilBanco(){
-        return ("Los animales son" + this.animales);
+        return ("Los animales son " + this.animales);
     }
 
     public String pistaFacilBiblioteca(){
-        return ("La gente es" + this.gente);
+        return ("La gente es " + this.gente);
     }
     public String pistaMediaBiblioteca(){
-        return ("La religion principal es" + this.religion);
+        return ("La religion principal es " + this.religion);
     }
     public String pistaDificilBiblioteca(){
-        return ("El lider es" + this.lider);
+        return ("El lider es " + this.lider);
     }
 
 }

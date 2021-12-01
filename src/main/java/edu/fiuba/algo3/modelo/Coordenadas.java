@@ -5,22 +5,26 @@ public class Coordenadas {
     private double latitud;
     private double longitud;
 
-    public Coordenadas(float latitud, float longitud) {
+    public Coordenadas(double latitud, double longitud) {
         this.latitud = latitud;
         this.longitud = longitud;
     }
 
     public double distanciaA(Coordenadas otrasCoordenadas) {
-        double dLat = Math.toRadians(otrasCoordenadas.latitud - this.latitud);
-        double dLon = Math.toRadians(otrasCoordenadas.longitud - this.longitud);
+        double copiaLatitudCiudadActual = this.latitud;
+        double copiaLongitudCiudadActual = this.longitud;
+        double copiaLatitudOtraCiudad = otrasCoordenadas.latitud;
+        double copiaLongitudOtraCiudad = otrasCoordenadas.longitud;
+        double dLat = Math.toRadians(copiaLatitudOtraCiudad - copiaLatitudCiudadActual);
+        double dLon = Math.toRadians(copiaLongitudOtraCiudad - copiaLongitudCiudadActual);
 
-        this.latitud = Math.toRadians(this.latitud);
-        otrasCoordenadas.latitud = Math.toRadians(this.longitud);
+        copiaLongitudCiudadActual = Math.toRadians(copiaLatitudCiudadActual);
+        copiaLatitudOtraCiudad = Math.toRadians(copiaLongitudCiudadActual);
 
         double a = Math.pow(Math.sin(dLat / 2), 2) +
                 Math.pow(Math.sin(dLon / 2), 2) *
-                        Math.cos(this.latitud) *
-                        Math.cos(otrasCoordenadas.latitud);
+                        Math.cos(copiaLatitudCiudadActual) *
+                        Math.cos(copiaLatitudOtraCiudad);
         double rad = 6371;
         double c = 2 * Math.asin(Math.sqrt(a));
         return rad * c;

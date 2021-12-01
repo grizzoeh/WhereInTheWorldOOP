@@ -12,11 +12,12 @@ public class Juego {
     private Policia policia;
     private Mision mision;
 
-    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision){
+    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision) {
         this.ciudadActual = ciudadComienzo;
         this.cantidadDeArrestos = 0;
         this.reloj = new Reloj();
         this.policia = new Policia(nombre);
+        this.mision = mision;
     }
 
     public void viajarA(Ciudad unaCiudad) {
@@ -28,8 +29,18 @@ public class Juego {
 
     public String policiaEntrarA(Edificio unEdificio) {
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
-        unEdificio.calcularTiempo();
+        int horas = unEdificio.calcularTiempo();
+        this.reloj.pasarHoras(horas);
         return pista;
+    }
+
+    public String obtenerHora() {
+        return this.reloj.aString();
+    }
+
+    public void recibirPunialada() {
+        int horas = this.policia.recibirPunialada();
+        this.reloj.pasarHoras(horas);
     }
 
 }
