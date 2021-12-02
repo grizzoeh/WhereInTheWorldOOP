@@ -11,7 +11,7 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 * **Gonzalo Daniel Rizzo Ehrenbock** - [Perfil](https://github.com/grizzoeh)
 * **Fabrizio Alejandro Busto** - [Perfil](https://github.com/Lagshadow)
 
-Corrector: **{Corrector}**
+Corrector: **Sebastián Blázquez**
 
 ## Aplicación
 
