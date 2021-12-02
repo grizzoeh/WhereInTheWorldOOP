@@ -1,9 +1,10 @@
 package edu.fiuba.algo3.modelo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
-import static org.mockito.Mockito.*;
 
 public class PoliciaTest {
     Policia policia = new Policia("Juan");
