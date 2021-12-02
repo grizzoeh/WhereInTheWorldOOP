@@ -1,29 +1,29 @@
 Nombre, Ciudad
-1,000 Year Old Egg, Peking
-Babylonian Tablet, Baghdad
-Boar's Tusk, Port Moresby
-Chandelier from the Opera House, Sydney
-Constantine's Jeweled Cross, Istanbul
-Crown Jewels, London
-Flying Carpet, Baghdad
-Golden Buddha, Bangkok
-Incan Gold Mask, Lima
-Islamic Manuscript, Bamako
-Ivan the Terrible's Crown, Moscow
-King Tut's Mask, Cairo
-Mask of Montezuma, Mexico City
-Mask of Priam, Athens
-Merlion the Golden Lion, Singapore
-Painting from the Kremlin, Moscow
-Pope's Ring, Rome
-Rare Mali Empire Pottery, Bamako
-Rare Tea Plant, Colombo
-Royal Quartz Collection, Kathmandu
-Sernedip Ruby, Colombo
-Silver LLama, Lima
-Solid Gold Bola, Buenos Aires
-Stanley Cup, Montreal
-Stuffed Parrot, Rio de Janeiro
-The Rockettes, New York
-Viking Helmet, Oslo
-Watusi King's Headdress, Kigali
+El Huevo De Los 1000 Años, Pekin
+Tabla Babilonica, Baghdad
+Colmillo del Jabali, Puerto Moresby
+Candelabro De La Opera, Sidney
+Cruz Con Joyas De Constantine, Estambul
+Joys De La Corona, Londres
+Alfombra Voladora, Baghdad
+Buda Dorado, Bangkok
+Mascara Dorada Del Inca, Lima
+Manuscrito Islamico, Bamako
+La Corona De Ivan El Terrible, Moscu
+La Corona De Tutankamon, Cairo
+La Mascara De Montezuma, Ciudad De Mexico
+La Mascara De Priamo, Atenas
+Merlion El Leon Dorado, Singpur
+Cuadro Del Kremlin, Moscu
+Anillo Del Papa, Roma
+Basija Rara Del Imperio Mali, Bamako
+Planta De Te Rara, Colombo
+La Coleccion De Cuarzo Real, Katmandu
+Rubi de Serendip, Colombo
+La LLama De Plata, Lima
+Balon De Oro, Buenos Aires
+Copa Stanley, Montreal
+Loro Relleno, Rio de Janeiro
+The Rockettes, Nueva York
+Caso Vikingo, Oslo
+El Tocado Del Rey Watusi, Kigali
