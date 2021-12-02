@@ -38,7 +38,7 @@ public class JuegoTest {
         String pista = partida.policiaEntrarA(banco);
         String hora = partida.obtenerHora();
         String horaEsperada = "Lunes 8 hs";
-        String pistaEsperada = "La sospechosa tenia el pelo de color castaño, La moneda es Drachmas";
+        String pistaEsperada = "La moneda es Drachmas, La sospechosa tenia el pelo de color castaño";
         assertEquals(pista, pistaEsperada);
         assertEquals(hora, horaEsperada);
     }
@@ -68,10 +68,10 @@ public class JuegoTest {
         String pistaBanco = partida.policiaEntrarA(banco);
         String horaBanco = partida.obtenerHora();
         String horaEsperadaBanco = "Lunes 8 hs";
-        String pistaEsperadaBanco = "La sospechosa tenia el pelo de color castaño, La moneda es Drachmas";
+        String pistaEsperadaBanco = "La moneda es Drachmas, La sospechosa tenia el pelo de color castaño";
         String pistaBiblioteca = partida.policiaEntrarA(biblioteca);
         String horaBiblioteca = partida.obtenerHora();
-        String pistaEsperadaBiblioteca = "La sospechosa tenia el pelo de color castaño, La gente es Plato";
+        String pistaEsperadaBiblioteca = "La gente es Plato, La sospechosa tenia el pelo de color castaño";
         String horaEsperadaBiblioteca = "Lunes 9 hs";
         assertEquals(pistaBanco, pistaEsperadaBanco);
         assertEquals(horaBanco, horaEsperadaBanco);
@@ -122,7 +122,7 @@ public class JuegoTest {
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
         Juego partida = new Juego(montreal, "Pepe", mision);
 
-        String pistaEsperada = "La sospechosa tenia el pelo de color castaño, La bandera es de color Blue and White";
+        String pistaEsperada = "La bandera es de color Blue and White, La sospechosa tenia el pelo de color castaño";
         String horaEsperada1 = "Lunes 13 hs";
         String horaEsperada2 = "Miércoles 9 hs";
         for (int i = 0; i < 3; i++) {
@@ -131,7 +131,7 @@ public class JuegoTest {
         }
         String hora = partida.obtenerHora();
         assertEquals(hora, horaEsperada1);
-        pistaEsperada = "La sospechosa tenia el pelo de color castaño, La bandera es de color Blue and White";
+        pistaEsperada = "La bandera es de color Blue and White, La sospechosa tenia el pelo de color castaño";
         for (int i = 0; i < 55; i++) {
             String pista = partida.policiaEntrarA(puerto);
             assertEquals(pista, pistaEsperada);

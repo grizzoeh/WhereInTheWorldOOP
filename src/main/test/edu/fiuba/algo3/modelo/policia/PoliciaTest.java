@@ -1,4 +1,4 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo.policia;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -6,8 +6,9 @@ import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 
+import edu.fiuba.algo3.modelo.Ciudad;
+import edu.fiuba.algo3.modelo.Mision;
 import edu.fiuba.algo3.modelo.edificios.Biblioteca;
-import edu.fiuba.algo3.modelo.policia.Policia;
 
 public class PoliciaTest {
     Policia policia = new Policia("Juan");
@@ -85,9 +86,9 @@ public class PoliciaTest {
         Biblioteca biblioteca = new Biblioteca();
         Ciudad ciudad = mock(Ciudad.class);
         Mision mision = mock(Mision.class);
-        when(mision.obtenerDescripcionSospechoso()).thenReturn("gauchita");
+        when(mision.obtenerDescripcionSospechoso()).thenReturn("pelo rojo");
         when(mision.obtenerProximaCiudad()).thenReturn(ciudad);
         when(ciudad.pistaFacilBiblioteca()).thenReturn("La gente es");
-        assertEquals(policia.policiaEntrarEnEdificioConMision(biblioteca, mision), "La gente es, gauchita");
+        assertEquals(policia.policiaEntrarEnEdificioConMision(biblioteca, mision), "La gente es maya, pelo rojo");
     }
 }
