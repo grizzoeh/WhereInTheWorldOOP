@@ -3,7 +3,7 @@
 
 Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA
 
-## Grupo {N}
+## Grupo {17}
 
 * **Jose Manuel Dieguez** - [Perfil](https://github.com/jmdieguez)
 * **Santiago Testa** - [Perfil](https://github.com/stesta1)
@@ -12,6 +12,8 @@ Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUB
 * **Fabrizio Alejandro Busto** - [Perfil](https://github.com/Lagshadow)
 
 Corrector: **Sebastián Blázquez**
+
+Informe: https://www.overleaf.com/project/61a91df5fb1a8d7a2b511f5d
 
 ## Aplicación
 
