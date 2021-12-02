@@ -2,6 +2,8 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
+import edu.fiuba.algo3.modelo.edificios.Edificio;
+
 public class Ciudad {
     private String nombre;
     private ArrayList<Edificio> edificios;

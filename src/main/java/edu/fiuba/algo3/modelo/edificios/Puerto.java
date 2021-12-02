@@ -1,29 +1,31 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo.edificios;
 
-public class Biblioteca implements Edificio {
+import edu.fiuba.algo3.modelo.Ciudad;
+
+public class Puerto implements Edificio {
     private int ingresos;
 
 
-    public Biblioteca(){
+    public Puerto(){
         this.ingresos = 0;
     }
 
     @Override
     public String obtenerPistaFacil(Ciudad ciudadProxima){
         ingresos++;
-        return ciudadProxima.pistaFacilBiblioteca();
+        return ciudadProxima.pistaFacilAeropuerto();
     }
 
     @Override
     public String obtenerPistaMedia(Ciudad ciudadProxima){
         ingresos++;
-        return ciudadProxima.pistaMediaBiblioteca();
+        return ciudadProxima.pistaMediaAeropuerto();
     }
 
     @Override
     public String obtenerPistaDificil(Ciudad ciudadProxima){
         ingresos++;
-        return ciudadProxima.pistaDificilBiblioteca();
+        return ciudadProxima.pistaDificilAeropuerto();
     }
 
     @Override

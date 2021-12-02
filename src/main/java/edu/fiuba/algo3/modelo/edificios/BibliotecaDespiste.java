@@ -1,10 +1,12 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo.edificios;
 
-public class BancoDespiste implements Edificio {
+import edu.fiuba.algo3.modelo.Ciudad;
+
+public class BibliotecaDespiste implements Edificio {
     private int ingresos;
 
 
-    public BancoDespiste(){
+    public BibliotecaDespiste(){
         this.ingresos = 0;
     }
 
