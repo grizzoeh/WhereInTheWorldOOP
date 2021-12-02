@@ -8,16 +8,16 @@ import org.junit.jupiter.api.Test;
 
 import edu.fiuba.algo3.modelo.Ciudad;
 
-public class AeropuertoTest {
-    Aeropuerto aeropuerto = new Aeropuerto();
+public class PuertoTest {
+    Puerto Puerto = new Puerto();
     
     @Test
     public void test01ObtengoUnaPistaFacilYLosIngresosAumentan() {
         Ciudad ciudad = mock(Ciudad.class);
         when(ciudad.pistaFacilAeropuerto()).thenReturn("La bandera es de color azul");
 
-        assertEquals(aeropuerto.obtenerPistaFacil(ciudad), "La bandera es de color azul");
-        assertEquals(aeropuerto.calcularTiempo(), 1);
+        assertEquals(Puerto.obtenerPistaFacil(ciudad), "La bandera es de color azul");
+        assertEquals(Puerto.calcularTiempo(), 1);
     }
 
     @Test
@@ -25,11 +25,11 @@ public class AeropuertoTest {
         Ciudad ciudad = mock(Ciudad.class);
         when(ciudad.pistaMediaAeropuerto()).thenReturn("El lenguaje del pais es español");
 
-        assertEquals(aeropuerto.obtenerPistaMedia(ciudad), "El lenguaje del pais es español");
-        assertEquals(aeropuerto.calcularTiempo(), 1);
+        assertEquals(Puerto.obtenerPistaMedia(ciudad), "El lenguaje del pais es español");
+        assertEquals(Puerto.calcularTiempo(), 1);
 
-        assertEquals(aeropuerto.obtenerPistaMedia(ciudad), "El lenguaje del pais es español");
-        assertEquals(aeropuerto.calcularTiempo(), 2);
+        assertEquals(Puerto.obtenerPistaMedia(ciudad), "El lenguaje del pais es español");
+        assertEquals(Puerto.calcularTiempo(), 2);
     }
 
     @Test
@@ -37,11 +37,11 @@ public class AeropuertoTest {
         Ciudad ciudad = mock(Ciudad.class);
         when(ciudad.pistaDificilAeropuerto()).thenReturn("Los landmarks son Great Sandy Desert, Opera House, Outback");
 
-        assertEquals(aeropuerto.obtenerPistaDificil(ciudad), "Los landmarks son Great Sandy Desert, Opera House, Outback");
-        assertEquals(aeropuerto.calcularTiempo(), 1);
+        assertEquals(Puerto.obtenerPistaDificil(ciudad), "Los landmarks son Great Sandy Desert, Opera House, Outback");
+        assertEquals(Puerto.calcularTiempo(), 1);
 
-        assertEquals(aeropuerto.obtenerPistaDificil(ciudad), "Los landmarks son Great Sandy Desert, Opera House, Outback");
-        assertEquals(aeropuerto.calcularTiempo(), 2);
+        assertEquals(Puerto.obtenerPistaDificil(ciudad), "Los landmarks son Great Sandy Desert, Opera House, Outback");
+        assertEquals(Puerto.calcularTiempo(), 2);
     }
 
 }
