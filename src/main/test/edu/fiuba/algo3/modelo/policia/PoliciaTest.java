@@ -88,7 +88,7 @@ public class PoliciaTest {
         Mision mision = mock(Mision.class);
         when(mision.obtenerDescripcionSospechoso()).thenReturn("pelo rojo");
         when(mision.obtenerProximaCiudad()).thenReturn(ciudad);
-        when(ciudad.pistaFacilBiblioteca()).thenReturn("La gente es");
+        when(ciudad.pistaFacilBiblioteca()).thenReturn("La gente es maya");
         assertEquals(policia.policiaEntrarEnEdificioConMision(biblioteca, mision), "La gente es maya, pelo rojo");
     }
 }
