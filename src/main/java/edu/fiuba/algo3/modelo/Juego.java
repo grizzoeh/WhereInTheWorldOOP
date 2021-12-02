@@ -2,6 +2,9 @@ package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
+import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.policia.Policia;
+
 public class Juego {
 
     private Ciudad ciudadActual;

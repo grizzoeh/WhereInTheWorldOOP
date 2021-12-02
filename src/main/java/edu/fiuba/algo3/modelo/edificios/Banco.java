@@ -1,29 +1,31 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo.edificios;
 
-public class AeropuertoDespiste implements Edificio {
+import edu.fiuba.algo3.modelo.Ciudad;
+
+public class Banco implements Edificio {
     private int ingresos;
 
 
-    public AeropuertoDespiste(){
+    public Banco(){
         this.ingresos = 0;
     }
 
     @Override
     public String obtenerPistaFacil(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return ciudadProxima.pistaFacilBanco();
     }
 
     @Override
     public String obtenerPistaMedia(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return ciudadProxima.pistaMediaBanco();
     }
 
     @Override
     public String obtenerPistaDificil(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return ciudadProxima.pistaDificilBanco();
     }
 
     @Override

@@ -6,6 +6,9 @@ import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 
+import edu.fiuba.algo3.modelo.edificios.Biblioteca;
+import edu.fiuba.algo3.modelo.policia.Policia;
+
 public class PoliciaTest {
     Policia policia = new Policia("Juan");
     

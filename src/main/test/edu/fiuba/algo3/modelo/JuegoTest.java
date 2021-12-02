@@ -2,6 +2,13 @@ package edu.fiuba.algo3.modelo;
 
 
 import org.junit.jupiter.api.Test;
+
+import edu.fiuba.algo3.modelo.edificios.Aeropuerto;
+import edu.fiuba.algo3.modelo.edificios.Banco;
+import edu.fiuba.algo3.modelo.edificios.Biblioteca;
+import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.edificios.Puerto;
+
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,7 +16,7 @@ public class JuegoTest {
 
     @Test
     public void test01VisitarBancoEnMontreal() {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Banco banco = new Banco();
         edificios.add(banco);
         edificios.add(new Biblioteca());
@@ -18,11 +25,11 @@ public class JuegoTest {
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
         Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
-        ArrayList<Ciudad> ciudades = new ArrayList();
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
-        ArrayList<Ciudad> ciudadesFalsas = new ArrayList();
-        ArrayList<String> descripciones = new ArrayList();
+        ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
+        ArrayList<String> descripciones = new ArrayList<String>();
         descripciones.add("La sospechosa tenia el pelo de color castaño");
         Ladron ladron = new Ladron("Juieta", "Femenino", "Tenis", "Castaño", "", "Auto", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
@@ -38,7 +45,7 @@ public class JuegoTest {
 
     @Test
     public void test02VisitarBancoYBibliotecaEnMontreal() {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Banco banco = new Banco();
         edificios.add(banco);
         Biblioteca biblioteca= new Biblioteca();
@@ -48,11 +55,11 @@ public class JuegoTest {
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
         Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
-        ArrayList<Ciudad> ciudades = new ArrayList();
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
-        ArrayList<Ciudad> ciudadesFalsas = new ArrayList();
-        ArrayList<String> descripciones = new ArrayList();
+        ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
+        ArrayList<String> descripciones = new ArrayList<String>();
         descripciones.add("La sospechosa tenia el pelo de color castaño");
         Ladron ladron = new Ladron("Juieta", "Femenino", "Tenis", "Castaño", "", "Auto", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
@@ -74,16 +81,16 @@ public class JuegoTest {
 
     @Test
     public void test03PoliciaViajaDeMontrealAMexico() {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasMexico = new Coordenadas(23.634501, -102.552784);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
         Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios);
-        ArrayList<Ciudad> ciudades = new ArrayList();
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(mexico);
-        ArrayList<Ciudad> ciudadesFalsas = new ArrayList();
-        ArrayList<String> descripciones = new ArrayList();
+        ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
+        ArrayList<String> descripciones = new ArrayList<String>();
         Ladron ladron = new Ladron("Juieta", "Femenino", "Tenis", "Castaño", "", "Auto", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
         Juego partida = new Juego(montreal, "Pepe", mision);
@@ -96,7 +103,7 @@ public class JuegoTest {
 
     @Test
     public void test04EntrarRepetidamenteAEdificios() {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Aeropuerto aeropuerto = new Aeropuerto();
         Puerto puerto = new Puerto();
         edificios.add(puerto);
@@ -105,11 +112,11 @@ public class JuegoTest {
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
         Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
-        ArrayList<Ciudad> ciudades = new ArrayList();
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
-        ArrayList<Ciudad> ciudadesFalsas = new ArrayList();
-        ArrayList<String> descripciones = new ArrayList();
+        ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
+        ArrayList<String> descripciones = new ArrayList<String>();
         descripciones.add("La sospechosa tenia el pelo de color castaño");
         Ladron ladron = new Ladron("Juieta", "Femenino", "Tenis", "Castaño", "", "Auto", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
@@ -135,13 +142,13 @@ public class JuegoTest {
 
     @Test
     public void test05PoliciaRecibeCuchilladasYDuerme() {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        ArrayList<Ciudad> ciudades = new ArrayList();
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
-        ArrayList<Ciudad> ciudadesFalsas = new ArrayList();
-        ArrayList<String> descripciones = new ArrayList();
+        ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
+        ArrayList<String> descripciones = new ArrayList<String>();
         Ladron ladron = new Ladron("Juieta", "Femenino", "Tenis", "Castaño", "", "Auto", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
         Juego partida = new Juego(montreal, "Pepe", mision);
