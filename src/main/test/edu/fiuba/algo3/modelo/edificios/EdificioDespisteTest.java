@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class AeropuertoDespisteTest {
-    AeropuertoDespiste aeropuerto = new AeropuertoDespiste();
+public class EdificioDespisteTest {
+    EdificioDespiste aeropuerto = new EdificioDespiste("Aeropuerto");
     
     @Test
     public void test01ObtengoUnaPistaFacilYLosIngresosAumentan() {
