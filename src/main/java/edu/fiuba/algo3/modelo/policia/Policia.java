@@ -1,6 +1,7 @@
 package edu.fiuba.algo3.modelo.policia;
 
 import edu.fiuba.algo3.modelo.Mision;
+import edu.fiuba.algo3.modelo.Reloj;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 
 public class Policia {
@@ -35,5 +36,9 @@ public class Policia {
             return 2;
         }
         return 1;
+    }
+
+    public void dormir(Reloj reloj){
+        reloj.pasarHoras(8,this);
     }
 }

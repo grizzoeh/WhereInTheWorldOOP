@@ -25,7 +25,7 @@ public class Juego {
 
     public void viajarA(Ciudad unaCiudad) {
         double distancia = this.ciudadActual.distanciaA(unaCiudad);
-        this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
+        this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia),policia);
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
     }
@@ -33,7 +33,7 @@ public class Juego {
     public String policiaEntrarA(Edificio unEdificio) {
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
-        this.reloj.pasarHoras(horas);
+        this.reloj.pasarHoras(horas,policia);
         return pista;
     }
 
@@ -43,7 +43,7 @@ public class Juego {
 
     public void recibirPunialada() {
         int horas = this.policia.recibirPunialada();
-        this.reloj.pasarHoras(horas);
+        this.reloj.pasarHoras(horas,policia);
     }
 
 }
