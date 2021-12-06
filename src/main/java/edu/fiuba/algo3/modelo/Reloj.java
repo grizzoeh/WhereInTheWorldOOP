@@ -15,8 +15,12 @@ public class Reloj {
         this.tiempoFinal = LocalDateTime.of(2021, Month.NOVEMBER, 28, 17, 0, 0);
     }
 
-    public void pasarHoras(int horas){
+    public void pasarHoras(int horas) {
+        LocalDateTime aux = this.tiempoActual;
         this.tiempoActual = tiempoActual.plusHours(horas);
+        if (tiempoActual.getDayOfMonth() > aux.getDayOfMonth()) {
+           this.tiempoActual = tiempoActual.plusHours(8);
+        }
     }
     
     public boolean quedaTiempo(){
