@@ -14,13 +14,17 @@ public class Juego {
     private Reloj reloj;
     private Policia policia;
     private Mision mision;
+    private OrdenDeArresto ordenDeArresto;
+    private int sospechososEscapados;
 
-    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision) {
+    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision, ArrayList<Ladron> ladrones) {
         this.ciudadActual = ciudadComienzo;
         this.cantidadDeArrestos = 0;
         this.reloj = new Reloj();
         this.policia = new Policia(nombre);
         this.mision = mision;
+        this.ladrones = ladrones;
+        this.ordenDeArresto = new OrdenDeArresto();
     }
 
     public void viajarA(Ciudad unaCiudad) {
@@ -28,6 +32,9 @@ public class Juego {
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
+        if (mision.finalDelRecorrido(this.ciudadActual)) {
+            this.ordenDeArresto.atraparLadron(this, this.mision);
+        }
     }
 
     public String policiaEntrarA(Edificio unEdificio) {
@@ -46,4 +53,26 @@ public class Juego {
         this.reloj.pasarHoras(horas);
     }
 
+    public void ladronAtrapado() {
+        this.cantidadDeArrestos++;
+        if (this.cantidadDeArrestos == 5 || this.cantidadDeArrestos == 15 || this.cantidadDeArrestos == 35) {
+            this.policia.ascender();
+        }
+    }
+
+    public void ladronEscapa(){
+        this.sospechososEscapados++;
+    }
+
+    public Policia obtenerPolicia() { // Unicamente para las pruebas
+        return this.policia;
+    }
+
+    public int obtenerCantidadDeArrestos() {
+        return this.cantidadDeArrestos;
+    }
+
+    public int obtenerCantidadDeEscapados() {
+        return  this.sospechososEscapados;
+    }
 }
