@@ -19,24 +19,29 @@ public class OrdenDeArresto {
         this.ladron = null;
     }
 
-    public void actualizarVehiculo(String vehiculo) {
+    public ArrayList<Ladron> actualizarVehiculo(String vehiculo, ArrayList<Ladron> ladrones) {
         this.vehiculo = vehiculo;
+        return this.posiblesLadrones(ladrones);
     }
 
-    public void actualizarHobby(String hobby) {
+    public ArrayList<Ladron> actualizarHobby(String hobby, ArrayList<Ladron> ladrones) {
         this.hobby = hobby;
+        return this.posiblesLadrones(ladrones);
     }
 
-    public void actualizarSexo(String sexo) {
+    public ArrayList<Ladron> actualizarSexo(String sexo, ArrayList<Ladron> ladrones) {
         this.sexo = sexo;
+        return this.posiblesLadrones(ladrones);
     }
 
-    public void actualizarCabello(String cabello) {
+    public ArrayList<Ladron> actualizarCabello(String cabello, ArrayList<Ladron> ladrones) {
         this.cabello = cabello;
+        return this.posiblesLadrones(ladrones);
     }
 
-    public void actualizarSenia(String senia) {
+    public ArrayList<Ladron> actualizarSenia(String senia, ArrayList<Ladron> ladrones) {
         this.senia = senia;
+        return this.posiblesLadrones(ladrones);
     }
 
     public ArrayList<Ladron> posiblesLadrones(ArrayList<Ladron> ladronesSospechosos) {
@@ -49,7 +54,6 @@ public class OrdenDeArresto {
             }
 
         }
-
         if (ladronesCoincidentes.size() == 1) {
             this.ladron = ladronesCoincidentes.get(0);
         } else {

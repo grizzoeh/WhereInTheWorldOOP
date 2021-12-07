@@ -60,6 +60,11 @@ public class Juego {
         }
     }
 
+    public void asignarMision(Mision mision, Ciudad ciudadComienzo) {
+        this.mision = mision;
+        this.ciudadActual = ciudadComienzo;
+    }
+
     public void ladronEscapa(){
         this.sospechososEscapados++;
     }
@@ -75,4 +80,26 @@ public class Juego {
     public int obtenerCantidadDeEscapados() {
         return  this.sospechososEscapados;
     }
+
+    public void OrdenActualizarVehiculo(String vehiculo) {
+        this.ordenDeArresto.actualizarVehiculo(vehiculo, ladrones);
+    }
+
+    public void OrdenActualizarHobby(String hobby) {
+        this.ordenDeArresto.actualizarHobby(hobby, ladrones);
+    }
+
+    public void OrdenActualizarSexo(String sexo) {
+        this.ordenDeArresto.actualizarSexo(sexo, ladrones);
+    }
+
+    public void OrdenActualizarCabello(String cabello) {
+        this.ordenDeArresto.actualizarCabello(cabello, ladrones);
+    }
+
+    public void OrdenActualizarSenia(String senia) {
+        this.ordenDeArresto.actualizarSenia(senia, ladrones);
+    }
+
 }
+
