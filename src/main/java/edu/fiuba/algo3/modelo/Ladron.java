@@ -37,4 +37,8 @@ public class Ladron {
         return resultado;
     }
 
+    public boolean coincideNombre(String nombre){
+        return this.nombre == nombre;
+    }
+
 }

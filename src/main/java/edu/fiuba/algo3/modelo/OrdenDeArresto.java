@@ -19,47 +19,36 @@ public class OrdenDeArresto {
         this.ladron = null;
     }
 
-    public ArrayList<Ladron> actualizarVehiculo(String vehiculo, ArrayList<Ladron> ladrones) {
+    public void actualizarVehiculo(String vehiculo) {
         this.vehiculo = vehiculo;
-        return this.posiblesLadrones(ladrones);
     }
 
-    public ArrayList<Ladron> actualizarHobby(String hobby, ArrayList<Ladron> ladrones) {
+    public void actualizarHobby(String hobby) {
         this.hobby = hobby;
-        return this.posiblesLadrones(ladrones);
     }
 
-    public ArrayList<Ladron> actualizarSexo(String sexo, ArrayList<Ladron> ladrones) {
+    public void actualizarSexo(String sexo) {
         this.sexo = sexo;
-        return this.posiblesLadrones(ladrones);
     }
 
-    public ArrayList<Ladron> actualizarCabello(String cabello, ArrayList<Ladron> ladrones) {
+    public void actualizarCabello(String cabello) {
         this.cabello = cabello;
-        return this.posiblesLadrones(ladrones);
     }
 
-    public ArrayList<Ladron> actualizarSenia(String senia, ArrayList<Ladron> ladrones) {
+    public void actualizarSenia(String senia) {
         this.senia = senia;
-        return this.posiblesLadrones(ladrones);
     }
 
-    public ArrayList<Ladron> posiblesLadrones(ArrayList<Ladron> ladronesSospechosos) {
+    public ArrayList<Ladron> posiblesLadrones(RegistroLadrones registroLadrones) {
         Ladron modeloLadron = new Ladron("???", this.sexo, this.hobby, this.cabello, this.senia, this.vehiculo, new ArrayList<String>());
-        ArrayList<Ladron> ladronesCoincidentes = new ArrayList<>();
 
-        for (Ladron ladron : ladronesSospechosos) {
-            if (ladron.coincideDesripcion(modeloLadron)) {
-                ladronesCoincidentes.add(ladron);
-            }
+        ArrayList<Ladron> ladronesCoincidentes = registroLadrones.posiblesLadrones(modeloLadron);
 
-        }
         if (ladronesCoincidentes.size() == 1) {
             this.ladron = ladronesCoincidentes.get(0);
         } else {
             this.ladron = null;
         }
-
         return ladronesCoincidentes;
     }
 

@@ -213,17 +213,20 @@ public class JuegoTest {
         ladrones.add(ladron3);
 
         OrdenDeArresto computadora = new OrdenDeArresto();
-        computadora.actualizarSexo("Masculino", ladrones);
-        ArrayList<Ladron> sospechosos1 = computadora.posiblesLadrones(ladrones);
+
+        RegistroLadrones registroLadrones = new RegistroLadrones(ladrones);
+
+        computadora.actualizarSexo("Masculino");
+        ArrayList<Ladron> sospechosos1 = computadora.posiblesLadrones(registroLadrones);
 
         OrdenDeArresto computadora2 = new OrdenDeArresto();
-        computadora2.actualizarHobby("Tenis", ladrones);
-        ArrayList<Ladron> sospechosos2 = computadora2.posiblesLadrones(ladrones);
+        computadora2.actualizarHobby("Tenis");
+        ArrayList<Ladron> sospechosos2 = computadora2.posiblesLadrones(registroLadrones);
 
         OrdenDeArresto computadora3 = new OrdenDeArresto();
-        computadora3.actualizarHobby("Femenino", ladrones);
-        computadora3.actualizarHobby("Rubio", ladrones);
-        ArrayList<Ladron> sospechosos3 = computadora3.posiblesLadrones(ladrones);
+        computadora3.actualizarHobby("Femenino");
+        computadora3.actualizarHobby("Rubio");
+        ArrayList<Ladron> sospechosos3 = computadora3.posiblesLadrones(registroLadrones);
 
         ArrayList<Ladron> sospechososEsperados1 = new ArrayList<Ladron>(Arrays.asList(ladron1, ladron2));
         ArrayList<Ladron> sospechososEsperados2 = new ArrayList<Ladron>(Arrays.asList(ladron2, ladron3));
@@ -374,12 +377,15 @@ public class JuegoTest {
         assertEquals(pistaEsperada2, pista2);
         assertEquals(pistaEsperada3, pista3);
         partida.OrdenActualizarVehiculo("Auto");
+        partida.generarOrdenDeArresto();
 
         // Como ya lleno la orden de arresto, simplemente sigue los paises.
 
         partida.viajarA(cairo);
         partida.viajarA(newYork);
         partida.viajarA(paris); // Final del recorrido, arresta al ladron.
+
+
 
         assertEquals(partida.obtenerCantidadDeArrestos(), 7);
         assertEquals(partida.obtenerCantidadDeEscapados(), 0);
