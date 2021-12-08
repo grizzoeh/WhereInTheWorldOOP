@@ -9,7 +9,7 @@ public class Juego {
 
     private Ciudad ciudadActual;
     private Edificio ubicacionActual;
-    private ArrayList<Ladron> ladrones;
+    private RegistroLadrones ladrones;
     private int cantidadDeArrestos;
     private Reloj reloj;
     private Policia policia;
@@ -23,7 +23,7 @@ public class Juego {
         this.reloj = new Reloj();
         this.policia = new Policia(nombre);
         this.mision = mision;
-        this.ladrones = ladrones;
+        this.ladrones = new RegistroLadrones(ladrones);
         this.ordenDeArresto = new OrdenDeArresto();
     }
 
@@ -82,23 +82,27 @@ public class Juego {
     }
 
     public void OrdenActualizarVehiculo(String vehiculo) {
-        this.ordenDeArresto.actualizarVehiculo(vehiculo, ladrones);
+        this.ordenDeArresto.actualizarVehiculo(vehiculo);
     }
 
     public void OrdenActualizarHobby(String hobby) {
-        this.ordenDeArresto.actualizarHobby(hobby, ladrones);
+        this.ordenDeArresto.actualizarHobby(hobby);
     }
 
     public void OrdenActualizarSexo(String sexo) {
-        this.ordenDeArresto.actualizarSexo(sexo, ladrones);
+        this.ordenDeArresto.actualizarSexo(sexo);
     }
 
     public void OrdenActualizarCabello(String cabello) {
-        this.ordenDeArresto.actualizarCabello(cabello, ladrones);
+        this.ordenDeArresto.actualizarCabello(cabello);
     }
 
     public void OrdenActualizarSenia(String senia) {
-        this.ordenDeArresto.actualizarSenia(senia, ladrones);
+        this.ordenDeArresto.actualizarSenia(senia);
+    }
+
+    public void generarOrdenDeArresto(){
+        this.ordenDeArresto.posiblesLadrones(this.ladrones);
     }
 
 }
