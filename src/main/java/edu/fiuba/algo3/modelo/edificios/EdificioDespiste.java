@@ -2,12 +2,15 @@ package edu.fiuba.algo3.modelo.edificios;
 
 import edu.fiuba.algo3.modelo.Ciudad;
 
-public class BancoDespiste implements Edificio {
+public class EdificioDespiste implements Edificio {
     private int ingresos;
+    private String nombreEdificio;
 
 
-    public BancoDespiste(){
+    public EdificioDespiste(String nombreEdificio){
+
         this.ingresos = 0;
+        this.nombreEdificio = nombreEdificio;
     }
 
     @Override

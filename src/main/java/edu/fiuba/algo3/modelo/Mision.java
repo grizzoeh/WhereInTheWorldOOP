@@ -31,5 +31,13 @@ public class Mision {
     public String obtenerDescripcionSospechoso() {
         return this.ladron.obtenerDescripcion();
     }
+
+    public boolean finalDelRecorrido(Ciudad ciudadActual) {
+        return this.recorridoLadron.get(this.recorridoLadron.size()-1) == ciudadActual;
+    }
+
+    public boolean compararLadron(Ladron otroLadron) {
+        return this.ladron == otroLadron;
+    }
 }
 
