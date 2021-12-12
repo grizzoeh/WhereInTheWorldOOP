@@ -1,0 +1,16 @@
+Nombre, Sexo, Hobby, Cabello, Seña, Vehiculo
+Nick Brunch, Masculino, Alpinismo, Negro, Anillo, Moto
+Len Bulk, Masculino, Alpinismo, Rojo, Tatuaje, Descapotable
+Ihor Ihorovitch, Masculino, Croquet, Rubio, Tatuaje, Limusina
+Fast Eddie B., Masculino, Croquet, Negro, Joyas, Descapotable
+Scar Graynolt, Masculino, Croquet, Rojo, Anillo, Limusina
+Merey Laroc, Femenino, Alpinismo, Castaño, Joyas, Limusina
+Lady Agatha, Femenino, Tenis, Rojo, Anillo, Descapotable
+Katherine Drib, Femenino, Alpinismo, Castaño, Tatuaje, Moto
+Dazzle Annie, Femenino, Tenis, Rubio, Tatuaje, Limo
+Carmen Sandiego, Femenino, Tenis, Castaño, Joyas, Descapotable
+Kobi Irwin, Masculino, Paracaidismo, Rojo, Cicatriz, Deportivo
+Javan Bond, Masculino, Música, Castaño, Cicatriz, Deportivo
+Aliya Moreno, Masculino, Natación, Rubio, Anillo, Moto
+Robin Ware, Masculino, Música, Negro, Joyas, Deportivo
+Star Fletcher, Femenino, Paracaidismo, Rubio, Joyas, Descapotable
