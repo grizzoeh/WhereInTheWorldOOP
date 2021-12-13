@@ -36,4 +36,9 @@ public class Policia {
         }
         return 1;
     }
+
+    public int recibirDisparo(){
+
+        return 4;
+    }
 }

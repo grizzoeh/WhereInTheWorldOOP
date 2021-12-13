@@ -1,0 +1,38 @@
+{
+  "Atenas": [
+    {
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Azul y Blanca",
+      "Moneda": "Drachmas",
+      "Geografía": "???",
+      "Landmarks": "Mar Egeo, Montañas Pindus",
+      "Industrias": "Higos, Aceitunas",
+      "Animales": "???",
+      "Gente": "Platón, Spartanos",
+      "Lenguaje": "Griego",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "República Helénica, Vecinos Yugoslavia"
+    }
+  ],
+  "Bagdad": [
+    {
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Azul y Blanca",
+      "Moneda": "Drachmas",
+      "Geografía": "???",
+      "Landmarks": "Mar Egeo, Montañas Pindus",
+      "Industrias": "Higos, Aceitunas",
+      "Animales": "???",
+      "Gente": "Platón, Spartanos",
+      "Lenguaje": "Griego",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "República Helénica, Vecinos Yugoslavia"
+    }
+  ]
+}

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Ladron {
-    private ArrayList<String> datos;
     private String nombre;
     private String sexo;
     private String hobby;
@@ -14,9 +13,12 @@ public class Ladron {
     private Descripcion descripcion;
 
     public Ladron(String nombre, String sexo, String hobby, String cabello, String senia, String vehiculo, ArrayList<String> descripciones) {
-
-        this.datos = new ArrayList<String>(Arrays.asList(nombre,sexo,hobby,cabello,senia,vehiculo));
-
+        this.nombre = nombre;
+        this.sexo = sexo;
+        this.hobby = hobby;
+        this.cabello = cabello;
+        this.senia = senia;
+        this.vehiculo = vehiculo;
         this.descripcion = new Descripcion(descripciones);
 
 
@@ -26,14 +28,16 @@ public class Ladron {
         return this.descripcion.obtenerDescripcionRandom();
     }
 
-    public boolean coincideDesripcion(Ladron otroLadron){
+    public boolean coincideDesripcion(LadronModelo otroLadron){
+
         boolean resultado = true;
 
-        for (int i = 0; i< this.datos.size(); i++){
-            resultado &= this.datos.get(i) == otroLadron.datos.get(i) || otroLadron.datos.get(i) == "???";
+        resultado &= otroLadron.obtenerSexo() == this.sexo || otroLadron.obtenerSexo() == "???";
+        resultado &= otroLadron.obtenerHobby() == this.hobby || otroLadron.obtenerHobby() == "???";
+        resultado &= otroLadron.obtenerCabello() == this.cabello || otroLadron.obtenerCabello() == "???";
+        resultado &= otroLadron.obtenerSenia() == this.senia || otroLadron.obtenerSenia() == "???";
+        resultado &= otroLadron.obtenerVehiculo() == this.vehiculo || otroLadron.obtenerVehiculo() == "???";
 
-
-        }
         return resultado;
     }
 
