@@ -6,14 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
         
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/vistaPrincipal.fxml"));
+        loader.setLocation(getClass().getResource("vista/vistaInicio.fxml"));
         Parent root = loader.load();
         var scene = new Scene(root);
         stage.setScene(scene);
