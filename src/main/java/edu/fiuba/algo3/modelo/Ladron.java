@@ -42,7 +42,7 @@ public class Ladron {
     }
 
     public boolean coincideNombre(String nombre){
-        return this.nombre == nombre;
+        return this.nombre.equals(nombre);
     }
 
 }

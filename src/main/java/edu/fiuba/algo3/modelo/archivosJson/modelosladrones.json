@@ -1,52 +1,46 @@
-{
-  "Nick Brunch": [
-    {
-      "Sexo" : "Masculino",
-      "Hobby": "Escalada De Montaña",
-      "Cabello": "Negro",
-      "Característica": "Anillo",
-      "Vehículo": "Motocicleta"
+[
+  {
+    "Nombre": "Nick Brunch",
+    "Sexo" : "Masculino",
+    "Hobby": "Escalada De Montaña",
+    "Cabello": "Negro",
+    "Característica": "Anillo",
+    "Vehículo": "Motocicleta"
+  },
+  {
+    "Nombre": "Len Bulk",
+    "Sexo" : "Masculino",
+    "Hobby": "Escalada De Montaña",
+    "Cabello": "Rojo",
+    "Característica": "Tatuaje",
+    "Vehículo": "Convertible"
 
-    }],
+  },
+  {
+    "Nombre": "Ihor Ihorovitch",
+    "Sexo" : "Masculino",
+    "Hobby": "Croquet",
+    "Cabello": "Rubio",
+    "Característica": "Tatuaje",
+    "Vehículo": "Limusina"
 
-  "Len Bulk": [
-    {
-      "Sexo" : "Masculino",
-      "Hobby": "Escalada De Montaña",
-      "Cabello": "Negro",
-      "Característica": "Anillo",
-      "Vehículo": "Motocicleta"
+  },
+  {
+    "Nombre": "Fast Eddie B.",
+    "Sexo" : "Masculino",
+    "Hobby": "Croquet",
+    "Cabello": "Negro",
+    "Característica": "Joyeria",
+    "Vehículo": "Convertible"
 
-    }],
-
-  "Len Bulk": [
-    {
-      "Sexo" : "Masculino",
-      "Hobby": "Escalada De Montaña",
-      "Negro": "Cabello",
-      "Característica": "Anillo",
-      "Vehículo": "Motocicleta"
-
-    }],
-  "Len Bulk": [
-    {
-      "Sexo" : "Masculino",
-      "Hobby": "Escalada De Montaña",
-      "Negro": "Cabello",
-      "Característica": "Anillo",
-      "Vehículo": "Motocicleta"
-
-    }],
-  "Len Bulk": [
-    {
-      "Sexo" : "Masculino",
-      "Hobby": "Escalada De Montaña",
-      "Negro": "Cabello",
-      "Característica": "Anillo",
-      "Vehículo": "Motocicleta"
-
-    }]
-
-
-}
+  },
+  {
+    "Nombre": "Scar Graynolt",
+    "Sexo" : "Masculino",
+    "Hobby": "Croquet",
+    "Cabello": "Rojo",
+    "Característica": "Anillo",
+    "Vehículo": "Limusina"
+  }
+]
 
