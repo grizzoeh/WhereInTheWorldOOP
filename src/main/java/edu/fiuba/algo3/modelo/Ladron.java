@@ -25,4 +25,25 @@ public class Ladron {
     public String obtenerDescripcion() {
         return this.descripcion.obtenerDescripcionRandom();
     }
+<<<<<<< Updated upstream
+=======
+
+    public boolean coincideDesripcion(LadronModelo otroLadron){
+
+        boolean resultado = true;
+
+        resultado &= otroLadron.obtenerSexo() == this.sexo || otroLadron.obtenerSexo() == "???";
+        resultado &= otroLadron.obtenerHobby() == this.hobby || otroLadron.obtenerHobby() == "???";
+        resultado &= otroLadron.obtenerCabello() == this.cabello || otroLadron.obtenerCabello() == "???";
+        resultado &= otroLadron.obtenerSenia() == this.senia || otroLadron.obtenerSenia() == "???";
+        resultado &= otroLadron.obtenerVehiculo() == this.vehiculo || otroLadron.obtenerVehiculo() == "???";
+
+        return resultado;
+    }
+
+    public boolean coincideNombre(String nombre){
+        return this.nombre.equals(nombre);
+    }
+
+>>>>>>> Stashed changes
 }
