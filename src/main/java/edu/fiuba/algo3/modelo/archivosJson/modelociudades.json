@@ -34,5 +34,62 @@
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia"
     }
+  ],
+
+  "Bamako": [
+    {
+      "Latitud": 12.639232,
+      "Longitud": -8.002889,
+      "Bandera": "Verde, Amarillo y Rojo",
+      "Moneda": "Franco",
+      "Geografía": "???",
+      "Landmarks": "Rio Níger, Sahara"
+      "Industrias": "Arroz",
+      "Animales": "???",
+      "Gente": "Tuaregs",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "Timbuktu"
+    }
+  ],
+
+  "Bangkok": [
+    {
+      "Latitud": 13.756331,
+      "Longitud": 100.501762,
+      "Bandera": "Roja, Blanco, Azul",
+      "Moneda": "Baht",
+      "Geografía": "???",
+      "Landmarks": "???",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "Budismo",
+      "Líder": "???",
+      "Extra": "Ciudad Vieja"
+    }
+  ],
+
+  "Lima": [
+    {
+      "Latitud": 13.756331,
+      "Longitud": 100.501762,
+      "Bandera": "Roja y Blanco",
+      "Moneda": "Sol",
+      "Geografía": "???",
+      "Landmarks": "Monte Huascaran",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "Arte Aymara",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???"
+    }
   ]
 }

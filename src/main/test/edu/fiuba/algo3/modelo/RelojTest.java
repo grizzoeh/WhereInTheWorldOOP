@@ -42,7 +42,6 @@ public class RelojTest {
 
         assertTrue(reloj.aString().equals("Lunes 7 hs"));
         reloj.pasarHoras(24);
-        System.out.println(reloj.aString());
         assertTrue(reloj.aString().equals("Martes 15 hs"));
         assertTrue(reloj.quedaTiempo());
     }

@@ -5,11 +5,11 @@
     "Ciudades_Despiste": ["Bangkok","Bamako"],
     "Objeto_Robado": "Mascara del Rey Tut"
   },
-
   {
-    "Ladron": "",
-    "Recorrido_Ladron": [],
-    "Ciudades_Despiste": [],
-    "Objeto_Robado": ""
+    "Ladron": "Nick Brunch",
+    "Recorrido_Ladron": ["Atenas","Bagdad","Lima"],
+    "Ciudades_Despiste": ["Bangkok","Bamako"],
+    "Objeto_Robado": "Mascara del Rey Tut"
   }
+
 ]

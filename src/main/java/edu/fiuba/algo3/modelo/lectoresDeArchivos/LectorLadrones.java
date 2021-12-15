@@ -36,10 +36,10 @@ public class LectorLadrones {
             System.out.println("No se encontro el archivo");
         }
         catch (IOException e) {
-            System.out.println("Esto no se que es");
+            System.out.println("Entrada y salida interrumpida");
         }
         catch (ParseException e) {
-            System.out.println("Esto no se que es");
+            System.out.println("Error de parseo en el archivo");
         }
         return ladrones;
     }

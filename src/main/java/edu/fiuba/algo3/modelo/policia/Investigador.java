@@ -8,13 +8,13 @@ import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasMedias;
 public class Investigador implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
-    //private GeneradorDeMisiones generadorDeMisiones;
+    private String rutaArchivoMisiones;
 
     private int kmPorHora;
 
     public Investigador(){
         this.obtenedorDePistas = new ObtenedorDePistasMedias();
-        //this.generadorDeMisiones = new GeneradorDeMisionValiosa();
+        this.rutaArchivoMisiones = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelomisionesValiosas.json";
         this.kmPorHora = 1300;
     }
 

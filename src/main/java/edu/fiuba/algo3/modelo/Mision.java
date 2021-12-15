@@ -1,6 +1,7 @@
 package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Mision {
     private String objetoRobado;
@@ -38,6 +39,28 @@ public class Mision {
 
     public boolean compararLadron(Ladron otroLadron) {
         return this.ladron == otroLadron;
+    }
+
+    public ArrayList<Ciudad> ciudadesDisponibles(){
+        ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
+
+        if (this.index >= this.recorridoLadron.size()){
+            return ciudades;
+        }
+
+        ciudades.add(this.recorridoLadron.get(this.index + 1));
+        for( int i = 0; i < 3; i++){
+
+            int randomNum = ThreadLocalRandom.current().nextInt(0, this.ciudadesFalsas.size()-1);
+            Ciudad ciudad = this.ciudadesFalsas.get(randomNum);
+            if (ciudades.contains(ciudad)){
+                continue;
+            }
+
+            ciudades.add(ciudad);
+        }
+
+        return ciudades;
     }
 }
 
