@@ -1,5 +1,6 @@
-package edu.fiuba.algo3.modelo;
+package edu.fiuba.algo3.modelo.Lectores;
 
+import edu.fiuba.algo3.modelo.Ladron;
 import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorLadrones;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
