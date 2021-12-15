@@ -261,6 +261,8 @@ public class JuegoTest {
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
         partida.viajarA(athens);
+        partida.policiaEntrarA(banco);
+
         assertEquals(0, partida.obtenerCantidadDeArrestos());
         assertEquals(1, partida.obtenerCantidadDeEscapados());
     }
@@ -341,6 +343,7 @@ public class JuegoTest {
         edificios5.add(banco5);
         edificios5.add(aeropuerto5);
         edificios5.add(biblioteca5);
+
         Ciudad paris = new Ciudad("Paris", coordenadasParis, "Red, White, and Blue", "Francs", "???", "Sienne", "Fashion","???","???","???","???","???","???","???", edificios5);
 
         recorridoLadron.add(montreal);
@@ -384,6 +387,8 @@ public class JuegoTest {
         partida.viajarA(cairo);
         partida.viajarA(newYork);
         partida.viajarA(paris); // Final del recorrido, arresta al ladron.
+        partida.policiaEntrarA(banco5);
+
 
 
 
@@ -394,4 +399,5 @@ public class JuegoTest {
 
 
     }
+
 }

@@ -40,7 +40,7 @@ public class OrdenDeArresto {
     }
 
     public ArrayList<Ladron> posiblesLadrones(RegistroLadrones registroLadrones) {
-        Ladron modeloLadron = new Ladron("???", this.sexo, this.hobby, this.cabello, this.senia, this.vehiculo, new ArrayList<String>());
+        LadronModelo modeloLadron = new LadronModelo(this.sexo, this.hobby, this.cabello, this.senia, this.vehiculo);
 
         ArrayList<Ladron> ladronesCoincidentes = registroLadrones.posiblesLadrones(modeloLadron);
 

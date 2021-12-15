@@ -8,10 +8,12 @@ import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasFaciles;
 public class Novato implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
+    //private GeneradorDeMisiones generadorDeMisiones;
     private int kmPorHora;
 
     public Novato(){
         this.obtenedorDePistas = new ObtenedorDePistasFaciles();
+        //this.generadorDeMisiones = new GeneradorDeMisionComun();
         this.kmPorHora = 900;
     }
 

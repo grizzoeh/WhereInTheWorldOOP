@@ -22,7 +22,7 @@ public class RegistroLadrones {
         throw new LadronNoEncontradoException();
     }
 
-    public ArrayList<Ladron> posiblesLadrones(Ladron modeloLadron){
+    public ArrayList<Ladron> posiblesLadrones(LadronModelo modeloLadron){
 
         ArrayList<Ladron> ladronesCoincidentes = new ArrayList<>();
 

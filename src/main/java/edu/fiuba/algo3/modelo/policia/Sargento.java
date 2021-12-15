@@ -8,10 +8,12 @@ import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasDificiles;
 public class Sargento implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
+    //private GeneradorDeMisiones generadorDeMisiones;
     private int kmPorHora;
 
     public Sargento(){
         this.obtenedorDePistas = new ObtenedorDePistasDificiles();
+        //this.generadorDeMisiones = new GeneradorDeMisionMuyValiosa();
         this.kmPorHora = 1500;
     }
 

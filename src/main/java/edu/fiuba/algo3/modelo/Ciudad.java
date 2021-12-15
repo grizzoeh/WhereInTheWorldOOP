@@ -40,6 +40,8 @@ public class Ciudad {
         this.coordenadas = coordenadas;
     }
 
+    public String obtenerNombre(){ return this.nombre; }
+
     public double distanciaA(Ciudad otraCiudad){
         return this.coordenadas.distanciaA(otraCiudad.coordenadas);
     }

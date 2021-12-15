@@ -32,15 +32,20 @@ public class Juego {
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
-        if (mision.finalDelRecorrido(this.ciudadActual)) {
-            this.ordenDeArresto.atraparLadron(this, this.mision);
-        }
+
     }
 
     public String policiaEntrarA(Edificio unEdificio) {
+
+        if (mision.finalDelRecorrido(this.ciudadActual)) {
+            this.ordenDeArresto.atraparLadron(this, this.mision);
+            return "El ladron ha sido atrapado!";
+        }
+
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
         this.reloj.pasarHoras(horas);
+
         return pista;
     }
 
@@ -50,6 +55,11 @@ public class Juego {
 
     public void recibirPunialada() {
         int horas = this.policia.recibirPunialada();
+        this.reloj.pasarHoras(horas);
+    }
+
+    public void recibirDisparo() {
+        int horas = this.policia.recibirDisparo();
         this.reloj.pasarHoras(horas);
     }
 

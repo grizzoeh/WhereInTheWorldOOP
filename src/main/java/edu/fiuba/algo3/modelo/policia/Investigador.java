@@ -8,10 +8,13 @@ import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasMedias;
 public class Investigador implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
+    //private GeneradorDeMisiones generadorDeMisiones;
+
     private int kmPorHora;
 
     public Investigador(){
         this.obtenedorDePistas = new ObtenedorDePistasMedias();
+        //this.generadorDeMisiones = new GeneradorDeMisionValiosa();
         this.kmPorHora = 1300;
     }
 
