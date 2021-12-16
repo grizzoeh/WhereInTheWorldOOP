@@ -97,9 +97,9 @@
                   <Font name="Ebrima" size="64.0" />
                </font>
             </Label>
-            <Button layoutX="495.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Jugar" />
-            <Button layoutX="648.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Tutorial" />
-            <Button layoutX="806.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Acerca de" />
+            <Button fx:id="btnJugar" layoutX="495.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Jugar" />
+            <Button fx:id="btnTutorial" layoutX="648.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Tutorial" />
+            <Button fx:id="btnAcercaDe" layoutX="806.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Acerca de" />
          </children>
     </AnchorPane>
   </children>

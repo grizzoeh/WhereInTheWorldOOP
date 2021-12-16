@@ -38,14 +38,15 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
-<VBox prefHeight="390.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -86,26 +87,28 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="739.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="776.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="366.0" fitWidth="739.0">
+            <ImageView fitHeight="476.0" fitWidth="776.0">
                <image>
-                  <Image url="@tumblr_5903b851faaa7c37df535ba0f5df31ff_0c76d839_1280.jpg" />
+                  <Image url="@carmen-sandiego-5e7cca2bbfe5f.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="315.0" fitWidth="358.0" layoutX="50.0" layoutY="23.0">
-               <image>
-                  <Image url="@Chase-devineaux.png" />
-               </image>
-            </ImageView>
-            <Label alignment="CENTER" layoutX="472.0" layoutY="60.0" prefHeight="38.0" prefWidth="214.0" style="-fx-background-color: white;" text="Ingresa tu nombre:" textAlignment="RIGHT">
+            <Label layoutX="62.0" layoutY="73.0" prefHeight="94.0" prefWidth="429.0" text="Fin del juego!" textFill="WHITE">
                <font>
-                  <Font name="Corbel" size="24.0" />
+                  <Font name="Ebrima" size="64.0" />
                </font>
             </Label>
-            <Button fx:id="btnComenzar" layoutX="486.0" layoutY="183.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="185.0" text="Comenzar partida" />
-            <Button fx:id="btnVolver" layoutX="487.0" layoutY="259.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="185.0" text="Volver" />
-            <TextArea fx:id="txtNombre" layoutX="480.0" layoutY="131.0" prefHeight="26.0" prefWidth="200.0" promptText="Nombre" />
+            <Button fx:id="btnVolver" layoutX="204.0" layoutY="341.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
+            <TextFlow layoutX="62.0" layoutY="241.0" prefHeight="62.0" prefWidth="375.0" style="-fx-background-color: white;" textAlignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Parece que los ladrones se salieron con la suya... ¿Deseas volver al menú principal?" textAlignment="CENTER" wrappingWidth="310.9366455078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
          </children>
     </AnchorPane>
   </children>

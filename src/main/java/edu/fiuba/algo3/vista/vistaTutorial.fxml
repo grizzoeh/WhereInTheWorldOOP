@@ -99,7 +99,7 @@
                   <Font name="Ebrima" size="64.0" />
                </font>
             </Label>
-            <Button layoutX="212.0" layoutY="527.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
+            <Button fx:id="btnVolver" layoutX="212.0" layoutY="527.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
             <TextFlow layoutX="91.0" layoutY="128.0" prefHeight="375.0" prefWidth="334.0" style="-fx-background-color: white;" textAlignment="CENTER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El objetivo del jugador es perseguir y atrapar al ladrón antes del término de una semana aproximadamente. Para ello se deberá emitir una orden de arresto con pistas recolectadas entre los testigos que identifique unívocamente al autor del ilícito.El policía deberá seguir al maleante a través de distintas capitales del mundo buscando las pistas que le permitan reconstruir la ruta de escape del mismo. En cada capital a su vez deberá visitar distintos lugares en busca de testigos que le provean de pistas para emitir la orden de arresto y que le permitan deducir la próxima capital a visitar." textAlignment="CENTER" wrappingWidth="310.9366455078125">
