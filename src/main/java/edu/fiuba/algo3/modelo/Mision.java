@@ -62,5 +62,9 @@ public class Mision {
 
         return ciudades;
     }
+
+    public Ciudad inicioRecorrido() {
+        return this.recorridoLadron.get(0);
+    }
 }
 

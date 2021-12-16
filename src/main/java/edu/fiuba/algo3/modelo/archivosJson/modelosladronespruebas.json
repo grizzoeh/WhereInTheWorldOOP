@@ -5,7 +5,11 @@
     "Hobby": "Escalada De Montaña",
     "Cabello": "Negro",
     "Característica": "Anillo",
-    "Vehículo": "Motocicleta"
+    "Vehículo": "Motocicleta",
+    "Descripciones": ["El sospechoso cargaba con un equipo de escalada de montaña",
+      "El sospechoso tenia el pelo de color negro", "El sospechoso llevaba un anillo muy particular",
+      "Vi al sospechoso bajarse de una moto"
+    ]
   }
 ]
 

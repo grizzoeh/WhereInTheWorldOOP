@@ -12,7 +12,7 @@ public class Reloj {
     
     public Reloj(){
         this.tiempoActual = LocalDateTime.of(2021, Month.NOVEMBER, 22, 7, 0, 0);
-        this.tiempoFinal = LocalDateTime.of(2021, Month.NOVEMBER, 28, 17, 0, 0);
+        this.tiempoFinal = LocalDateTime.of(2021, Month.NOVEMBER, 29, 7, 0, 0);
     }
 
     public void pasarHoras(int horas) {
@@ -25,6 +25,14 @@ public class Reloj {
     
     public boolean quedaTiempo(){
         return (tiempoActual.isBefore(tiempoFinal));
+    }
+
+    public LocalDateTime obtenerFechaYHora() {
+        return this.tiempoActual;
+    }
+
+    public boolean coincideFechaYHora(LocalDateTime otraFechaYHora){
+        return this.tiempoActual.equals(otraFechaYHora);
     }
 
     public String aString(){

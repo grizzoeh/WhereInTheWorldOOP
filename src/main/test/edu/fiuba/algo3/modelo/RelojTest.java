@@ -23,9 +23,9 @@ public class RelojTest {
     }
 
     @Test
-    public void test03Pasan154HorasYNoQuedaTiempo(){
+    public void test03Pasan200HorasYNoQuedaTiempo(){
 
-        reloj.pasarHoras(154);
+        reloj.pasarHoras(200);
         assertFalse(reloj.quedaTiempo());
     }
 

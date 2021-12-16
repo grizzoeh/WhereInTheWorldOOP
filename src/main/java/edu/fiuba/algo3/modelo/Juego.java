@@ -1,8 +1,10 @@
 package edu.fiuba.algo3.modelo;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorLadrones;
 import edu.fiuba.algo3.modelo.policia.Policia;
 
 public class Juego {
@@ -16,6 +18,8 @@ public class Juego {
     private Mision mision;
     private OrdenDeArresto ordenDeArresto;
     private int sospechososEscapados;
+    private String rutaCiudades = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelociudades.json";
+    private String rutaLadrones = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelosladrones.json";
 
     public Juego(Ciudad ciudadComienzo, String nombre, Mision mision, ArrayList<Ladron> ladrones) {
         this.ciudadActual = ciudadComienzo;
@@ -27,16 +31,29 @@ public class Juego {
         this.ordenDeArresto = new OrdenDeArresto();
     }
 
+    public Juego(String nombrePolicia){
+        this.cantidadDeArrestos = 0;
+        this.policia = new Policia(nombrePolicia);
+        LectorLadrones lectorLadrones = new LectorLadrones();
+        this.ladrones = new RegistroLadrones(lectorLadrones.cargarLadrones(this.rutaLadrones));
+        this.iniciarNuevaMision();
+    }
+
+    public void iniciarNuevaMision() {
+        this.reloj = new Reloj();
+        this.ordenDeArresto =  new OrdenDeArresto();
+        this.mision = policia.nuevaMision(this.rutaCiudades, this.ladrones);
+        this.ciudadActual = this.mision.inicioRecorrido();
+    }
+
     public void viajarA(Ciudad unaCiudad) {
         double distancia = this.ciudadActual.distanciaA(unaCiudad);
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
-
     }
 
     public String policiaEntrarA(Edificio unEdificio) {
-
         if (mision.finalDelRecorrido(this.ciudadActual)) {
             this.ordenDeArresto.atraparLadron(this, this.mision);
             return "El ladron ha sido atrapado!";
@@ -49,8 +66,8 @@ public class Juego {
         return pista;
     }
 
-    public String obtenerHora() {
-        return this.reloj.aString();
+    public LocalDateTime obtenerHora() {
+        return this.reloj.obtenerFechaYHora();
     }
 
     public void recibirPunialada() {

@@ -1,46 +1,122 @@
 [
-  {
-    "Nombre": "Nick Brunch",
-    "Sexo" : "Masculino",
-    "Hobby": "Escalada De Montaña",
-    "Cabello": "Negro",
-    "Característica": "Anillo",
-    "Vehículo": "Motocicleta"
-  },
-  {
-    "Nombre": "Len Bulk",
-    "Sexo" : "Masculino",
-    "Hobby": "Escalada De Montaña",
-    "Cabello": "Rojo",
-    "Característica": "Tatuaje",
-    "Vehículo": "Convertible"
-
-  },
-  {
-    "Nombre": "Ihor Ihorovitch",
-    "Sexo" : "Masculino",
-    "Hobby": "Croquet",
-    "Cabello": "Rubio",
-    "Característica": "Tatuaje",
-    "Vehículo": "Limusina"
-
-  },
-  {
-    "Nombre": "Fast Eddie B.",
-    "Sexo" : "Masculino",
-    "Hobby": "Croquet",
-    "Cabello": "Negro",
-    "Característica": "Joyeria",
-    "Vehículo": "Convertible"
-
-  },
-  {
-    "Nombre": "Scar Graynolt",
-    "Sexo" : "Masculino",
-    "Hobby": "Croquet",
-    "Cabello": "Rojo",
-    "Característica": "Anillo",
-    "Vehículo": "Limusina"
-  }
+    {
+      "Nombre": "Nick Brunch",
+      "Sexo" : "Masculino",
+      "Hobby": "Escalada De Montaña",
+      "Cabello": "Negro",
+      "Característica": "Anillo",
+      "Vehículo": "Motocicleta",
+      "Descripciones": ["El sospechoso cargaba con un equipo de escalada de montaña",
+        "El sospechoso tenia el pelo de color negro", "El sospechoso llevaba un anillo muy particular",
+        "Vi al sospechoso bajarse de una moto"
+      ]
+    },
+    {
+      "Nombre": "Len Bulk",
+      "Sexo" : "Masculino",
+      "Hobby": "Escalada De Montaña",
+      "Cabello": "Rojo",
+      "Característica": "Tatuaje",
+      "Vehículo": "Convertible",
+      "Descripciones": ["El sospechoso cargaba con un equipo de escalada de montaña",
+        "El sospechoso tenia el pelo de color rojo", "El sospechoso tenia unos tatuajes muy bonitos",
+        "El sospechoso estacionó un convertible en la puerta"
+      ]
+    },
+    {
+      "Nombre": "Ihor Ihorovitch",
+      "Sexo" : "Masculino",
+      "Hobby": "Croquet",
+      "Cabello": "Rubio",
+      "Característica": "Tatuaje",
+      "Vehículo": "Limusina",
+      "Descripciones": ["El sospechoso llevaba una mochila con palos de Croquet",
+        "El sospechoso tenia el pelo de color rubio", "El sospechoso tenia unos tatuajes muy bonitos",
+        "Vi como su chofer le abria la puerta de su Limusina"
+      ]
+    },
+    {
+      "Nombre": "Fast Eddie B.",
+      "Sexo" : "Masculino",
+      "Hobby": "Croquet",
+      "Cabello": "Negro",
+      "Característica": "Joyeria",
+      "Vehículo": "Convertible",
+      "Descripciones": ["El sospechoso llevaba una mochila con palos de Croquet",
+        "El sospechoso tenia el pelo de color negro", "El sospechoso llevaba mucha joyeria",
+        "El sospechoso estacionó un convertible en la puerta"
+      ]
+    },
+    {
+      "Nombre": "Scar Graynolt",
+      "Sexo" : "Masculino",
+      "Hobby": "Croquet",
+      "Cabello": "Rojo",
+      "Característica": "Anillo",
+      "Vehículo": "Limusina",
+      "Descripciones": ["El sospechoso llevaba una mochila con palos de Croquet",
+        "El sospechoso tenia el pelo de color rojo", "El sospechoso llevaba un anillo muy particular",
+        "Vi como su chofer le abria la puerta de su Limusina"
+      ]
+    },
+    {
+      "Nombre": "Merey Laroc",
+      "Sexo" : "Femenino",
+      "Hobby": "Escalada De Montaña",
+      "Cabello": "Castaño",
+      "Característica": "Joyeria",
+      "Vehículo": "Limusina",
+      "Descripciones": ["La sospechoasa cargaba con un equipo de escalada de montaña",
+        "La sospechosa tenia el pelo de color castaño", "La sospechosa llevaba mucha joyeria",
+        "Vi como su chofer le abria la puerta de su Limusina"
+      ]
+    },
+    {
+        "Nombre": "Lady Agatha",
+        "Sexo" : "Femenino",
+        "Hobby": "Tenis",
+        "Cabello": "Rojo",
+        "Característica": "Anillo",
+        "Vehículo":"Convertible" ,
+        "Descripciones": ["La sospechosa llevaba un estuche con raquetas de tenis",
+          "La sospechosa tenia el pelo de color rojo", "La sospechosa llevaba un anillo muy particular",
+          "La sospechosa estacionó un convertible en la puerta"
+        ]
+    },
+    {
+      "Nombre": "Katherine Drib",
+      "Sexo" : "Femenino",
+      "Hobby": "Escalada De Montaña",
+      "Cabello": "Castaño",
+      "Característica": "Tatuaje",
+      "Vehículo": "Motocicleta",
+      "Descripciones": ["La sospechoasa cargaba con un equipo de escalada de montaña",
+        "La sospechosa tenia el pelo de color castaño", "La sospechosa tenia unos tatuajes muy bonitos",
+        "Vi a la sospechosa bajarse de una moto"
+      ]
+    },
+    {
+      "Nombre": "Dazzle Annie",
+      "Sexo" : "Femenino",
+      "Hobby": "Tenis",
+      "Cabello": "Rubio",
+      "Característica": "Tatuaje",
+      "Vehículo": "Limusina",
+      "Descripciones": ["La sospechosa llevaba un estuche con raquetas de tenis",
+        "La sospechosa tenia el pelo de color rubio", "La sospechosa tenia unos tatuajes muy bonitos",
+        "Vi como su chofer le abria la puerta de su Limusina"
+      ]
+    },
+    {
+      "Nombre": "Carmen Sandiego",
+      "Sexo" : "Femenino",
+      "Hobby": "Tenis",
+      "Cabello": "Castaño",
+      "Característica": "Joyeria",
+      "Vehículo": "Convertible",
+      "Descripciones": ["La sospechosa llevaba un estuche con raquetas de tenis",
+        "La sospechosa tenia el pelo de color castaño", "La sospechosa llevaba mucha joyeria",
+        "La sospechosa estacionó un convertible en la puerta"
+      ]
+    }    
 ]
-

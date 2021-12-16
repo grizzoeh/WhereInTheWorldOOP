@@ -1,7 +1,9 @@
 package edu.fiuba.algo3.modelo.policia;
 
 import edu.fiuba.algo3.modelo.Mision;
+import edu.fiuba.algo3.modelo.RegistroLadrones;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorMisiones;
 import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistas;
 import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasMedias;
 
@@ -31,5 +33,11 @@ public class Detective implements Rango {
     @Override
     public double calcularTiempoViajeA(double distancia){
         return distancia/this.kmPorHora;
+    }
+
+    @Override
+    public Mision asignarNuevaMision(String rutaArchivoCiudades, RegistroLadrones registroLadrones) {
+        LectorMisiones lector = new LectorMisiones();
+        return lector.cargarMisiones(this.rutaArchivoMisiones, rutaArchivoCiudades, registroLadrones);
     }
 }

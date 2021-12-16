@@ -13,7 +13,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/vistaPrincipal.fxml"));
+        loader.setLocation(getClass().getResource("/vistaInicio.fxml"));
         Parent root = loader.load();
         var scene = new Scene(root);
         stage.setScene(scene);

@@ -10,6 +10,8 @@ import edu.fiuba.algo3.modelo.edificios.Biblioteca;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 import edu.fiuba.algo3.modelo.edificios.Puerto;
 
+import java.time.LocalDateTime;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -41,8 +43,8 @@ public class JuegoTest {
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
         String pista = partida.policiaEntrarA(banco);
-        String hora = partida.obtenerHora();
-        String horaEsperada = "Lunes 8 hs";
+        LocalDateTime hora = partida.obtenerHora();
+        LocalDateTime horaEsperada = LocalDateTime.of(2021, Month.NOVEMBER, 22, 8, 0, 0);
         String pistaEsperada = "La moneda es Drachmas, La sospechosa tenia el pelo de color castaño";
         assertEquals(pista, pistaEsperada);
         assertEquals(hora, horaEsperada);
@@ -73,13 +75,13 @@ public class JuegoTest {
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
         String pistaBanco = partida.policiaEntrarA(banco);
-        String horaBanco = partida.obtenerHora();
-        String horaEsperadaBanco = "Lunes 8 hs";
+        LocalDateTime horaBanco = partida.obtenerHora();
+        LocalDateTime horaEsperadaBanco = LocalDateTime.of(2021, Month.NOVEMBER, 22, 8, 0, 0);
         String pistaEsperadaBanco = "La moneda es Drachmas, La sospechosa tenia el pelo de color castaño";
         String pistaBiblioteca = partida.policiaEntrarA(biblioteca);
-        String horaBiblioteca = partida.obtenerHora();
+        LocalDateTime horaBiblioteca = partida.obtenerHora();
         String pistaEsperadaBiblioteca = "La gente es Plato, La sospechosa tenia el pelo de color castaño";
-        String horaEsperadaBiblioteca = "Lunes 9 hs";
+        LocalDateTime horaEsperadaBiblioteca = LocalDateTime.of(2021, Month.NOVEMBER, 22, 9, 0, 0);
         assertEquals(pistaBanco, pistaEsperadaBanco);
         assertEquals(horaBanco, horaEsperadaBanco);
         assertEquals(pistaBiblioteca, pistaEsperadaBiblioteca);
@@ -90,7 +92,7 @@ public class JuegoTest {
     public void test03PoliciaViajaDeMontrealAMexico() {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
-        Coordenadas coordenadasMexico = new Coordenadas(23.634501, -102.552784);
+        Coordenadas coordenadasMexico = new Coordenadas(19.432608, -99.133209);
         Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
         Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios);
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
@@ -105,8 +107,8 @@ public class JuegoTest {
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
         partida.viajarA(mexico);
-        String tiempoEsperadoViaje = "Lunes 9 hs";
-        String tiempoViaje = partida.obtenerHora();
+        LocalDateTime tiempoEsperadoViaje = LocalDateTime.of(2021, Month.NOVEMBER, 22, 10, 0, 0);
+        LocalDateTime tiempoViaje = partida.obtenerHora();
         assertEquals(tiempoViaje, tiempoEsperadoViaje);
     }
 
@@ -134,13 +136,13 @@ public class JuegoTest {
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
         String pistaEsperada = "La bandera es de color Blue and White, La sospechosa tenia el pelo de color castaño";
-        String horaEsperada1 = "Lunes 13 hs";
-        String horaEsperada2 = "Miércoles 9 hs";
+        LocalDateTime horaEsperada1 = LocalDateTime.of(2021, Month.NOVEMBER, 22, 13, 0, 0);
+        LocalDateTime horaEsperada2 = LocalDateTime.of(2022, Month.FEBRUARY, 9, 9, 0, 0);
         for (int i = 0; i < 3; i++) {
             String pista = partida.policiaEntrarA(aeropuerto);
             assertEquals(pista, pistaEsperada);
         }
-        String hora = partida.obtenerHora();
+        LocalDateTime hora = partida.obtenerHora();
         assertEquals(hora, horaEsperada1);
         pistaEsperada = "La bandera es de color Blue and White, La sospechosa tenia el pelo de color castaño";
         for (int i = 0; i < 55; i++) {
@@ -166,14 +168,13 @@ public class JuegoTest {
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
         Juego partida = new Juego(montreal, "Pepe", mision, ladrones);
 
-        String horaEsperada = "Martes 8 hs";
+        LocalDateTime horaEsperada = LocalDateTime.of(2021, Month.NOVEMBER, 23, 8, 0, 0);
         for (int i = 0; i < 16; i++) {
             partida.recibirPunialada();
         }
-        String hora = partida.obtenerHora();
+        LocalDateTime hora = partida.obtenerHora();
         assertEquals(hora, horaEsperada);
     }
-
     @Test
     public void test06PoliciaInvestigadorViajaDeMonterealAMexico() {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
@@ -196,8 +197,8 @@ public class JuegoTest {
         policia.ascender(); // Sube a Investigador
         partida.viajarA(mexico);
 
-        String tiempoEsperadoViaje = "Lunes 8 hs";
-        String tiempoViaje = partida.obtenerHora();
+        LocalDateTime tiempoEsperadoViaje = LocalDateTime.of(2021, Month.NOVEMBER, 22, 8, 0, 0);;
+        LocalDateTime tiempoViaje = partida.obtenerHora();
         assertEquals(tiempoViaje, tiempoEsperadoViaje);
     }
 
@@ -390,13 +391,8 @@ public class JuegoTest {
         partida.policiaEntrarA(banco5);
 
 
-
-
         assertEquals(partida.obtenerCantidadDeArrestos(), 7);
         assertEquals(partida.obtenerCantidadDeEscapados(), 0);
-
-
-
 
     }
 

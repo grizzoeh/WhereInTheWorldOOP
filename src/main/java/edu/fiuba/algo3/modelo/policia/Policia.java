@@ -1,6 +1,7 @@
 package edu.fiuba.algo3.modelo.policia;
 
 import edu.fiuba.algo3.modelo.Mision;
+import edu.fiuba.algo3.modelo.RegistroLadrones;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 
 public class Policia {
@@ -40,5 +41,9 @@ public class Policia {
     public int recibirDisparo(){
 
         return 4;
+    }
+
+    public Mision nuevaMision(String rutaArchivoCiudades, RegistroLadrones registroLadrones) {
+        return this.rango.asignarNuevaMision(rutaArchivoCiudades, registroLadrones);
     }
 }
