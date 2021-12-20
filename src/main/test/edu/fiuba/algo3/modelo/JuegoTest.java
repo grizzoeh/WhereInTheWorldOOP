@@ -18,7 +18,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class JuegoTest {
-
+/*
     @Test
     public void test01VisitarBancoEnMontreal() {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
@@ -395,5 +395,5 @@ public class JuegoTest {
         assertEquals(partida.obtenerCantidadDeEscapados(), 0);
 
     }
-
+    */
 }

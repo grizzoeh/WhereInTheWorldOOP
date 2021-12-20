@@ -3,6 +3,7 @@ package edu.fiuba.algo3.modelo.policia;
 import edu.fiuba.algo3.modelo.Mision;
 import edu.fiuba.algo3.modelo.RegistroLadrones;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorCiudades;
 import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorMisiones;
 import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistas;
 import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasMedias;
@@ -10,14 +11,13 @@ import edu.fiuba.algo3.modelo.obtenedoresDePistas.ObtenedorDePistasMedias;
 public class Detective implements Rango {
 
     private ObtenedorDePistas obtenedorDePistas;
-    private String rutaArchivoMisiones;
     private int kmPorHora;
+    private LectorMisiones lectorMisiones;
 
-    public Detective(){
+    public Detective(LectorMisiones lectorMisiones){
         this.obtenedorDePistas = new ObtenedorDePistasMedias();
-        this.rutaArchivoMisiones = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelomisionesValiosas.json";
-
         this.kmPorHora = 1100;
+        this.lectorMisiones = lectorMisiones;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Detective implements Rango {
 
     @Override
     public Rango proximoRango(){
-        return new Investigador();
+        return new Investigador(this.lectorMisiones);
     }
 
     @Override
@@ -36,8 +36,7 @@ public class Detective implements Rango {
     }
 
     @Override
-    public Mision asignarNuevaMision(String rutaArchivoCiudades, RegistroLadrones registroLadrones) {
-        LectorMisiones lector = new LectorMisiones();
-        return lector.cargarMisiones(this.rutaArchivoMisiones, rutaArchivoCiudades, registroLadrones);
+    public Mision asignarNuevaMision(LectorCiudades lectorCiudades, RegistroLadrones registroLadrones) {
+        return this.lectorMisiones.cargarMisiones(lectorCiudades, registroLadrones);
     }
 }

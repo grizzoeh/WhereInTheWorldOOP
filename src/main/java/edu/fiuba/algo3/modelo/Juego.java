@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import edu.fiuba.algo3.modelo.edificios.Edificio;
-import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorLadrones;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.*;
 import edu.fiuba.algo3.modelo.policia.Policia;
 
 public class Juego {
@@ -18,9 +18,11 @@ public class Juego {
     private Mision mision;
     private OrdenDeArresto ordenDeArresto;
     private int sospechososEscapados;
-    private String rutaCiudades = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelociudades.json";
-    private String rutaLadrones = "src/main/java/edu/fiuba/algo3/modelo/archivosJson/modelosladrones.json";
+    private LectorMisiones lectorMisiones = new LectorMisionesJSON();
+    private LectorLadrones lectorLadrones = new LectorLadronesJSON();
+    private LectorCiudades lectorCiudades = new LectorCiudadesJSON();
 
+    /*
     public Juego(Ciudad ciudadComienzo, String nombre, Mision mision, ArrayList<Ladron> ladrones) {
         this.ciudadActual = ciudadComienzo;
         this.cantidadDeArrestos = 0;
@@ -30,19 +32,27 @@ public class Juego {
         this.ladrones = new RegistroLadrones(ladrones);
         this.ordenDeArresto = new OrdenDeArresto();
     }
+    */
 
     public Juego(String nombrePolicia){
         this.cantidadDeArrestos = 0;
-        this.policia = new Policia(nombrePolicia);
-        LectorLadrones lectorLadrones = new LectorLadrones();
-        this.ladrones = new RegistroLadrones(lectorLadrones.cargarLadrones(this.rutaLadrones));
+        this.sospechososEscapados = 0;
+        this.policia = new Policia(nombrePolicia, this.lectorMisiones);
+        this.ladrones = new RegistroLadrones(this.lectorLadrones.cargarLadrones());
         this.iniciarNuevaMision();
     }
 
     public void iniciarNuevaMision() {
         this.reloj = new Reloj();
         this.ordenDeArresto =  new OrdenDeArresto();
-        this.mision = policia.nuevaMision(this.rutaCiudades, this.ladrones);
+        this.mision = policia.nuevaMision(this.lectorCiudades, this.ladrones);
+        this.ciudadActual = this.mision.inicioRecorrido();
+    }
+
+    public void iniciarNuevaMisionPrueba(Mision mision) {
+        this.reloj = new Reloj();
+        this.ordenDeArresto = new OrdenDeArresto();
+        this.mision = mision;
         this.ciudadActual = this.mision.inicioRecorrido();
     }
 

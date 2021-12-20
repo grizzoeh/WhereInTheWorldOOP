@@ -3,6 +3,8 @@ package edu.fiuba.algo3.modelo.policia;
 import edu.fiuba.algo3.modelo.Mision;
 import edu.fiuba.algo3.modelo.RegistroLadrones;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorCiudades;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorMisiones;
 
 public class Policia {
     private String nombre;
@@ -10,9 +12,9 @@ public class Policia {
     private int cantidadDeArrestos;
     private int cantidadDePunialadas;
 
-    public Policia(String nombre){
+    public Policia(String nombre, LectorMisiones lectorMisiones){
         this.nombre = nombre;
-        this.rango = new Novato();
+        this.rango = new Novato(lectorMisiones);
         this.cantidadDeArrestos = 0;
         this.cantidadDePunialadas = 0;
     }
@@ -43,7 +45,7 @@ public class Policia {
         return 4;
     }
 
-    public Mision nuevaMision(String rutaArchivoCiudades, RegistroLadrones registroLadrones) {
-        return this.rango.asignarNuevaMision(rutaArchivoCiudades, registroLadrones);
+    public Mision nuevaMision(LectorCiudades lectorCiudades, RegistroLadrones registroLadrones) {
+        return this.rango.asignarNuevaMision(lectorCiudades, registroLadrones);
     }
 }
