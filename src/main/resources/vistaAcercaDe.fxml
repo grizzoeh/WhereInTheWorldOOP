@@ -99,7 +99,7 @@
                   <Font name="Ebrima" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="745.0" layoutY="514.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
+            <Button fx:id="btnVolver" layoutX="745.0" layoutY="514.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
             <TextFlow layoutX="26.0" layoutY="461.0" prefHeight="138.0" prefWidth="333.0" style="-fx-background-color: white;" textAlignment="CENTER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA. Aplicación desarrollada en Java. Más información en https://github.com/jmdieguez/algothief" textAlignment="CENTER" wrappingWidth="310.9366455078125">

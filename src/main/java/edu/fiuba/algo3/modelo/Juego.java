@@ -2,6 +2,7 @@ package edu.fiuba.algo3.modelo;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 import edu.fiuba.algo3.modelo.lectoresDeArchivos.*;
@@ -21,22 +22,14 @@ public class Juego {
     private LectorMisiones lectorMisiones = new LectorMisionesJSON();
     private LectorLadrones lectorLadrones = new LectorLadronesJSON();
     private LectorCiudades lectorCiudades = new LectorCiudadesJSON();
+    private boolean activarAtaques;
+    private int chancePunialada = 10;
+    private int chanceDisparo = 10;
 
-    /*
-    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision, ArrayList<Ladron> ladrones) {
-        this.ciudadActual = ciudadComienzo;
-        this.cantidadDeArrestos = 0;
-        this.reloj = new Reloj();
-        this.policia = new Policia(nombre);
-        this.mision = mision;
-        this.ladrones = new RegistroLadrones(ladrones);
-        this.ordenDeArresto = new OrdenDeArresto();
-    }
-    */
-
-    public Juego(String nombrePolicia){
+    public Juego(String nombrePolicia, boolean activarAtaques){
         this.cantidadDeArrestos = 0;
         this.sospechososEscapados = 0;
+        this.activarAtaques = activarAtaques;
         this.policia = new Policia(nombrePolicia, this.lectorMisiones);
         this.ladrones = new RegistroLadrones(this.lectorLadrones.cargarLadrones());
     }
@@ -67,12 +60,27 @@ public class Juego {
             this.ordenDeArresto.atraparLadron(this, this.mision);
             return "El ladron ha sido atrapado!";
         }
-
+        if (this.activarAtaques) {
+            randomizarAtaques();
+        }
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
         this.reloj.pasarHoras(horas);
 
         return pista;
+    }
+
+    public void randomizarAtaques() {
+        int punialada = ThreadLocalRandom.current().nextInt(0, this.chancePunialada);
+        int disparo = ThreadLocalRandom.current().nextInt(0, this.chanceDisparo);
+        if (disparo == 1) {
+            this.recibirDisparo();
+            return;
+        }
+        if (punialada == 1) {
+            this.recibirPunialada();
+            return;
+        }
     }
 
     public LocalDateTime obtenerHora() {
@@ -94,11 +102,6 @@ public class Juego {
         if (this.cantidadDeArrestos == 5 || this.cantidadDeArrestos == 15 || this.cantidadDeArrestos == 35) {
             this.policia.ascender();
         }
-    }
-
-    public void asignarMision(Mision mision, Ciudad ciudadComienzo) {
-        this.mision = mision;
-        this.ciudadActual = ciudadComienzo;
     }
 
     public void ladronEscapa(){

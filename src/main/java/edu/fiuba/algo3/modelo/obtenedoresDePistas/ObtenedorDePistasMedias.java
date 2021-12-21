@@ -8,6 +8,9 @@ public class ObtenedorDePistasMedias implements ObtenedorDePistas{
     public String pedirPista(Edificio unEdificio, Mision unaMision){
         String parte1 = unEdificio.obtenerPistaMedia(unaMision.obtenerProximaCiudad());
         String parte2 = unaMision.obtenerDescripcionSospechoso();
+        if (parte1.equals("???")) {
+            return parte2;
+        }
         return parte1 + ", " + parte2;
     }
 }

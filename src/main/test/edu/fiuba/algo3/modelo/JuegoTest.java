@@ -34,19 +34,19 @@ public class JuegoTest {
         ciudades.add(athens);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
         String pista = partida.policiaEntrarA(banco);
         LocalDateTime hora = partida.obtenerHora();
         LocalDateTime horaEsperada = LocalDateTime.of(2021, Month.NOVEMBER, 22, 8, 0, 0);
-        String pistaEsperada = "La moneda es Drachmas, La sospechoasa cargaba con un equipo de escalada de montaña";
+        String pistaEsperada = "Le sospechose cambio su dinero por Drachmas, Le sospechose cargaba con un equipo de escalada de montaña";
         assertEquals(pista, pistaEsperada);
         assertEquals(hora, horaEsperada);
     }
@@ -68,22 +68,22 @@ public class JuegoTest {
         ciudades.add(athens);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
         String pistaBanco = partida.policiaEntrarA(banco);
         LocalDateTime horaBanco = partida.obtenerHora();
         LocalDateTime horaEsperadaBanco = LocalDateTime.of(2021, Month.NOVEMBER, 22, 8, 0, 0);
-        String pistaEsperadaBanco = "La moneda es Drachmas, La sospechoasa cargaba con un equipo de escalada de montaña";
+        String pistaEsperadaBanco = "Le sospechose cambio su dinero por Drachmas, Le sospechose cargaba con un equipo de escalada de montaña";
         String pistaBiblioteca = partida.policiaEntrarA(biblioteca);
         LocalDateTime horaBiblioteca = partida.obtenerHora();
-        String pistaEsperadaBiblioteca = "La gente es Plato, La sospechosa tenia el pelo de color castaño";
+        String pistaEsperadaBiblioteca = "Le sospechose estaba leyendo informacion acerca de Plato, Le sospechose tenia el pelo de color castaño";
         LocalDateTime horaEsperadaBiblioteca = LocalDateTime.of(2021, Month.NOVEMBER, 22, 9, 0, 0);
         assertEquals(pistaBanco, pistaEsperadaBanco);
         assertEquals(horaBanco, horaEsperadaBanco);
@@ -103,13 +103,13 @@ public class JuegoTest {
         ciudades.add(mexico);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
         partida.viajarA(mexico);
@@ -134,13 +134,13 @@ public class JuegoTest {
         ciudades.add(athens);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
-        String pistaEsperada = "La bandera es de color Blue and White, La sospechoasa cargaba con un equipo de escalada de montaña";
+        String pistaEsperada = "Le sospechose subio a un avion que llevava una bandera Blue and White, Le sospechose cargaba con un equipo de escalada de montaña";
         LocalDateTime horaEsperada1 = LocalDateTime.of(2021, Month.NOVEMBER, 22, 13, 0, 0);
         LocalDateTime horaEsperada2 = LocalDateTime.of(2022, Month.FEBRUARY, 9, 9, 0, 0);
         for (int i = 0; i < 3; i++) {
@@ -149,7 +149,7 @@ public class JuegoTest {
         }
         LocalDateTime hora = partida.obtenerHora();
         assertEquals(hora, horaEsperada1);
-        pistaEsperada = "La bandera es de color Blue and White, La sospechoasa cargaba con un equipo de escalada de montaña";
+        pistaEsperada = "Le sospechose subio a un avion que llevava una bandera Blue and White, Le sospechose cargaba con un equipo de escalada de montaña";
         for (int i = 0; i < 55; i++) {
             String pista = partida.policiaEntrarA(puerto);
             assertEquals(pista, pistaEsperada);
@@ -167,13 +167,13 @@ public class JuegoTest {
         ciudades.add(montreal);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
         LocalDateTime horaEsperada = LocalDateTime.of(2021, Month.NOVEMBER, 23, 8, 0, 0);
@@ -196,13 +196,13 @@ public class JuegoTest {
         ciudades.add(mexico);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
         Policia policia = partida.obtenerPolicia();
         policia.ascender(); // Sube a Detective
@@ -266,13 +266,13 @@ public class JuegoTest {
         ciudades.add(athens);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("La sospechoasa cargaba con un equipo de escalada de montaña");
-        descripciones.add("La sospechosa tenia el pelo de color castaño");
-        descripciones.add("La sospechosa llevaba mucha joyeria");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color castaño");
+        descripciones.add("Le sospechose llevaba mucha joyeria");
         descripciones.add("Vi como su chofer le abria la puerta de su Limusina");
         Ladron ladron = new Ladron("Merey Laroc", "Femenino", "Escalada De Montaña", "Castaño", "Joyeria", "Limusina", descripciones);
         Mision mision = new Mision("Tesoro Nacional de Montreal", ladron , ciudades, ciudadesFalsas);
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         partida.iniciarNuevaMisionPrueba(mision);
 
         partida.viajarA(athens);
@@ -285,14 +285,14 @@ public class JuegoTest {
     @Test
     public void test09RoboIncanGoldMaskCon6ArrestosPrevios() {
         ArrayList<String> descripciones = new ArrayList<String>();
-        descripciones.add("El sospechoso cargaba con un equipo de escalada de montaña");
-        descripciones.add("El sospechoso tenia el pelo de color negro");
-        descripciones.add("El sospechoso llevaba un anillo muy particular");
-        descripciones.add("Vi al sospechoso bajarse de una moto");
+        descripciones.add("Le sospechose cargaba con un equipo de escalada de montaña");
+        descripciones.add("Le sospechose tenia el pelo de color negro");
+        descripciones.add("Le sospechose llevaba un anillo muy particular");
+        descripciones.add("Vi al sospechose bajarse de una moto");
 
         Ladron ladron = new Ladron("Nick Brunch", "Masculino", "Escalada De Montaña", "Negro", "Anillo", "Motocicleta", descripciones);
 
-        Juego partida = new Juego("Pepe");
+        Juego partida = new Juego("Pepe", false);
         // El policia realiza 6 arrestos.
         partida.ladronAtrapado();
         partida.ladronAtrapado();
@@ -370,9 +370,9 @@ public class JuegoTest {
         String pista1 = partida.policiaEntrarA(banco);
         String pista2 = partida.policiaEntrarA(aeropuerto);
         String pista3 = partida.policiaEntrarA(biblioteca);
-        String pistaEsperada1 = "Las industrias son Figs, Olives, El sospechoso cargaba con un equipo de escalada de montaña";
-        String pistaEsperada2 = "El lenguaje del pais es Greek, El sospechoso tenia el pelo de color negro";
-        String pistaEsperada3 = "La religion principal es ???, El sospechoso llevaba un anillo muy particular";
+        String pistaEsperada1 = "Estaba muy interesade en las industrias de Figs, Olives, Le sospechose cargaba con un equipo de escalada de montaña";
+        String pistaEsperada2 = "Le sospechose cargaba con varios diccionarios de español a Greek, Le sospechose tenia el pelo de color negro";
+        String pistaEsperada3 = "Le sospechose llevaba un anillo muy particular";
         assertEquals(pistaEsperada1, pista1);
         assertEquals(pistaEsperada2, pista2);
         assertEquals(pistaEsperada3, pista3);
@@ -385,9 +385,9 @@ public class JuegoTest {
         pista1 = partida.policiaEntrarA(banco2);
         pista2 = partida.policiaEntrarA(aeropuerto2);
         pista3 = partida.policiaEntrarA(biblioteca2);
-        pistaEsperada1 = "Las industrias son ???, Vi al sospechoso bajarse de una moto";
-        pistaEsperada2 = "El lenguaje del pais es French, El sospechoso cargaba con un equipo de escalada de montaña";
-        pistaEsperada3 = "La religion principal es ???, El sospechoso tenia el pelo de color negro";
+        pistaEsperada1 = "Vi al sospechose bajarse de una moto";
+        pistaEsperada2 = "Le sospechose cargaba con varios diccionarios de español a French, Le sospechose cargaba con un equipo de escalada de montaña";
+        pistaEsperada3 = "Le sospechose tenia el pelo de color negro";
         assertEquals(pistaEsperada1, pista1);
         assertEquals(pistaEsperada2, pista2);
         assertEquals(pistaEsperada3, pista3);

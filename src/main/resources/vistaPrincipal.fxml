@@ -91,15 +91,13 @@
                   <Image url="@carmensndiego.PNG" />
                </image>
             </ImageView>
-            <Button layoutX="278.0" layoutY="388.0" mnemonicParsing="false" text="Evidencia" />
-            <Button layoutX="348.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" text="Sospechosos" />
-            <Button layoutX="444.0" layoutY="388.0" mnemonicParsing="false" text="Paises" />
-            <Button layoutX="506.0" layoutY="388.0" mnemonicParsing="false" text="Opciones" />
-            <Button fx:id="btnOnPantalla" layoutX="64.0" layoutY="263.0" mnemonicParsing="false" text="ON/OFF" />
-            <Button fx:id="btnMutePantalla" layoutX="147.0" layoutY="263.0" mnemonicParsing="false" text="MUTE" />
-            <Button layoutX="278.0" layoutY="579.0" mnemonicParsing="false" text="Enviar/Recibir" />
-            <Button layoutX="403.0" layoutY="579.0" mnemonicParsing="false" text="Mas " />
-            <Button layoutX="484.0" layoutY="579.0" mnemonicParsing="false" text="Cancelar" />
+            <Button fx:id="btnEvidencia" layoutX="278.0" layoutY="388.0" mnemonicParsing="false" text="Evidencia" />
+            <Button fx:id="btnSospechosos" layoutX="348.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" text="Sospechosos" />
+            <Button fx:id="btnPaises" layoutX="444.0" layoutY="388.0" mnemonicParsing="false" text="Paises" />
+            <Button fx:id="btnOpciones" layoutX="506.0" layoutY="388.0" mnemonicParsing="false" text="Opciones" />
+            <Button fx:id="btnEnviar" layoutX="278.0" layoutY="579.0" mnemonicParsing="false" text="Enviar/Recibir" />
+            <Button fx:id="btnMas" layoutX="403.0" layoutY="579.0" mnemonicParsing="false" text="Mas " />
+            <Button fx:id="btnCancelar" layoutX="484.0" layoutY="579.0" mnemonicParsing="false" text="Cancelar" />
             <Button fx:id="btnViajar" layoutX="61.0" layoutY="331.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="VIAJAR" />
             <Button fx:id="btnRedCrimen" layoutX="61.0" layoutY="362.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="RED CRIMEN" />
             <Button fx:id="btnEmitirOrden" layoutX="61.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="EMITIR ORDEN" />
