@@ -15,7 +15,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LectorMisionesTest {
-
+/*
     @Test
     public void test01secargaunamision() {
         ArrayList<Ladron> ladrones = new ArrayList<Ladron>();
@@ -32,5 +32,6 @@ public class LectorMisionesTest {
 
         assertEquals(mision.obtenerProximaCiudad(),mision.ciudadesDisponibles().get(0));
     }
+*/
 }
 

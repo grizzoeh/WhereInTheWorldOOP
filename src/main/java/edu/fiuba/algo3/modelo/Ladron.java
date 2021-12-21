@@ -32,17 +32,21 @@ public class Ladron {
 
         boolean resultado = true;
 
-        resultado &= otroLadron.obtenerSexo() == this.sexo || otroLadron.obtenerSexo() == "???";
-        resultado &= otroLadron.obtenerHobby() == this.hobby || otroLadron.obtenerHobby() == "???";
-        resultado &= otroLadron.obtenerCabello() == this.cabello || otroLadron.obtenerCabello() == "???";
-        resultado &= otroLadron.obtenerSenia() == this.senia || otroLadron.obtenerSenia() == "???";
-        resultado &= otroLadron.obtenerVehiculo() == this.vehiculo || otroLadron.obtenerVehiculo() == "???";
+        resultado &= otroLadron.obtenerSexo().equals(this.sexo) || otroLadron.obtenerSexo().equals("???");
+        resultado &= otroLadron.obtenerHobby().equals(this.hobby) || otroLadron.obtenerHobby().equals("???");
+        resultado &= otroLadron.obtenerCabello().equals(this.cabello) || otroLadron.obtenerCabello().equals("???");
+        resultado &= otroLadron.obtenerSenia().equals(this.senia) || otroLadron.obtenerSenia().equals("???");
+        resultado &= otroLadron.obtenerVehiculo().equals(this.vehiculo) || otroLadron.obtenerVehiculo().equals("???");
 
         return resultado;
     }
 
     public boolean coincideNombre(String nombre){
         return this.nombre.equals(nombre);
+    }
+
+    public boolean sosEsteLadron(Ladron otroLadron){
+        return this.nombre.equals(otroLadron.nombre);
     }
 
 }

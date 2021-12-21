@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.LectorMisionesJSON;
 import edu.fiuba.algo3.modelo.policia.Policia;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,8 @@ import edu.fiuba.algo3.modelo.Mision;
 import edu.fiuba.algo3.modelo.edificios.Biblioteca;
 
 public class PoliciaTest {
-    Policia policia = new Policia("Juan");
+
+    Policia policia = new Policia("Juan", new LectorMisionesJSON());
     
     @Test
     public void test01UnNovatoTardaUnaHoraEnRecorrer900Km(){
@@ -92,4 +94,6 @@ public class PoliciaTest {
         when(ciudad.pistaFacilBiblioteca()).thenReturn("La gente es maya");
         assertEquals(policia.policiaEntrarEnEdificioConMision(biblioteca, mision), "La gente es maya, pelo rojo");
     }
+
 }
+

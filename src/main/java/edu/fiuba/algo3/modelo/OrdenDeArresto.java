@@ -53,6 +53,10 @@ public class OrdenDeArresto {
     }
 
     public void atraparLadron(Juego juego, Mision mision) {
+        if (this.ladron == null){
+            juego.ladronEscapa();
+            return;
+        }
         if (mision.compararLadron(this.ladron)) {
             juego.ladronAtrapado();
         }

@@ -24,6 +24,8 @@ public class LectorMisionesJSON implements LectorMisiones {
     private int index = 0;
     private int max_index = 2;
 
+    public LectorMisionesJSON(){}
+
     public void ascender(){
         if (this.index < max_index) {
             this.index++;

@@ -39,7 +39,6 @@ public class Juego {
         this.sospechososEscapados = 0;
         this.policia = new Policia(nombrePolicia, this.lectorMisiones);
         this.ladrones = new RegistroLadrones(this.lectorLadrones.cargarLadrones());
-        this.iniciarNuevaMision();
     }
 
     public void iniciarNuevaMision() {

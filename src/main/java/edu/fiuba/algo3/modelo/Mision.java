@@ -38,7 +38,7 @@ public class Mision {
     }
 
     public boolean compararLadron(Ladron otroLadron) {
-        return this.ladron == otroLadron;
+        return this.ladron.sosEsteLadron(otroLadron);
     }
 
     public ArrayList<Ciudad> ciudadesDisponibles(){
