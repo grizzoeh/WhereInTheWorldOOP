@@ -44,7 +44,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorInicio">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -97,7 +97,7 @@
                   <Font name="Ebrima" size="64.0" />
                </font>
             </Label>
-            <Button fx:id="btnJugar" layoutX="495.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Jugar" />
+            <Button fx:id="btnJugar" layoutX="495.0" layoutY="538.0" mnemonicParsing="false" onAction="#handleJugar" prefHeight="61.0" prefWidth="92.0" text="Jugar" />
             <Button fx:id="btnTutorial" layoutX="648.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Tutorial" />
             <Button fx:id="btnAcercaDe" layoutX="806.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Acerca de" />
          </children>

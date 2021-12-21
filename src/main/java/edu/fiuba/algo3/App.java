@@ -1,8 +1,8 @@
 package edu.fiuba.algo3;
 import java.io.IOException;
+
+import edu.fiuba.algo3.vista.Vista;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -11,10 +11,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("vista/vistaInicio.fxml"));
-        Parent root = loader.load();
-        var scene = new Scene(root);
+        Vista vistaInicio = new Vista("escenas/vistaInicio.fxml");
+        var scene = new Scene(vistaInicio.escena());
         stage.setScene(scene);
         stage.show();
     }
