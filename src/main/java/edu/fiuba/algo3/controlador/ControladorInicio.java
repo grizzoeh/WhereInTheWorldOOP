@@ -1,6 +1,7 @@
 package edu.fiuba.algo3.controlador;
 
 import edu.fiuba.algo3.vista.Vista;
+
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,6 +21,7 @@ public class ControladorInicio{
     Parent vista;
 
     public ControladorInicio(){
+
     }
 
     public void handleJugar() throws Exception{

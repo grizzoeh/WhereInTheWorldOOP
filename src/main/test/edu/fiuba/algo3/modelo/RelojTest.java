@@ -23,9 +23,9 @@ public class RelojTest {
     }
 
     @Test
-    public void test03Pasan154HorasYNoQuedaTiempo(){
+    public void test03Pasan200HorasYNoQuedaTiempo(){
 
-        reloj.pasarHoras(154);
+        reloj.pasarHoras(200);
         assertFalse(reloj.quedaTiempo());
     }
 
@@ -42,7 +42,6 @@ public class RelojTest {
 
         assertTrue(reloj.aString().equals("Lunes 7 hs"));
         reloj.pasarHoras(24);
-        System.out.println(reloj.aString());
         assertTrue(reloj.aString().equals("Martes 15 hs"));
         assertTrue(reloj.quedaTiempo());
     }
