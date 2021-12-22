@@ -144,5 +144,8 @@ public class Juego {
         this.ordenDeArresto.posiblesLadrones(this.ladrones);
     }
 
+    public ArrayList<Ciudad> viajesDisponibles(){
+        return this.mision.ciudadesDisponibles();
+    }
 }
 

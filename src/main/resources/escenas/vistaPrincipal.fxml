@@ -32,18 +32,22 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorPrincipal">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -91,7 +95,7 @@
                   <Image url="@carmensndiego.PNG" />
                </image>
             </ImageView>
-            <Button fx:id="btnEvidencia" layoutX="278.0" layoutY="388.0" mnemonicParsing="false" text="Evidencia" />
+            <Button fx:id="btnEvidencia" layoutX="278.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleEvidencia" text="Evidencia" />
             <Button fx:id="btnSospechosos" layoutX="348.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" text="Sospechosos" />
             <Button fx:id="btnPaises" layoutX="444.0" layoutY="388.0" mnemonicParsing="false" text="Paises" />
             <Button fx:id="btnOpciones" layoutX="506.0" layoutY="388.0" mnemonicParsing="false" text="Opciones" />
@@ -101,11 +105,48 @@
             <Button fx:id="btnViajar" layoutX="61.0" layoutY="331.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="VIAJAR" />
             <Button fx:id="btnRedCrimen" layoutX="61.0" layoutY="362.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="RED CRIMEN" />
             <Button fx:id="btnEmitirOrden" layoutX="61.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="EMITIR ORDEN" />
-            <TextField fx:id="consola" layoutX="267.0" layoutY="427.0" prefHeight="151.0" prefWidth="314.0" style="-fx-background-color: black;" />
-            <ImageView fx:id="imagen" fitHeight="360.0" fitWidth="650.0" layoutX="270.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="consola" editable="false" layoutX="267.0" layoutY="427.0" prefHeight="151.0" prefWidth="314.0" promptText="Iniciando nueva misión..." style="-fx-background-color: black;" />
+            <ImageView fx:id="imagen" fitHeight="360.0" fitWidth="650.0" layoutX="270.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1283291.jpg" />
+               </image></ImageView>
             <ImageView fx:id="imagenChica" fitHeight="203.0" fitWidth="277.0" layoutX="636.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="pantalla" fitHeight="119.0" fitWidth="160.0" layoutX="51.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
-            <TextField fx:id="pantallaChica" layoutX="58.0" layoutY="191.0" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: black;" />
+            <TextField fx:id="pantallaChica" editable="false" layoutX="58.0" layoutY="191.0" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: black;" />
+            <Pane fx:id="paneEvidencia" disable="true" layoutX="278.0" layoutY="388.0" prefHeight="181.0" prefWidth="160.0" visible="false">
+               <children>
+                  <Accordion fx:id="accordionLadronModelo" prefHeight="151.0" prefWidth="160.0">
+                    <panes>
+                        <TitledPane animated="false" prefHeight="31.0" prefWidth="182.0" text="Sexo">
+                           <content>
+                              <ChoiceBox fx:id="choiceboxSexo" prefHeight="26.0" prefWidth="160.0" />
+                           </content>
+                        </TitledPane>
+                      <TitledPane animated="false" prefHeight="31.0" prefWidth="182.0" text="Hobby">
+                           <content>
+                              <ChoiceBox fx:id="choiceboxHobby" prefHeight="26.0" prefWidth="160.0" />
+                           </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Cabello">
+                           <content>
+                              <ChoiceBox fx:id="choiceboxCabello" prefHeight="26.0" prefWidth="160.0" />
+                           </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Seña">
+                           <content>
+                              <ChoiceBox fx:id="choiceboxSenia" prefHeight="26.0" prefWidth="160.0" />
+                           </content>
+                      </TitledPane>
+                        <TitledPane animated="false" prefHeight="31.0" prefWidth="182.0" text="Vehiculo">
+                           <content>
+                              <ChoiceBox fx:id="choiceboxVehiculo" prefHeight="26.0" prefWidth="160.0" />
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+                  <Button fx:id="btnCerrarMenuEvidencia" layoutY="155.0" mnemonicParsing="false" onAction="#handleCerrarMenuLadronModelo" prefHeight="26.0" prefWidth="160.0" text="Cerrar menú" />
+               </children>
+            </Pane>
       </children>
     </AnchorPane>
   </children>

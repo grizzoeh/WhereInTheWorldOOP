@@ -30,9 +30,10 @@ public class ControladorRegistro{
     }
 
     public void handleComenzar() throws Exception{
-        Vista vistaPrincipal = new Vista("/escenas/vistaPrincipal.fxml");
+        Vista vistaPrincipal = new Vista("/escenas/vistaPrincipal2.fxml");
         var scene = new Scene(vistaPrincipal.escena());
         this.stage = (Stage) btnComenzar.getScene().getWindow();
         this.stage.setScene(scene);
+        
     }
 }

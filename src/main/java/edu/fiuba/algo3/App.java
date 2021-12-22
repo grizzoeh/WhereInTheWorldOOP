@@ -1,6 +1,5 @@
 package edu.fiuba.algo3;
 import java.io.IOException;
-
 import edu.fiuba.algo3.vista.Vista;
 import javafx.application.Application;
 import javafx.scene.Scene;
