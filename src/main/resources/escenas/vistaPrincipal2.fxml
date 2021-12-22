@@ -66,6 +66,67 @@
             </Label>
             <TextFlow id="idDescripcion" layoutX="465.0" layoutY="21.0" prefHeight="63.0" prefWidth="99.0" />
             <ImageView id="imgCiudad" fitHeight="488.0" fitWidth="405.0" layoutX="-25.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox fx:id="vboxOrden" layoutX="8.0" layoutY="104.0" prefHeight="502.0" prefWidth="448.0" visible="false">
+               <children>
+                  <AnchorPane prefHeight="516.0" prefWidth="421.0">
+                     <children>
+                        <ImageView fitHeight="494.0" fitWidth="421.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@SolapaOrdenA.png" />
+                           </image>
+                        </ImageView>
+                        <TextFlow fx:id="txtSospechosos" layoutX="20.0" layoutY="336.0" prefHeight="74.0" prefWidth="382.0" />
+                        <Label layoutX="85.0" layoutY="72.0" text="Sexo:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="14.0" text="ORDEN DE ARRESTO" textFill="WHITE">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="115.0" text="Cabello:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="159.0" text="Hobby:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="242.0" text="Caracteristica:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="202.0" text="Vehiculo:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnEmitirOrden" layoutX="60.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleEmitirOrden" prefHeight="25.0" prefWidth="316.0" text="Emitir Orden" />
+                        <Button fx:id="btnCancelarOrden" layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleCancelarOrden" prefHeight="25.0" prefWidth="316.0" text="Cancelar" />
+                        <Label layoutX="103.0" layoutY="297.0" text="Posibles Sospechosos:" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="267.0" text="________________________________________" textFill="WHITE">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="cmbSexo" layoutX="154.0" layoutY="72.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="cmbCabello" layoutX="154.0" layoutY="115.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="cmbHobby" layoutX="154.0" layoutY="159.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="cmbCaracteristica" layoutX="154.0" layoutY="242.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="cmbVehiculo" layoutX="154.0" layoutY="202.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
             <VBox fx:id="vboxViajar" layoutX="265.0" layoutY="161.0" prefHeight="300.0" prefWidth="421.0" visible="false">
                <children>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
@@ -102,7 +163,7 @@
                               <Font size="25.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnConfirmarEdificios" layoutX="224.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleConfirmarEdificios" prefHeight="25.0" prefWidth="119.0" text="Viajar" />
+                        <Button fx:id="btnConfirmarEdificios" layoutX="224.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleConfirmarEdificios" prefHeight="25.0" prefWidth="119.0" text="Entrar" />
                         <Button fx:id="btnCancelarEdificios" layoutX="79.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleCancelarEdificios" prefHeight="25.0" prefWidth="119.0" text="Cancelar" />
                      </children>
                   </AnchorPane>

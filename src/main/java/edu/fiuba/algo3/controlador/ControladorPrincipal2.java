@@ -5,25 +5,19 @@ import java.util.ArrayList;
 import edu.fiuba.algo3.modelo.Ciudad;
 import edu.fiuba.algo3.modelo.Juego;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
-import edu.fiuba.algo3.vista.Vista;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class ControladorPrincipal2{
 
     Stage stage;
-
+    /* Button */
     @FXML
     Button btnViajar;
     @FXML
@@ -39,15 +33,34 @@ public class ControladorPrincipal2{
     @FXML
     Button btnCancelarEdificios;
     @FXML
+    Button btnEmitirOrden;
+    @FXML
+    Button btnCancelarOrden;
+    /* VBox */
+    @FXML
     VBox vboxViajar;
     @FXML
     VBox vboxEdificios;
     @FXML
     VBox vboxPrincipal;
     @FXML
+    VBox vboxOrden;
+    /* ChoiceBox */
+    @FXML
     ChoiceBox cmbEdificios;
     @FXML
     ChoiceBox cmbViajar;
+    @FXML
+    ChoiceBox cmbSexo;
+    @FXML
+    ChoiceBox cmbCabello;
+    @FXML
+    ChoiceBox cmbHobby;
+    @FXML
+    ChoiceBox cmbSenia;
+    @FXML
+    ChoiceBox cmbVehiculo;
+
     Parent vista;
     private Juego juego;
 
@@ -59,9 +72,7 @@ public class ControladorPrincipal2{
     
     public void handleViajar() throws Exception{
         this.vboxViajar.setVisible(true);
-        this.btnViajar.setDisable(true);
-        this.btnEdificios.setDisable(true);
-        this.btnOrden.setDisable(true);
+        this.deshabilitarBotonesPrincipales();
         ArrayList<Ciudad> ciudades = this.juego.viajesDisponibles();
         ObservableList<Ciudad> lista = FXCollections.observableArrayList();
         for (Ciudad ciudad: ciudades){
@@ -85,9 +96,7 @@ public class ControladorPrincipal2{
 
     public void handleEdificios() throws Exception{
         this.vboxEdificios.setVisible(true);
-        this.btnViajar.setDisable(true);
-        this.btnEdificios.setDisable(true);
-        this.btnOrden.setDisable(true);
+        this.deshabilitarBotonesPrincipales();
         ArrayList<Edificio> edificios = this.juego.edificiosDisponibles();
         ObservableList<Edificio> lista = FXCollections.observableArrayList();
         for (Edificio edificio: edificios){
@@ -103,8 +112,20 @@ public class ControladorPrincipal2{
         this.cerrarVBox(this.vboxEdificios);
     }
     public void handleOrden() throws Exception{
+        this.vboxOrden.setVisible(true);
+        this.deshabilitarBotonesPrincipales();
     }
-
+    public void handleEmitirOrden() throws Exception{
+        this.cerrarVBox(this.vboxOrden);
+    }
+    public void handleCancelarOrden() throws Exception{
+        this.cerrarVBox(this.vboxOrden);
+    }   
+    public void deshabilitarBotonesPrincipales(){
+        this.btnViajar.setDisable(true);
+        this.btnEdificios.setDisable(true);
+        this.btnOrden.setDisable(true);
+    }
 }
     /*
     public void handleConfirmarViajar() throws Exception{
