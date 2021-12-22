@@ -38,13 +38,14 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="390.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorRegistro">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -85,21 +86,26 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="951.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="739.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="621.0" fitWidth="968.0" layoutX="-17.0">
+            <ImageView fitHeight="366.0" fitWidth="739.0">
                <image>
-                  <Image url="@WF782138_CSD_WhoInTheWorldIsCSD.jpg" />
+                  <Image url="@tumblr_5903b851faaa7c37df535ba0f5df31ff_0c76d839_1280.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="541.0" layoutY="61.0" prefHeight="62.0" prefWidth="297.0" text="AlgoThief">
+            <ImageView fitHeight="315.0" fitWidth="358.0" layoutX="50.0" layoutY="23.0">
+               <image>
+                  <Image url="@Chase-devineaux.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="472.0" layoutY="60.0" prefHeight="38.0" prefWidth="214.0" style="-fx-background-color: white;" text="Ingresa tu nombre:" textAlignment="RIGHT">
                <font>
-                  <Font name="Ebrima" size="64.0" />
+                  <Font name="Corbel" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="btnJugar" layoutX="495.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Jugar" />
-            <Button fx:id="btnTutorial" layoutX="648.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Tutorial" />
-            <Button fx:id="btnAcercaDe" layoutX="806.0" layoutY="538.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Acerca de" />
+            <Button fx:id="btnComenzar" layoutX="486.0" layoutY="183.0" mnemonicParsing="false"  onAction="#handleComenzar" prefHeight="62.0" prefWidth="185.0" text="Comenzar partida" />
+            <Button fx:id="btnVolver" layoutX="487.0" layoutY="259.0" mnemonicParsing="false"  onAction="#handleVolver" prefHeight="62.0" prefWidth="185.0" text="Volver" />
+            <TextArea fx:id="txtNombre" layoutX="480.0" layoutY="131.0" prefHeight="26.0" prefWidth="200.0" promptText="Nombre" />
          </children>
     </AnchorPane>
   </children>
