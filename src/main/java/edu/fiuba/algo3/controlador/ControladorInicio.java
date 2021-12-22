@@ -23,21 +23,21 @@ public class ControladorInicio{
     }
 
     public void handleJugar() throws Exception{
-        Vista vistaRegistro = new Vista("escenas/vistaRegistro.fxml");
+        Vista vistaRegistro = new Vista("/escenas/vistaRegistro.fxml");
         var scene = new Scene(vistaRegistro.escena());
         this.stage = (Stage) btnJugar.getScene().getWindow();
         this.stage.setScene(scene);
     }
 
     public void handleTutorial() throws Exception{
-        Vista vistaTutorial = new Vista("escenas/vistaTutorial.fxml");
+        Vista vistaTutorial = new Vista("/escenas/vistaTutorial.fxml");
         var scene = new Scene(vistaTutorial.escena());
         this.stage = (Stage) btnTutorial.getScene().getWindow();
         this.stage.setScene(scene);
     }
 
     public void handleAcercaDe() throws Exception{
-        Vista vistaAcercaDe = new Vista("escenas/vistaAcercaDe.fxml");
+        Vista vistaAcercaDe = new Vista("/escenas/vistaAcercaDe.fxml");
         var scene = new Scene(vistaAcercaDe.escena());
         this.stage = (Stage) btnAcercaDe.getScene().getWindow();
         this.stage.setScene(scene);

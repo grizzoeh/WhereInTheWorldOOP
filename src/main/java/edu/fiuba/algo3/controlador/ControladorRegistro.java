@@ -23,14 +23,14 @@ public class ControladorRegistro{
     }
 
     public void handleVolver() throws Exception{
-        Vista vistaInicio = new Vista("escenas/vistaInicio.fxml");
+        Vista vistaInicio = new Vista("/escenas/vistaInicio.fxml");
         var scene = new Scene(vistaInicio.escena());
         this.stage = (Stage) btnVolver.getScene().getWindow();
         this.stage.setScene(scene);
     }
 
     public void handleComenzar() throws Exception{
-        Vista vistaPrincipal = new Vista("escenas/vistaPrincipal.fxml");
+        Vista vistaPrincipal = new Vista("/escenas/vistaPrincipal.fxml");
         var scene = new Scene(vistaPrincipal.escena());
         this.stage = (Stage) btnComenzar.getScene().getWindow();
         this.stage.setScene(scene);

@@ -19,7 +19,7 @@ public class ControladorPantallaSimple{
     }
 
     public void handleVolver() throws Exception{
-        Vista vistaInicio = new Vista("escenas/vistaInicio.fxml");
+        Vista vistaInicio = new Vista("/escenas/vistaInicio.fxml");
         var scene = new Scene(vistaInicio.escena());
         this.stage = (Stage) btnVolver.getScene().getWindow();
         this.stage.setScene(scene);

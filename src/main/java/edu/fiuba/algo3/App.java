@@ -11,7 +11,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         
-        Vista vistaInicio = new Vista("escenas/vistaInicio.fxml");
+        Vista vistaInicio = new Vista("/escenas/vistaInicio.fxml");
         var scene = new Scene(vistaInicio.escena());
         stage.setScene(scene);
         stage.show();
