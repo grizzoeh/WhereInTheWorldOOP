@@ -45,7 +45,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="390.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="390.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorRegistro">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -103,8 +103,8 @@
                   <Font name="Corbel" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="btnComenzar" layoutX="486.0" layoutY="183.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="185.0" text="Comenzar partida" />
-            <Button fx:id="btnVolver" layoutX="487.0" layoutY="259.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="185.0" text="Volver" />
+            <Button fx:id="btnComenzar" layoutX="486.0" layoutY="183.0" mnemonicParsing="false"  onAction="#handleComenzar" prefHeight="62.0" prefWidth="185.0" text="Comenzar partida" />
+            <Button fx:id="btnVolver" layoutX="487.0" layoutY="259.0" mnemonicParsing="false"  onAction="#handleVolver" prefHeight="62.0" prefWidth="185.0" text="Volver" />
             <TextArea fx:id="txtNombre" layoutX="480.0" layoutY="131.0" prefHeight="26.0" prefWidth="200.0" promptText="Nombre" />
          </children>
     </AnchorPane>

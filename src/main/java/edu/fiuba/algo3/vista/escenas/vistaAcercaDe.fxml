@@ -46,7 +46,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorPantallaSimple">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -99,7 +99,7 @@
                   <Font name="Ebrima" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="btnVolver" layoutX="745.0" layoutY="514.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="92.0" text="Volver" />
+            <Button fx:id="btnVolver" layoutX="745.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleVolver" prefHeight="61.0" prefWidth="92.0" text="Volver" />
             <TextFlow layoutX="26.0" layoutY="461.0" prefHeight="138.0" prefWidth="333.0" style="-fx-background-color: white;" textAlignment="CENTER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA. Aplicación desarrollada en Java. Más información en https://github.com/jmdieguez/algothief" textAlignment="CENTER" wrappingWidth="310.9366455078125">

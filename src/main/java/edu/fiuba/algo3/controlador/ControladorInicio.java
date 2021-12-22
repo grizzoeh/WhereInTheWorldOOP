@@ -1,39 +1,46 @@
 package edu.fiuba.algo3.controlador;
 
 import edu.fiuba.algo3.vista.Vista;
-import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class ControladorInicio implements EventHandler<MouseEvent> {
+public class ControladorInicio{
 
     Stage stage;
-    Button btnJugar, btnTutorial, btnAcercaDe;
+    @FXML
+    Button btnJugar;
+    @FXML
+    Button btnTutorial;
+    @FXML
+    Button btnAcercaDe;
 
     Parent vista;
 
     public ControladorInicio(){
-
-    }
-    public void init(Stage stage) {
-        this.stage = stage;
     }
 
     public void handleJugar() throws Exception{
         Vista vistaRegistro = new Vista("escenas/vistaRegistro.fxml");
         var scene = new Scene(vistaRegistro.escena());
-        Stage stageNuevo = new Stage();
-        stageNuevo.setScene(scene);
-        stageNuevo.show();
+        this.stage = (Stage) btnJugar.getScene().getWindow();
+        this.stage.setScene(scene);
     }
-    @Override
-    public void handle(MouseEvent mouseEvent) {
-        System.out.println("asd");
 
+    public void handleTutorial() throws Exception{
+        Vista vistaTutorial = new Vista("escenas/vistaTutorial.fxml");
+        var scene = new Scene(vistaTutorial.escena());
+        this.stage = (Stage) btnTutorial.getScene().getWindow();
+        this.stage.setScene(scene);
+    }
+
+    public void handleAcercaDe() throws Exception{
+        Vista vistaAcercaDe = new Vista("escenas/vistaAcercaDe.fxml");
+        var scene = new Scene(vistaAcercaDe.escena());
+        this.stage = (Stage) btnAcercaDe.getScene().getWindow();
+        this.stage.setScene(scene);
     }
 }
 
