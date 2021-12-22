@@ -147,5 +147,10 @@ public class Juego {
     public ArrayList<Ciudad> viajesDisponibles(){
         return this.mision.ciudadesDisponibles();
     }
+    public ArrayList<Edificio> edificiosDisponibles(){
+        return this.ciudadActual.obtenerEdificios();
+    }
+
+
 }
 

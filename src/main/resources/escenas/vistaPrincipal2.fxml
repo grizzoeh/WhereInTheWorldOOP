@@ -42,11 +42,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="vboxPrincipal" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fiuba.algo3.controlador.ControladorPrincipal2">
   <children>
     <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="951.0" VBox.vgrow="ALWAYS">
       <children>
-            <ImageView id="imgFondo" fx:id="fondo" disable="true" fitHeight="621.0" fitWidth="951.0">
+            <ImageView id="imgFondo" fx:id="fondo" disable="true" fitHeight="621.0" fitWidth="951.0" layoutY="-3.0">
                <image>
                   <Image url="@carmenUI.png" />
                </image>
@@ -64,25 +64,50 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextFlow id="idDescripcion" layoutX="465.0" layoutY="21.0" prefHeight="480.0" prefWidth="472.0" />
-            <VBox layoutX="271.0" layoutY="147.0" prefHeight="258.0" prefWidth="421.0">
+            <TextFlow id="idDescripcion" layoutX="465.0" layoutY="21.0" prefHeight="63.0" prefWidth="99.0" />
+            <ImageView id="imgCiudad" fitHeight="488.0" fitWidth="405.0" layoutX="-25.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox fx:id="vboxViajar" layoutX="265.0" layoutY="161.0" prefHeight="300.0" prefWidth="421.0" visible="false">
                <children>
-                  <Button fx:id="btnCancelarViajar" mnemonicParsing="false" onAction="#handleCancelarViajar" text="Cancelar" />
-                  <Button fx:id="btnConfirmarViajar" mnemonicParsing="false" onAction="#handleConfirmarViajar" text="Viajar" />
-                  <ChoiceBox prefWidth="150.0" />
-                  <Label text="Elija el destino de viaje:" textFill="WHITE">
-                     <font>
-                        <Font size="25.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="275.0" fitWidth="433.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@sdfgsdg.png" />
-                     </image>
-                  </ImageView>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="275.0" fitWidth="433.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sdfgsdg.png" />
+                           </image>
+                        </ImageView>
+                        <ChoiceBox fx:id="cmbViajar" layoutX="79.0" layoutY="125.0" prefHeight="25.0" prefWidth="264.0" />
+                        <Label layoutX="83.0" layoutY="25.0" text="Elija el destino de viaje:" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnConfirmarViajar" layoutX="224.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleConfirmarViajar" prefHeight="25.0" prefWidth="119.0" text="Viajar" />
+                        <Button fx:id="btnCancelarViajar" layoutX="79.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleCancelarViajar" prefHeight="25.0" prefWidth="119.0" text="Cancelar" />
+                     </children>
+                  </AnchorPane>
                </children>
             </VBox>
-            <ImageView id="imgCiudad" fitHeight="488.0" fitWidth="405.0" layoutX="227.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox fx:id="vboxEdificios" layoutX="255.0" layoutY="157.0" prefHeight="300.0" prefWidth="421.0" visible="false">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="275.0" fitWidth="433.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sdfgsdg.png" />
+                           </image>
+                        </ImageView>
+                        <ChoiceBox fx:id="cmbEdificios" layoutX="79.0" layoutY="125.0" prefHeight="25.0" prefWidth="264.0" />
+                        <Label layoutX="83.0" layoutY="25.0" text="Elija edificio para entrar:" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnConfirmarEdificios" layoutX="224.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleConfirmarEdificios" prefHeight="25.0" prefWidth="119.0" text="Viajar" />
+                        <Button fx:id="btnCancelarEdificios" layoutX="79.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleCancelarEdificios" prefHeight="25.0" prefWidth="119.0" text="Cancelar" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
       </children>
     </AnchorPane>
   </children>

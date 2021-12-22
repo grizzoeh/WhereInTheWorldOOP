@@ -73,6 +73,15 @@ public class Ciudad {
     public String pistaDificilBiblioteca(){
         return this.lider.equals("???") ? this.lider : ("Le sospechose invstigó acerca del " + this.lider + " del pais al que se dirigia");
     }
+    public ArrayList<Edificio> obtenerEdificios(){
+
+        return this.edificios;
+    }
+    @Override
+    public String toString(){
+
+        return this.obtenerNombre();
+    }
 
 }
 
