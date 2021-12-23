@@ -1,0 +1,62 @@
+[
+  {
+    "Ladron": "Nick Brunch",
+    "Recorrido_Ladron": ["Atenas","Baghdad","Londres","Lima"],
+    "Ciudades_Despiste": ["Bangkok","Bamako","Ciudad de Mexico","Oslo"],
+    "Objeto_Robado": "Mascara del Rey Tut"
+  },
+  {
+    "Ladron": "Len Bulk",
+    "Recorrido_Ladron": ["Roma","Nueva York","Paris","Oslo"],
+    "Ciudades_Despiste": ["Atenas","Baghdad","Londres","Lima"],
+    "Objeto_Robado": "Anillo del Papa"
+  },
+  {
+    "Ladron": "Ihor Ihorovitch",
+    "Recorrido_Ladron": ["Baghdad","Tokyo","Pekin","Atenas"],
+    "Ciudades_Despiste": ["Rio de Janeiro","Buenos Aires","Nueva York","Oslo"],
+    "Objeto_Robado": "Tablilla babilónica"
+  },
+  {
+    "Ladron": "Fast Eddie B.",
+    "Recorrido_Ladron": ["Lima","Montreal","Estambul","Paris"],
+    "Ciudades_Despiste": ["Buenos Aires","Atenas","Tokyo","Moscu"],
+    "Objeto_Robado": "Mascara de oro Inca"
+  },
+  {
+    "Ladron": "Scar Graynolt",
+    "Recorrido_Ladron": ["Londres","Nueva Delhi","Moscu","Atenas"],
+    "Ciudades_Despiste": ["Lima","Montreal","Estambul","Tokyo"],
+    "Objeto_Robado": "Joyas de la corona"
+  },
+  {
+    "Ladron": "Merey Laroc",
+    "Recorrido_Ladron": ["Buenos Aires","Paris","Estambul","Atenas"],
+    "Ciudades_Despiste": ["Montreal","Lima","Baghdad","Tokyo"],
+    "Objeto_Robado": "Bola de Oro"
+  },
+  {
+    "Ladron": "Lady Agatha",
+    "Recorrido_Ladron": ["Montreal","Tokyo","Buenos Aires","Rio de Janeiro"],
+    "Ciudades_Despiste": ["Estambul","Buenos Aires","Baghdad","Lima"],
+    "Objeto_Robado": "Copa Stanley"
+  },
+  {
+    "Ladron": "Katherine Drib",
+    "Recorrido_Ladron": ["Baghdad","Tokyo","Pekin","Atenas"],
+    "Ciudades_Despiste": ["Montreal", "Estambul","Buenos Aires","Montreal","Lima"],
+    "Objeto_Robado": "Tablilla babilónica"
+  },
+  {
+    "Ladron": "Dazzle Annie",
+    "Recorrido_Ladron": ["Montreal","Paris","Estambul","Atenas"],
+    "Ciudades_Despiste": ["Bangkok","Bamako","Ciudad de Mexico","Oslo"],
+    "Objeto_Robado": "Copa Stanley"
+  },
+  {
+    "Ladron": "Carmen Sandiego",
+    "Recorrido_Ladron": ["Roma","Nueva York","Estambul","Oslo"],
+    "Ciudades_Despiste": ["Lima","Montreal","Ciudad de Mexico","Paris"],
+    "Objeto_Robado": "Anillo del Papa"
+  }
+]

@@ -20,9 +20,10 @@ public class Ciudad {
     private String religion;
     private String lider;
     private String extra;
+    private String descripcion;
 
 
-    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios){
+    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios, String descripcion){
         this.nombre = nombre;
         this.bandera = bandera;
         this.moneda = moneda;
@@ -38,40 +39,51 @@ public class Ciudad {
         this.extra = extra;
         this.edificios = edificios;
         this.coordenadas = coordenadas;
+        this.descripcion = descripcion;
     }
+
+    public String obtenerNombre(){ return this.nombre; }
 
     public double distanciaA(Ciudad otraCiudad){
         return this.coordenadas.distanciaA(otraCiudad.coordenadas);
     }
 
     public String pistaFacilAeropuerto(){
-        return ("La bandera es de color " + this.bandera);
+        return this.bandera.equals("???") ? this.bandera : ("Le sospechose subio a un avion que llevava una bandera " + this.bandera);
     }
     public String pistaMediaAeropuerto(){
-        return ("El lenguaje del pais es " + this.lenguaje);
+        return this.lenguaje.equals("???") ? this.lenguaje : ("Le sospechose cargaba con varios diccionarios de español a " + this.lenguaje);
     }
     public String pistaDificilAeropuerto(){
-        return ("Los landmarks son " + this.landmarks);
+        return this.landmarks.equals("???") ? this.landmarks : ("Le sospechose tenia la intencion de visitar " + this.landmarks);
     }
-
     public String pistaFacilBanco(){
-        return ("La moneda es " + this.moneda);
+        return this.moneda.equals("???") ? this.moneda : ("Le sospechose cambio su dinero por " + this.moneda);
     }
     public String pistaMediaBanco(){
-        return ("Las industrias son " + this.industrias);
+        return this.industrias.equals("???") ? this.industrias : ("Estaba muy interesade en las industrias de " + this.industrias);
     }
     public String pistaDificilBanco(){
-        return ("Los animales son " + this.animales);
+        return this.animales.equals("???") ? this.animales : ("Le sospechose estaba leyendo informacion acerca de " + this.animales);
     }
-
     public String pistaFacilBiblioteca(){
-        return ("La gente es " + this.gente);
+        return this.gente.equals("???") ? this.gente : ("Le sospechose estaba leyendo informacion acerca de " + this.gente);
     }
     public String pistaMediaBiblioteca(){
-        return ("La religion principal es " + this.religion);
+        return this.religion.equals("???") ? this.religion : ("Parecia que le sospechose estaba muy interesade en " + this.religion);
     }
     public String pistaDificilBiblioteca(){
-        return ("El lider es " + this.lider);
+        return this.lider.equals("???") ? this.lider : ("Le sospechose invstigó acerca del " + this.lider + " del pais al que se dirigia");
+    }
+    public ArrayList<Edificio> obtenerEdificios() {
+        return this.edificios;
+    }
+    public String obtenerDescripcion() {
+        return this.descripcion;
+    }
+    @Override
+    public String toString(){
+        return this.obtenerNombre();
     }
 
 }

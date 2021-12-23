@@ -1,8 +1,13 @@
 package edu.fiuba.algo3.modelo;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.concurrent.ThreadLocalRandom;
 
+import edu.fiuba.algo3.controlador.ControladorPrincipal;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.modelo.lectoresDeArchivos.*;
 import edu.fiuba.algo3.modelo.policia.Policia;
 
 public class Juego {
@@ -16,40 +21,107 @@ public class Juego {
     private Mision mision;
     private OrdenDeArresto ordenDeArresto;
     private int sospechososEscapados;
+    private LectorMisiones lectorMisiones = new LectorMisionesJSON();
+    private LectorLadrones lectorLadrones = new LectorLadronesJSON();
+    private LectorCiudades lectorCiudades = new LectorCiudadesJSON();
+    private HashMap<String, ArrayList<String>> caracteristicasLadrones = this.lectorLadrones.obtenerCaracteristicas();
+    private ControladorPrincipal controladorInterfazGrafica;
+    private boolean activarAtaques;
+    private int chancePunialada = 10;
+    private int chanceDisparo = 10;
 
-    public Juego(Ciudad ciudadComienzo, String nombre, Mision mision, ArrayList<Ladron> ladrones) {
-        this.ciudadActual = ciudadComienzo;
+    public Juego(String nombrePolicia, boolean activarAtaques){
         this.cantidadDeArrestos = 0;
+        this.sospechososEscapados = 0;
+        this.activarAtaques = activarAtaques;
+        this.policia = new Policia(nombrePolicia, this.lectorMisiones);
+        this.ladrones = new RegistroLadrones(this.lectorLadrones.cargarLadrones());
+    }
+
+    public void iniciarNuevaMision() {
         this.reloj = new Reloj();
-        this.policia = new Policia(nombre);
-        this.mision = mision;
-        this.ladrones = new RegistroLadrones(ladrones);
+        this.ordenDeArresto =  new OrdenDeArresto();
+        this.mision = policia.nuevaMision(this.lectorCiudades, this.ladrones);
+        this.ciudadActual = this.mision.inicioRecorrido();
+        this.controladorInterfazGrafica.mostrarInfo("Agente "+this.policia.obtenerNombre()+", alguien se robo un@ "+this.mision.obtenerObjetoRobado()+" en "+this.mision.inicioRecorrido()+" y tu mision es seguirle la pista y atraparlo, buena suerte!");
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+        this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
+    }
+
+    public void iniciarNuevaMisionPrueba(Mision mision) {
+        this.reloj = new Reloj();
         this.ordenDeArresto = new OrdenDeArresto();
+        this.mision = mision;
+        this.ciudadActual = this.mision.inicioRecorrido();
     }
 
     public void viajarA(Ciudad unaCiudad) {
         double distancia = this.ciudadActual.distanciaA(unaCiudad);
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
+        if (!this.reloj.quedaTiempo()) {
+            this.ladronEscapa();
+        }
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
-        if (mision.finalDelRecorrido(this.ciudadActual)) {
-            this.ordenDeArresto.atraparLadron(this, this.mision);
+        if (this.mision.finalDelRecorrido(this.ciudadActual)) {
+            this.controladorInterfazGrafica.mostrarInfo("Parece que el sospechoso que buscas se encuentra en esta ciudad, busca en los edificios!");
         }
+        else {
+            this.controladorInterfazGrafica.mostrarInfo(this.ciudadActual.obtenerDescripcion());
+        }
+        this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
     }
 
     public String policiaEntrarA(Edificio unEdificio) {
+        if (mision.finalDelRecorrido(this.ciudadActual)) {
+            this.ordenDeArresto.atraparLadron(this, this.mision);
+            return "";
+        }
+        if (this.activarAtaques) {
+            randomizarAtaques();
+        }
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
         this.reloj.pasarHoras(horas);
+        if (!this.reloj.quedaTiempo()) {
+            this.ladronEscapa();
+            return "";
+        }
+        this.controladorInterfazGrafica.mostrarPista(pista);
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+
         return pista;
     }
 
-    public String obtenerHora() {
-        return this.reloj.aString();
+    public void randomizarAtaques() {
+        int punialada = ThreadLocalRandom.current().nextInt(0, this.chancePunialada);
+        int disparo = ThreadLocalRandom.current().nextInt(0, this.chanceDisparo);
+        if (disparo == 1) {
+            this.recibirDisparo();
+            this.controladorInterfazGrafica.recibirDisparo();
+            this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+            return;
+        }
+        if (punialada == 1) {
+            this.recibirPunialada();
+            this.controladorInterfazGrafica.recibirPunialada();
+            this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+            return;
+        }
+    }
+
+    public LocalDateTime obtenerHora() {
+        return this.reloj.obtenerFechaYHora();
     }
 
     public void recibirPunialada() {
         int horas = this.policia.recibirPunialada();
+        this.reloj.pasarHoras(horas);
+    }
+
+    public void recibirDisparo() {
+        int horas = this.policia.recibirDisparo();
         this.reloj.pasarHoras(horas);
     }
 
@@ -58,15 +130,14 @@ public class Juego {
         if (this.cantidadDeArrestos == 5 || this.cantidadDeArrestos == 15 || this.cantidadDeArrestos == 35) {
             this.policia.ascender();
         }
+        this.controladorInterfazGrafica.cerrarVentanas();
+        this.controladorInterfazGrafica.ladronAtrapado();
     }
 
-    public void asignarMision(Mision mision, Ciudad ciudadComienzo) {
-        this.mision = mision;
-        this.ciudadActual = ciudadComienzo;
-    }
-
-    public void ladronEscapa(){
+    public void ladronEscapa() {
         this.sospechososEscapados++;
+        this.controladorInterfazGrafica.cerrarVentanas();
+        this.controladorInterfazGrafica.ladronEscapa();
     }
 
     public Policia obtenerPolicia() { // Unicamente para las pruebas
@@ -101,8 +172,24 @@ public class Juego {
         this.ordenDeArresto.actualizarSenia(senia);
     }
 
-    public void generarOrdenDeArresto(){
-        this.ordenDeArresto.posiblesLadrones(this.ladrones);
+    public ArrayList<Ladron> generarOrdenDeArresto(){
+        return this.ordenDeArresto.posiblesLadrones(this.ladrones);
+    }
+
+    public ArrayList<Ciudad> viajesDisponibles(){
+        return this.mision.ciudadesDisponibles();
+    }
+
+    public ArrayList<Edificio> edificiosDisponibles(){
+        return this.ciudadActual.obtenerEdificios();
+    }
+
+    public HashMap<String, ArrayList<String>> obtenerCaracteristicas() {
+        return this.caracteristicasLadrones;
+    }
+
+    public void establecerInterfazGrafica(ControladorPrincipal controladorInterfazGrafica) {
+        this.controladorInterfazGrafica = controladorInterfazGrafica;
     }
 
 }

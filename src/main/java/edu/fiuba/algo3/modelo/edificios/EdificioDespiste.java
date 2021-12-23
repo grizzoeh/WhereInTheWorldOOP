@@ -16,23 +16,28 @@ public class EdificioDespiste implements Edificio {
     @Override
     public String obtenerPistaFacil(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return "!!!";
     }
 
     @Override
     public String obtenerPistaMedia(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return "!!!";
     }
 
     @Override
     public String obtenerPistaDificil(Ciudad ciudadProxima){
         ingresos++;
-        return "No paso el sospechoso por aca";
+        return "!!!";
     }
 
     @Override
     public int calcularTiempo(){
         return ingresos;
+    }
+
+    @Override
+    public String toString(){
+        return this.nombreEdificio;
     }
 }

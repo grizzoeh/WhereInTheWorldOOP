@@ -4,7 +4,7 @@ import edu.fiuba.algo3.modelo.Ciudad;
 
 public class Banco implements Edificio {
     private int ingresos;
-
+    private String nombre = "Banco";
 
     public Banco(){
         this.ingresos = 0;
@@ -31,5 +31,10 @@ public class Banco implements Edificio {
     @Override
     public int calcularTiempo(){
         return ingresos;
+    }
+    @Override
+    public String toString(){
+
+        return this.nombre;
     }
 }
