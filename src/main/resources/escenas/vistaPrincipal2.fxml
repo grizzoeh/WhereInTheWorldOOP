@@ -107,7 +107,7 @@
                            </font>
                         </Label>
                         <Button fx:id="btnEmitirOrden" layoutX="60.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleEmitirOrden" prefHeight="25.0" prefWidth="316.0" text="Emitir Orden" />
-                        <Button fx:id="btnCancelarOrden" layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleCancelarOrden" prefHeight="25.0" prefWidth="316.0" text="Cancelar" />
+                        <Button fx:id="btnCancelarOrden" layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleCancelarOrden" prefHeight="25.0" prefWidth="316.0" text="Cerrar" />
                         <Label layoutX="103.0" layoutY="297.0" text="Posibles Sospechosos:" textFill="WHITE">
                            <font>
                               <Font size="22.0" />

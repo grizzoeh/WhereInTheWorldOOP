@@ -2,6 +2,7 @@ package edu.fiuba.algo3.modelo;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
 import edu.fiuba.algo3.modelo.edificios.Edificio;
@@ -22,6 +23,7 @@ public class Juego {
     private LectorMisiones lectorMisiones = new LectorMisionesJSON();
     private LectorLadrones lectorLadrones = new LectorLadronesJSON();
     private LectorCiudades lectorCiudades = new LectorCiudadesJSON();
+    private HashMap<String, ArrayList<String>> caracteristicasLadrones = this.lectorLadrones.obtenerCaracteristicas();
     private boolean activarAtaques;
     private int chancePunialada = 10;
     private int chanceDisparo = 10;
@@ -147,8 +149,13 @@ public class Juego {
     public ArrayList<Ciudad> viajesDisponibles(){
         return this.mision.ciudadesDisponibles();
     }
+
     public ArrayList<Edificio> edificiosDisponibles(){
         return this.ciudadActual.obtenerEdificios();
+    }
+
+    public HashMap<String, ArrayList<String>> obtenerCaracteristicas() {
+        return this.caracteristicasLadrones;
     }
 
 
