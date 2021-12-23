@@ -49,4 +49,8 @@ public class Ladron {
         return this.nombre.equals(otroLadron.nombre);
     }
 
+    @Override
+    public String toString(){
+        return this.nombre;
+    }
 }

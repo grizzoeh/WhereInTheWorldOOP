@@ -56,15 +56,15 @@
                   <Image url="@carmenUI.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnViajar" layoutX="505.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleViajar" prefHeight="44.0" prefWidth="99.0" text="VIAJAR" />
-            <Button fx:id="btnEdificios" layoutX="643.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleEdificios" prefHeight="44.0" prefWidth="99.0" text="EDIFICIOS" />
-            <Button fx:id="btnOrden" layoutX="780.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleOrden" prefHeight="44.0" prefWidth="99.0" text="ORDEN" />
-            <Label id="txtPais" fx:id="txtCiudadActual" layoutX="21.0" layoutY="14.0" prefHeight="36.0" prefWidth="391.0" text="Paris" textFill="WHITE">
+            <Button fx:id="btnViajar" disable="true" layoutX="505.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleViajar" prefHeight="44.0" prefWidth="99.0" text="VIAJAR" />
+            <Button fx:id="btnEdificios" disable="true" layoutX="643.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleEdificios" prefHeight="44.0" prefWidth="99.0" text="EDIFICIOS" />
+            <Button fx:id="btnOrden" disable="true" layoutX="780.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleOrden" prefHeight="44.0" prefWidth="99.0" text="ORDEN" />
+            <Label id="txtPais" fx:id="txtCiudadActual" layoutX="21.0" layoutY="14.0" prefHeight="36.0" prefWidth="391.0" text="Pais" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <Label fx:id="txtFechaYHora" layoutX="21.0" layoutY="43.0" prefHeight="36.0" prefWidth="391.0" text="Lunes, 9hs00" textFill="WHITE">
+            <Label fx:id="txtFechaYHora" layoutX="21.0" layoutY="43.0" prefHeight="36.0" prefWidth="391.0" text="Hora" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
@@ -78,6 +78,25 @@
                   <Font size="17.0" />
                </font>
             </TextArea>
+            <VBox fx:id="vboxInicio" layoutX="502.0" layoutY="103.0" prefHeight="248.0" prefWidth="382.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="248.0" fitWidth="535.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sdfgsdg.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="132.0" layoutY="28.0" text="¿Todo Listo?" textFill="WHITE">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnIniciar" layoutX="130.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleIniciar" prefHeight="25.0" prefWidth="119.0" text="Iniciar Partida" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
             <VBox fx:id="vboxLadronEscapa" layoutX="482.0" layoutY="79.0" prefHeight="200.0" prefWidth="421.0" visible="false">
                <children>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">

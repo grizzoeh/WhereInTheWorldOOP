@@ -8,6 +8,7 @@ import java.util.*;
 
 import edu.fiuba.algo3.modelo.Ciudad;
 import edu.fiuba.algo3.modelo.Juego;
+import edu.fiuba.algo3.modelo.Ladron;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 import javafx.animation.KeyFrame;
 import javafx.animation.PauseTransition;
@@ -78,6 +79,8 @@ public class ControladorPrincipal2{
     VBox vboxLadronEscapa;
     @FXML
     VBox vboxLadronAtrapado;
+    @FXML
+    VBox vboxInicio;
     /* ChoiceBox */
     @FXML
     ChoiceBox cmbEdificios;
@@ -98,9 +101,13 @@ public class ControladorPrincipal2{
     private Juego juego;
 
     public ControladorPrincipal2(){
-        this.juego = new Juego("asd", true);
+    }
+
+    public void handleIniciar() throws Exception {
+        this.juego = new Juego("", true);
         this.juego.establecerInterfazGrafica(this);
         this.juego.iniciarNuevaMision();
+        this.cerrarVBox(vboxInicio);
     }
 
     public void handleViajar() throws Exception{
@@ -128,9 +135,7 @@ public class ControladorPrincipal2{
 
     private void cerrarVBox(VBox vbox){
         vbox.setVisible(false);
-        this.btnViajar.setDisable(false);
-        this.btnEdificios.setDisable(false);
-        this.btnOrden.setDisable(false);
+        this.habilitarBotonesPrincipales();
     }
 
     public void handleEdificios() throws Exception{
@@ -198,11 +203,32 @@ public class ControladorPrincipal2{
     }
 
     public void handleEmitirOrden() throws Exception{
-        juego.OrdenActualizarSexo();
-        juego.OrdenActualizarHobby();
-        juego.OrdenActualizarCabello();
-        juego.OrdenActualizarSenia();
-        juego.OrdenActualizarVehiculo();
+        String sexo = (String) cmbSexo.getValue();
+        String hobby = (String) cmbHobby.getValue();
+        String cabello = (String) cmbCabello.getValue();
+        String senia = (String) cmbCaracteristica.getValue();
+        String vehiculo = (String) cmbVehiculo.getValue();
+        if (sexo != null) {
+            juego.OrdenActualizarSexo(sexo);
+        }
+        if (hobby != null) {
+            juego.OrdenActualizarHobby(hobby);
+        }
+        if (cabello != null) {
+            juego.OrdenActualizarCabello(cabello);
+        }
+        if (senia != null) {
+            juego.OrdenActualizarSenia(senia);
+        }
+        if (vehiculo != null) {
+            juego.OrdenActualizarVehiculo(vehiculo);
+        }
+        ArrayList<Ladron> sospechosos = this.juego.generarOrdenDeArresto();
+        String salidaSospechosos = "";
+        for (Ladron ladron: sospechosos) {
+            salidaSospechosos = salidaSospechosos + ladron.toString() + "\n";
+        }
+        this.txtPosiblesSospechosos.setText(salidaSospechosos);
     }
 
     public void handleCancelarOrden() throws Exception{
@@ -213,6 +239,12 @@ public class ControladorPrincipal2{
         this.btnViajar.setDisable(true);
         this.btnEdificios.setDisable(true);
         this.btnOrden.setDisable(true);
+    }
+
+    public void habilitarBotonesPrincipales() {
+        this.btnViajar.setDisable(false);
+        this.btnEdificios.setDisable(false);
+        this.btnOrden.setDisable(false);
     }
 
     public void recibirPunialada() {
@@ -266,33 +298,43 @@ public class ControladorPrincipal2{
     public void ladronEscapa() {
         this.vboxLadronEscapa.setVisible(true);
         this.deshabilitarBotonesPrincipales();
-        try {
-            Thread.sleep(3000);
-        }
-        catch (Exception e) {
-            System.out.println(e);
-        }
-        this.mostrarPista("");
-        this.mostrarInfo("");
-        juego.iniciarNuevaMision();
-        this.cerrarVBox(this.vboxLadronEscapa);
+        Timeline timeline = new Timeline(
+                new KeyFrame(
+                        Duration.seconds(5),
+                        event -> {
+                            this.mostrarPista("");
+                            this.mostrarInfo("");
+                            this.txtPosiblesSospechosos.setText("");
+                            juego.iniciarNuevaMision();
+                            this.cerrarVBox(this.vboxLadronEscapa);
+                        }
+                )
+        );
+        timeline.play();
     }
 
     public void ladronAtrapado() {
         this.vboxLadronAtrapado.setVisible(true);
         this.deshabilitarBotonesPrincipales();
-        try {
-            Thread.sleep(3000);
-        }
-        catch (Exception e) {
-            System.out.println(e);
-        }
-        this.mostrarPista("");
-        this.mostrarInfo("");
-        juego.iniciarNuevaMision();
-        this.cerrarVBox(this.vboxLadronAtrapado);
+        Timeline timeline = new Timeline(
+                new KeyFrame(
+                        Duration.seconds(5),
+                        event -> {
+                            this.mostrarPista("");
+                            this.mostrarInfo("");
+                            this.txtPosiblesSospechosos.setText("");
+                            juego.iniciarNuevaMision();
+                            this.cerrarVBox(this.vboxLadronAtrapado);
+                        }
+                )
+        );
+        timeline.play();
     }
 
-
+    public void cerrarVentanas() {
+        this.cerrarVBox(vboxEdificios);
+        this.cerrarVBox(vboxViajar);
+        this.cerrarVBox(vboxOrden);
+    }
 
 }

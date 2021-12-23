@@ -43,6 +43,8 @@ public class Juego {
         this.ordenDeArresto =  new OrdenDeArresto();
         this.mision = policia.nuevaMision(this.lectorCiudades, this.ladrones);
         this.ciudadActual = this.mision.inicioRecorrido();
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+        this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
     }
 
     public void iniciarNuevaMisionPrueba(Mision mision) {
@@ -67,6 +69,7 @@ public class Juego {
     public String policiaEntrarA(Edificio unEdificio) {
         if (mision.finalDelRecorrido(this.ciudadActual)) {
             this.ordenDeArresto.atraparLadron(this, this.mision);
+            return "";
         }
         if (this.activarAtaques) {
             randomizarAtaques();
@@ -76,6 +79,7 @@ public class Juego {
         this.reloj.pasarHoras(horas);
         if (!this.reloj.quedaTiempo()) {
             this.ladronEscapa();
+            return "";
         }
         this.controladorInterfazGrafica.mostrarPista(pista);
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
@@ -119,11 +123,13 @@ public class Juego {
         if (this.cantidadDeArrestos == 5 || this.cantidadDeArrestos == 15 || this.cantidadDeArrestos == 35) {
             this.policia.ascender();
         }
+        this.controladorInterfazGrafica.cerrarVentanas();
         this.controladorInterfazGrafica.ladronAtrapado();
     }
 
     public void ladronEscapa() {
         this.sospechososEscapados++;
+        this.controladorInterfazGrafica.cerrarVentanas();
         this.controladorInterfazGrafica.ladronEscapa();
     }
 
@@ -159,8 +165,8 @@ public class Juego {
         this.ordenDeArresto.actualizarSenia(senia);
     }
 
-    public void generarOrdenDeArresto(){
-        this.ordenDeArresto.posiblesLadrones(this.ladrones);
+    public ArrayList<Ladron> generarOrdenDeArresto(){
+        return this.ordenDeArresto.posiblesLadrones(this.ladrones);
     }
 
     public ArrayList<Ciudad> viajesDisponibles(){
