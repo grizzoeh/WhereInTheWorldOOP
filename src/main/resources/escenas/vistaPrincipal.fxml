@@ -186,7 +186,7 @@
                   </AnchorPane>
                </children>
             </VBox>
-            <VBox fx:id="vboxOrden" layoutX="8.0" layoutY="104.0" prefHeight="502.0" prefWidth="448.0" visible="false">
+            <VBox fx:id="vboxOrden" layoutX="8.0" layoutY="104.0" prefHeight="502.0" prefWidth="448.0">
                <children>
                   <AnchorPane prefHeight="516.0" prefWidth="421.0">
                      <children>
@@ -242,7 +242,7 @@
                         <ChoiceBox fx:id="cmbHobby" layoutX="154.0" layoutY="159.0" prefWidth="150.0" />
                         <ChoiceBox fx:id="cmbCaracteristica" layoutX="154.0" layoutY="242.0" prefWidth="150.0" />
                         <ChoiceBox fx:id="cmbVehiculo" layoutX="154.0" layoutY="202.0" prefWidth="150.0" />
-                        <TextArea fx:id="txtPosiblesSospechosos" layoutX="58.0" layoutY="329.0" prefHeight="86.0" prefWidth="316.0" wrapText="true" />
+                        <TextArea fx:id="txtPosiblesSospechosos" editable="false" layoutX="58.0" layoutY="329.0" prefHeight="86.0" prefWidth="316.0" wrapText="true" />
                      </children>
                   </AnchorPane>
                </children>
