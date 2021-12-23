@@ -1,23 +1,36 @@
 package edu.fiuba.algo3.controlador;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.chrono.ThaiBuddhistEra;
+import java.time.format.TextStyle;
+import java.util.*;
 
 import edu.fiuba.algo3.modelo.Ciudad;
 import edu.fiuba.algo3.modelo.Juego;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import javafx.animation.KeyFrame;
+import javafx.animation.PauseTransition;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class ControladorPrincipal2{
 
     Stage stage;
+    /* Labels */
+    @FXML
+    Label txtFechaYHora;
+    @FXML
+    Label txtCiudadActual;
     /* Button */
     @FXML
     Button btnViajar;
@@ -46,6 +59,10 @@ public class ControladorPrincipal2{
     VBox vboxPrincipal;
     @FXML
     VBox vboxOrden;
+    @FXML
+    VBox vboxDisparo;
+    @FXML
+    VBox vboxPunialada;
     /* ChoiceBox */
     @FXML
     ChoiceBox cmbEdificios;
@@ -66,7 +83,8 @@ public class ControladorPrincipal2{
     private Juego juego;
 
     public ControladorPrincipal2(){
-        this.juego = new Juego("asd", false);
+        this.juego = new Juego("asd", true);
+        this.juego.establecerInterfazGrafica(this);
         this.juego.iniciarNuevaMision();
     }
 
@@ -82,8 +100,11 @@ public class ControladorPrincipal2{
     }
 
     public void handleConfirmarViajar() throws Exception{
-        this.cerrarVBox(this.vboxViajar);
-        
+        Ciudad ciudadDestino = (Ciudad) cmbViajar.getValue();
+        if (ciudadDestino != null) {
+            juego.viajarA(ciudadDestino);
+            this.cerrarVBox(this.vboxViajar);
+        }
     }
 
     public void handleCancelarViajar() throws Exception{
@@ -171,13 +192,47 @@ public class ControladorPrincipal2{
         this.btnEdificios.setDisable(true);
         this.btnOrden.setDisable(true);
     }
-}
-    /*
-    public void handleConfirmarViajar() throws Exception{
-        Vista vistaInicio = new Vista("/escenas/vistaInicio.fxml");
-        var scene = new Scene(vistaInicio.escena());
-        this.stage = (Stage) btnViajar.getScene().getWindow();
-        this.stage.setScene(scene);
-        this.juego.viajarA(null);
+
+    public void recibirPunialada() {
+        this.vboxPunialada.setVisible(true);
+        this.deshabilitarBotonesPrincipales();
+        Timeline timeline = new Timeline(
+                new KeyFrame(
+                        Duration.seconds(5),
+                        event -> {
+                            this.cerrarVBox(this.vboxPunialada);
+                        }
+                )
+        );
+        timeline.play();
     }
-}*/
+
+    public void recibirDisparo() {
+        this.vboxDisparo.setVisible(true);
+        this.deshabilitarBotonesPrincipales();
+        Timeline timeline = new Timeline(
+                new KeyFrame(
+                        Duration.seconds(5),
+                        event -> {
+                            this.cerrarVBox(this.vboxDisparo);
+                        }
+                )
+        );
+        timeline.play();
+    }
+
+    public void actualizarFechaYHora(LocalDateTime fecha) {
+        String dia = fecha.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("es","ES")); // Dia de la semana segun fecha
+        dia = dia.substring(0, 1).toUpperCase() + dia.substring(1);
+        int hora = fecha.getHour();
+        String str = dia + ", " + hora + ":00hs";
+        this.txtFechaYHora.setText(str);
+    }
+
+    public void actualizarCiudadActual(String nombreCiudad) {
+        this.txtCiudadActual.setText(nombreCiudad);
+    }
+
+
+
+}

@@ -79,7 +79,6 @@ public class Ciudad {
     }
     @Override
     public String toString(){
-
         return this.obtenerNombre();
     }
 

@@ -41,7 +41,7 @@ public class Reloj {
         String dia = tiempoActual.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("es","ES")); // Dia de la semana segun fecha
         dia = dia.substring(0, 1).toUpperCase() + dia.substring(1); // Capitalize
 
-        String str = dia + " " + hora + " hs";
+        String str = dia + " " + hora + " hs00";
         return str;
     }
 }

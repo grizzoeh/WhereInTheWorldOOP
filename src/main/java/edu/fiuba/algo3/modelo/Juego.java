@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
+import edu.fiuba.algo3.controlador.ControladorPrincipal2;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 import edu.fiuba.algo3.modelo.lectoresDeArchivos.*;
 import edu.fiuba.algo3.modelo.policia.Policia;
@@ -24,6 +25,7 @@ public class Juego {
     private LectorLadrones lectorLadrones = new LectorLadronesJSON();
     private LectorCiudades lectorCiudades = new LectorCiudadesJSON();
     private HashMap<String, ArrayList<String>> caracteristicasLadrones = this.lectorLadrones.obtenerCaracteristicas();
+    private ControladorPrincipal2 controladorInterfazGrafica;
     private boolean activarAtaques;
     private int chancePunialada = 10;
     private int chanceDisparo = 10;
@@ -55,6 +57,8 @@ public class Juego {
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
+        this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
     }
 
     public String policiaEntrarA(Edificio unEdificio) {
@@ -156,6 +160,10 @@ public class Juego {
 
     public HashMap<String, ArrayList<String>> obtenerCaracteristicas() {
         return this.caracteristicasLadrones;
+    }
+
+    public void establecerInterfazGrafica(ControladorPrincipal2 controladorInterfazGrafica) {
+        this.controladorInterfazGrafica = controladorInterfazGrafica;
     }
 
 

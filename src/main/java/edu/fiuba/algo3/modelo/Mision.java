@@ -44,7 +44,7 @@ public class Mision {
     public ArrayList<Ciudad> ciudadesDisponibles(){
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
 
-        if (this.index >= this.recorridoLadron.size()){
+        if (this.index >= this.recorridoLadron.size()-1){
             return ciudades;
         }
 
