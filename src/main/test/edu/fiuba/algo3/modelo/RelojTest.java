@@ -33,16 +33,16 @@ public class RelojTest {
     public void test04Pasan2HorasyEsLunes9hs(){
 
         reloj.pasarHoras(2);
-        assertTrue(reloj.aString().equals("Lunes 9 hs"));
+        assertTrue(reloj.aString().equals("Lunes 9 hs00"));
         assertTrue(reloj.quedaTiempo());
     }
     
     @Test
     public void test05Pasan24HorasYEsMartes15hs(){
 
-        assertTrue(reloj.aString().equals("Lunes 7 hs"));
+        assertTrue(reloj.aString().equals("Lunes 7 hs00"));
         reloj.pasarHoras(24);
-        assertTrue(reloj.aString().equals("Martes 15 hs"));
+        assertTrue(reloj.aString().equals("Martes 15 hs00"));
         assertTrue(reloj.quedaTiempo());
     }
 }

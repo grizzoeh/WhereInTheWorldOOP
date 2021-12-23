@@ -10,27 +10,27 @@ public class EdificioDespisteTest {
     @Test
     public void test01ObtengoUnaPistaFacilYLosIngresosAumentan() {
 
-        assertEquals(aeropuerto.obtenerPistaFacil(null), "No paso el sospechoso por aca");
+        assertEquals(aeropuerto.obtenerPistaFacil(null), "!!!");
         assertEquals(aeropuerto.calcularTiempo(), 1);
     }
 
     @Test
     public void test02ObtengoUnaPistaMediaYLosIngresosAumentan() {
 
-        assertEquals(aeropuerto.obtenerPistaMedia(null), "No paso el sospechoso por aca");
+        assertEquals(aeropuerto.obtenerPistaMedia(null), "!!!");
         assertEquals(aeropuerto.calcularTiempo(), 1);
 
-        assertEquals(aeropuerto.obtenerPistaMedia(null), "No paso el sospechoso por aca");
+        assertEquals(aeropuerto.obtenerPistaMedia(null), "!!!");
         assertEquals(aeropuerto.calcularTiempo(), 2);
     }
 
     @Test
     public void test03ObtengoUnaPistaDificilYLosIngresosAumentan() {
 
-        assertEquals(aeropuerto.obtenerPistaDificil(null), "No paso el sospechoso por aca");
+        assertEquals(aeropuerto.obtenerPistaDificil(null), "!!!");
         assertEquals(aeropuerto.calcularTiempo(), 1);
 
-        assertEquals(aeropuerto.obtenerPistaDificil(null), "No paso el sospechoso por aca");
+        assertEquals(aeropuerto.obtenerPistaDificil(null), "!!!");
         assertEquals(aeropuerto.calcularTiempo(), 2);
     }
 
