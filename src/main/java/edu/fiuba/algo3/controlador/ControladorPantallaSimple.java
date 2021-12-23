@@ -29,7 +29,7 @@ public class ControladorPantallaSimple{
     }
 
     public void handleVolver() throws Exception{
-        this.reproducir_sonido("src/main/resources/Sonidos/Cick.aiff");
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Vista vistaInicio = new Vista("/escenas/vistaInicio.fxml");
         var scene = new Scene(vistaInicio.escena());
         this.stage = (Stage) btnVolver.getScene().getWindow();
