@@ -1,14 +1,14 @@
 [
   {
     "Ladron": "Nick Brunch",
-    "Recorrido_Ladron": ["Atenas","Bagdad","Londres","Lima"],
+    "Recorrido_Ladron": ["Atenas","Baghdad","Londres","Lima"],
     "Ciudades_Despiste": ["Bangkok","Bamako","Ciudad de Mexico","Oslo"],
     "Objeto_Robado": "Mascara del Rey Tut"
   },
   {
     "Ladron": "Len Bulk",
     "Recorrido_Ladron": ["Roma","Nueva York","Paris","Oslo"],
-    "Ciudades_Despiste": ["Atenas","Bagdad","Londres","Lima"],
+    "Ciudades_Despiste": ["Atenas","Baghdad","Londres","Lima"],
     "Objeto_Robado": "Anillo del Papa"
   },
   {
@@ -44,7 +44,7 @@
   {
     "Ladron": "Katherine Drib",
     "Recorrido_Ladron": ["Baghdad","Tokyo","Pekin","Atenas"],
-    "Ciudades_Despiste": ["Montreal", "Estambul","Buenos Aires","Montrea","Lima"],
+    "Ciudades_Despiste": ["Montreal", "Estambul","Buenos Aires","Montreal","Lima"],
     "Objeto_Robado": "Tablilla babilónica"
   },
   {

@@ -14,7 +14,7 @@
     {
         "Ladron": "Scar Graynolt",
         "Recorrido_Ladron": ["Roma", "Nueva York", "San Marino", "Paris", "Oslo", "Sidney", "Tokyo"],
-        "Ciudades_Despiste": ["Atenas","Bagdad","Londres","Lima", "Buenos Aires"],
+        "Ciudades_Despiste": ["Atenas","Baghdad","Londres","Lima", "Buenos Aires"],
         "Objeto_Robado": "Anillo del Papa"
     },
     {

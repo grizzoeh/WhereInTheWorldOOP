@@ -119,6 +119,7 @@ public class ControladorPrincipal {
         this.juego.establecerInterfazGrafica(this);
         this.juego.iniciarNuevaMision();
         this.cerrarVBox(vboxInicio);
+
     }
 
     public void handleIntroduccionNombre() {
