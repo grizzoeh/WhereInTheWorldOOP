@@ -251,6 +251,7 @@ public class ControladorPrincipal {
     }
 
     public void handleEmitirOrden() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.aiff");
         String sexo = (String) cmbSexo.getValue();
         String hobby = (String) cmbHobby.getValue();
         String cabello = (String) cmbCabello.getValue();
@@ -299,11 +300,12 @@ public class ControladorPrincipal {
     public void recibirPunialada() {
         this.vboxPunialada.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
+        this.reproducir_sonido("src/main/resources/Sonidos/Puñalada.aiff");
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
-                            this.reproducir_sonido("src/main/resources/Sonidos/Puñalada.aiff");
+
                             this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxPunialada);
                         }
@@ -315,11 +317,12 @@ public class ControladorPrincipal {
     public void recibirDisparo() {
         this.vboxDisparo.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
+        this.reproducir_sonido("src/main/resources/Sonidos/Disparo.aiff");
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
-                            this.reproducir_sonido("src/main/resources/Sonidos/Disparo.aiff");
+
                             this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxDisparo);
                         }

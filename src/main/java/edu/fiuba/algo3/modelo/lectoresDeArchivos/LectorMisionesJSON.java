@@ -40,12 +40,10 @@ public class LectorMisionesJSON implements LectorMisiones {
             int largo = JSONMisiones.size();
             int randomNum = ThreadLocalRandom.current().nextInt(0, largo);
             JSONObject JSONMision = (JSONObject) JSONMisiones.get(randomNum);
-
             String nombreLadron = (String) JSONMision.get("Ladron");
             ArrayList<String> nombresRecorridoLadron = (ArrayList<String>) JSONMision.get("Recorrido_Ladron");
             ArrayList<String> nombresCiudadesDespiste = (ArrayList<String>) JSONMision.get("Ciudades_Despiste");
             String objetoRobado = (String) JSONMision.get("Objeto_Robado");
-
             Ladron ladron = registroLadrones.encontrarLadronConNombre(nombreLadron);
             ArrayList<Ciudad> recorridoLadron = lectorCiudades.cargarCiudades(nombresRecorridoLadron,false);
             ArrayList<Ciudad> ciudadesDespiste = lectorCiudades.cargarCiudades(nombresCiudadesDespiste,true);

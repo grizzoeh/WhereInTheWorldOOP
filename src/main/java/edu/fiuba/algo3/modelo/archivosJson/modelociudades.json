@@ -9,32 +9,32 @@
       "Landmarks": "Mar Egeo, Montañas Pindus",
       "Industrias": "Higos, Aceitunas",
       "Animales": "???",
-      "Gente": "Platón, Spartanos",
+      "Gente": "Platón, Espartanos",
       "Lenguaje": "Griego",
       "Arte": "???",
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
-      "Descripcion": "Atenas"
+      "Descripcion": "Atenas es la capital de Grecia y actualmente la ciudad más grande, importante y poblada del país."
     }
   ],
-  "Bagdad": [
+  "Baghdad": [
     {
-      "Latitud": 37.983810,
-      "Longitud": 23.727539,
-      "Bandera": "Azul y Blanca",
-      "Moneda": "Drachmas",
+      "Latitud": 33.0112777,
+      "Longitud": 44.3849679,
+      "Bandera": "Roja, Negra y Blanca",
+      "Moneda": "Dinar",
       "Geografía": "???",
-      "Landmarks": "Mar Egeo, Montañas Pindus",
-      "Industrias": "Higos, Aceitunas",
-      "Animales": "???",
-      "Gente": "Platón, Spartanos",
-      "Lenguaje": "Griego",
+      "Landmarks": "Desierto Sirio, Rio Eufrates, Rio Tigris",
+      "Industrias": "Aceite",
+      "Animales": "Gacela Arabe",
+      "Gente": "Sumerios",
+      "Lenguaje": "???",
       "Arte": "???",
       "Religion": "???",
-      "Líder": "Primer Ministro",
-      "Extra": "República Helénica, Vecinos Yugoslavia",
-      "Descripcion": "Descripcion Bagdad"
+      "Líder": "???",
+      "Extra": "Mesopotamia",
+      "Descripcion": "Bagdad es la capital y la ciudad más poblada de Irak. Su número de habitantes es de 8 765 000 (est. 2016), lo que la convierte en la mayor ciudad del país y en la tercera del mundo árabe, solo por detrás de El Cairo y Riad."
     }
   ],
 
@@ -45,7 +45,7 @@
       "Bandera": "Verde, Amarillo y Rojo",
       "Moneda": "Franco",
       "Geografía": "???",
-      "Landmarks": "Rio Níger, Sahara"
+      "Landmarks": "Rio Níger, Sahara",
       "Industrias": "Arroz",
       "Animales": "???",
       "Gente": "Tuaregs",
@@ -54,7 +54,7 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "Timbuktu",
-      "Descripcion": "Descripcion Bamako"
+      "Descripcion": "Bamako o Bámako es la capital de Malí, se encuentra a orillas del río Níger en el sudoeste del país. Principal centro administrativo, importante puerto fluvial y un centro comercial para toda la región circundante, tiene la categoría de distrito a nivel nacional y está a su vez dividida en seis comunas dirigidas por sus respectivos alcaldes electos."
     }
   ],
 
@@ -74,14 +74,14 @@
       "Religion": "Budismo",
       "Líder": "???",
       "Extra": "Ciudad Vieja",
-      "Descripcion": "Descripcion Bangkok"
+      "Descripcion": "Bangkok es la capital y ciudad principal de Tailandia Aunque el nombre oficial de la capital no es Bangkok, es comúnmente empleado internacionalmente para referirse a la ciudad."
     }
   ],
 
   "Lima": [
     {
-      "Latitud": 13.756331,
-      "Longitud": 100.501762,
+      "Latitud": -12.046374,
+      "Longitud": -77.042793,
       "Bandera": "Roja y Blanco",
       "Moneda": "Sol",
       "Geografía": "???",
@@ -94,7 +94,491 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Descripcion Lima"
+      "Descripcion": "Lima es la capital y una megalópolis de la República del Perú.Se encuentra situada en la costa central del país, a orillas del océano Pacífico"
+    }
+  ],
+
+  "Budapest": [
+    {
+      "Latitud": 47.49835,
+      "Longitud": 19.04045,
+      "Bandera": "Roja, Blanco y Verde",
+      "Moneda": "Forints",
+      "Geografía": "???",
+      "Landmarks": "Llanuras Alpold, Rio Danubio",
+      "Industrias": "Uvas",
+      "Animales": "???",
+      "Gente": "Croatas, Gitanos",
+      "Lenguaje": "???",
+      "Arte": "Arte Magyar",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Limita con Austria",
+      "Descripcion": "Budapest es la capital y ciudad más poblada de Hungría así como su principal centro industrial, comercial y de transportes."
+    }
+  ],
+
+  "Buenos Aires" : [
+    {
+      "Latitud": -34.61315,
+      "Longitud": -58.37723,
+      "Bandera": "Blanca, Celeste y Sol",
+      "Moneda": "Austral",
+      "Geografía": "???",
+      "Landmarks": "Rio Parana, Tierra del Fuego",
+      "Industrias": "Vacas",
+      "Animales": "???",
+      "Gente": "Gauchos",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "Ex Colonia Española",
+      "Descripcion": "Buenos Aires es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país."
+    }
+  ],
+
+  "Cairo" : [
+    {
+      "Latitud": 13.756331,
+      "Longitud": 100.501762,
+      "Bandera": "???",
+      "Moneda": "Libras",
+      "Geografía": "???",
+      "Landmarks": "Tumbas de Faraones, Desierto Sinaí",
+      "Industrias": "Caliza",
+      "Animales": "???",
+      "Gente": "Nubios",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Antigua Alejandría",
+      "Descripcion": "El Cairo es la capital de Egipto y de su gobernación (muhafazah o provincia). Es la mayor ciudad del mundo árabe, de Oriente Próximo y de África"
+    }
+  ],
+
+  "Colombo" : [
+    {
+      "Latitud": 30.005493,
+      "Longitud": 31.477898,
+      "Bandera": "Leon Dorado",
+      "Moneda": "Rupias",
+      "Geografía": "???",
+      "Landmarks": "Golfo de Manar",
+      "Industrias": "Citronela",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "Artefactos Veddah",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Antiguo Taprobano",
+      "Descripcion": "Colombo es la ciudad más poblada de Sri Lanka y su capital comercial. Está situada en la costa occidental de la isla en proximidades de Sri Jayawardenepura Kotte, la capital administrativa de Sri Lanka"
+    }
+  ],
+
+  "Estambul" : [
+    {
+      "Latitud": 41.047867,
+      "Longitud": 28.898272,
+      "Bandera": "Creciente y Estrella",
+      "Moneda": "Lira",
+      "Geografía": "???",
+      "Landmarks": "Mar Negro, Monte Arafat",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Hittites",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "Impario Bizantino, Constantinopla",
+      "Descripcion": "Estambul, antiguamente conocida como Bizancio y Constantinopla, es la ciudad más poblada de Turquía y el centro histórico, cultural y económico del país"
+    }
+  ],
+
+  "Katmandu" : [
+    {
+      "Latitud": 27.700769,
+      "Longitud": 85.300140,
+      "Bandera": "Doble Triangulo",
+      "Moneda": "Rupias",
+      "Geografía":   "Montañas",
+      "Landmarks": "Himalayas",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Gurkhas",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion":    "Hindu",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "Katmandú es la capital y mayor ciudad de Nepal. Tiene una población de 1 003 285 habitantes, según censo de 2013. Situada en el valle del mismo nombre en Nepal central"
+    }
+  ],
+
+  "Kigali" : [
+    {
+      "Latitud": -1.935114,
+      "Longitud": 30.082111,
+      "Bandera": "Roja, Amarilla, y Verde",
+      "Moneda": "Francos",
+      "Geografía":   "Volcanes",
+      "Landmarks": "???",
+      "Industrias": "Estaño",
+      "Animales": "Mamba Negra, Gorila",
+      "Gente": "Oigmeos, Tutsi",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "Kigali es la capital de Ruanda, también su ciudad más poblada. Se encuentra situada en el centro geográfico del país, perteneciente a la provincia homónima."
+    }
+  ],
+
+  "Londres" : [
+    {
+      "Latitud": 13.756331,
+      "Longitud": 100.501762,
+      "Bandera": "Roja, Blanco, y Azul",
+      "Moneda": "Libras",
+      "Geografía": "???",
+      "Landmarks": "Big Ben, Lago Ness, Thames",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Celtas, Druidas, Saxons",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "???",
+      "Descripcion": "Londres es la capital y mayor ciudad de Inglaterra y del Reino Unido. Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos"
+    }
+  ],
+  "Ciudad de Mexico" : [
+    {
+      "Latitud": 51.507359,
+      "Longitud": -0.136439,
+      "Bandera": "Verde, Blanco, y Roja",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Monte Popocatepetl, Sierra Madre",
+      "Industrias": "???",
+      "Animales": "Monstruo Gila",
+      "Gente": "Aztecas, Mayas, Toltecas",
+      "Lenguaje": "???",
+      "Arte": "Joyas de Yucatan",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "La Ciudad de México (CDMX), anteriormente denominada el Distrito Federal (D. F.),es la capital de México Es una de las entidades federativas que, junto a treinta y un estados, conforman ese país."
+    }
+  ],
+  "Montreal" : [
+    {
+      "Latitud": 45.508888,
+      "Longitud":  -73.561668,
+      "Bandera": "Hoja de Arce",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Peninsula Gaspe, Lago Mistassini, Cascadas Montgomery, Isla Principe Edward, Yukon",
+      "Industrias": "???",
+      "Animales": "Alce",
+      "Gente": "???",
+      "Lenguaje": "French",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Ex Colonia Francesa",
+      "Descripcion": "Montreal es la mayor ciudad de la provincia de Quebec, en Canadá y la segunda más poblada del país"
+    }
+  ],
+  "Moroni" : [
+    {
+      "Latitud": -11.749997 ,
+      "Longitud": 43.1999992,
+      "Bandera": "Verde y Blanco",
+      "Moneda": "Francos",
+      "Geografía": "Islas, Volcanes",
+      "Landmarks": "Monte Karthala",
+      "Industrias": "Perfume",
+      "Animales": "Buhos",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "Moroni es la ciudad más grande de Comoras y desde 1962 su capital. En 2003 se estimaban unos 60.200 habitantes. La ciudad está localizada en la costa oeste de la isla de Gran Comora. "
+    }
+  ],
+  "Moscu" : [
+    {
+      "Latitud": 55.751244,
+      "Longitud": 37.618423,
+      "Bandera": "Roja",
+      "Moneda": "Rublos",
+      "Geografía": "???",
+      "Landmarks": "Lago Ladoga, Montaña Ural",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Ivan El Terrible",
+      "Lenguaje": "Ruso, Ural",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Moldavia, El pais mas grande del mundo",
+      "Descripcion": "Moscú es la capital y la entidad federal más poblada de Rusia. La ciudad es un importante centro político, económico, cultural y científico de Rusia"
+    }
+  ],
+  "Nueva Delhi" : [
+    {
+      "Latitud": 28.644800,
+      "Longitud": 77.216721,
+      "Bandera": "Roja, Blanco, y Verde",
+      "Moneda": "Rupias",
+      "Geografía": "???",
+      "Landmarks": "???",
+      "Industrias": "???",
+      "Animales": "Echis",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion" : "Sikh",
+      "Líder": "Primer Ministro",
+      "Extra": "???",
+      "Descripcion": "Nueva Delhi es la capital de la República de la India y sede del poder ejecutivo, legislativo y judicial de su Gobierno. Está situada en la metrópolis de Delhi y es uno de sus nueve distritos."
+    }
+  ],
+  "Nueva York" : [
+    {
+      "Latitud": 40.730610,
+      "Longitud": -73.935242,
+      "Bandera": "Roja, Blanco, y Azul",
+      "Moneda": "Dolares",
+      "Geografía": "???",
+      "Landmarks": "Tumba de Grant, Rio Hudson , Naciones Unidas, One World Trade Center",
+      "Industrias": "Fashion, Bolsa",
+      "Animales": "???",
+      "Gente": "Henry Hudson",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Subtes",
+      "Descripcion": "Nueva York es la ciudad más poblada de los Estados Unidos y una de las más pobladas del mundo. Desde finales del siglo XIX es uno de los centros de la economía mundial"
+    }
+  ],
+  "Oslo" : [
+    {
+      "Latitud": 59.911491,
+      "Longitud": 10.757933,
+      "Bandera": "Roja y Cruz Azul",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Mar de Barents",
+      "Industrias": "Hidroelectricidad",
+      "Animales": "???",
+      "Gente": "Vikingos",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Rey",
+      "Extra": "Ski Nordico",
+      "Descripcion": "Oslo, llamada Christiania de 1624 a 1897 y Kristiania de 1897 a 1925 (Cristianía en español), es la capital y la ciudad más poblada de Noruega, además de ser su centro político, económico y cultural."
+    }
+  ],
+  "Paris" : [
+    {
+      "Latitud": 48.856613,
+      "Longitud": 2.352222,
+      "Bandera": "Roja, Blanco, y Azul",
+      "Moneda": "Francos",
+      "Geografía": "???",
+      "Landmarks": "Senna",
+      "Industrias": "Fashion",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "París es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o Región Parisina), constituye el único departamento unicomunal del país."
+    }
+  ],
+  "Pekin" : [
+    {
+      "Latitud": 48.85341 ,
+      "Longitud": 2.3488,
+      "Bandera": "Roja",
+      "Moneda": "Yuanes",
+      "Geografía": "???",
+      "Landmarks": "Ciudad Olvidadad, Mar Amarillo",
+      "Industrias": "???",
+      "Animales": "Panda Gigante",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Dinastia Shang, Levantamiento de Wuchang",
+      "Descripcion": "Pekin es uno de los cuatro municipios que, junto con las veintidós provincias, cinco regiones autónomas y dos regiones administrativas especiales, conforman la República Popular China"
+    }
+  ],
+  "Puerto Moresby" : [
+    {
+      "Latitud": -9.4438004,
+      "Longitud": 147.1802671,
+      "Bandera": "Amarilla, Roja, y Negra",
+      "Moneda" : "Kinas",
+      "Geografía" : "Volcanes",
+      "Landmarks": "Monte Karkar, Monte Manam",
+      "Industrias": "Oro",
+      "Animales": "???",
+      "Gente": "Taipanes",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "Nueva Irlanda",
+      "Descripcion": "Puerto Moresby es la capital de Papúa Nueva Guinea, y su mayor aglomeración de población contando su área metropolitana que se extiende por todo el Distrito Capital Nacional. La ciudad está situada en las costas del golfo de Papúa, en la costa sureste de la isla de Nueva Guinea."
+    }
+  ],
+  "Reikiavik" : [
+    {
+      "Latitud": 64.128288,
+      "Longitud": -21.827774,
+      "Bandera": "Roja y Azul",
+      "Moneda" : "Coronas",
+      "Geografía": "Aguas Termales, Volcanes",
+      "Landmarks": "???",
+      "Industrias": "Pescado",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Nacion Isla",
+      "Descripcion": "Reikiavik es la capital y ciudad más poblada de Islandia. Situada al sur de la bahía Faxaflói, en una zona donde abundan los géiseres"
+    }
+  ],
+  "Rio de Janeiro" : [
+    {
+      "Latitud": -22.908333,
+      "Longitud": -43.196388,
+      "Bandera": "Verde, Azul, y Amarilla",
+      "Moneda": "Cruzeiros",
+      "Geografía": "???",
+      "Landmarks": "Rio Amazonas",
+      "Industrias": "Cafe, Diamantes, Titanio",
+      "Animales": "Guacamayo, Macaco",
+      "Gente": "???",
+      "Lenguaje": "Portugues",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "???",
+      "Descripcion": "Río de Janeiro, fundada como São Sebastião do Rio de Janeiro, es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país. Es la segunda ciudad más poblada de Brasil después de São Paulo."
+    }
+  ],
+  "Roma" : [
+    {
+      "Latitud": 41.902782,
+      "Longitud": 12.496366,
+      "Bandera": "Verde, Blanca, y Roja",
+      "Moneda": "Liras",
+      "Geografía": "???",
+      "Landmarks": "Coliseo, Foro, Monte Etna,  Mar Tirreno",
+      "Industrias": "Textil",
+      "Animales": "???",
+      "Gente": "Etruscos",
+      "Lenguaje": "Italiano",
+      "Arte": "Pintura Renacentista",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "???",
+      "Descripcion": "Roma es una ciudad italiana de 2 815 951 habitantes, capital de la región del Lacio y de Italia. Es el municipio más poblado de Italia y la tercera ciudad más poblada de la Unión Europea Por antonomasia, se la conoce desde la Antigüedad como la Urbe (Urbs). Tambien es llamada La Ciudad Eterna"
+    }
+  ],
+  "San Marino" : [
+    {
+      "Latitud": 43.934089597,
+      "Longitud": 12.4417115665,
+      "Bandera": "Azul y Blanco",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Monte Titano",
+      "Industrias": "Ceramica, Estampillas",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "Italiano",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Estado mas viejo de Europa, Vecino de Italia",
+      "Descripcion": "San Marino, oficialmente la Serenísima República de San Marino (en italiano: Serenissima Repubblica di San Marino),es una república parlamentaria y el Estado soberano más antiguo del mundo"
+    }
+  ],
+  "Singapur" : [
+    {
+      "Latitud": 1.290270,
+      "Longitud": 103.851959,
+      "Bandera": "Roja y Blanca",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Raffles Hotel, Mar de China Del Sur",
+      "Industrias": "Goma",
+      "Animales": "Synanceia",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "Arte Malayo",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Ex Colonia Britanica",
+      "Descripcion": "Singapur, oficialmente República de Singapur, es un país soberano insular de Asia, formado por sesenta y tres islas, cuya forma de gobierno es la república parlamentaria."
+    }
+  ],
+  "Sidney" : [
+    {
+      "Latitud": -33.865143,
+      "Longitud": 151.209900,
+      "Bandera": "Roja, Blanco, y Azul",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Gran Desierto Arenoso, Casa de La Opera",
+      "Industrias": "Wool",
+      "Animales": "Koala, Serpiente Tigre, Wallabi, Wombat",
+      "Gente": "Aborigenes, Capitan Cook",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "Sídney es la ciudad más grande y poblada de Australia y Oceanía, con una población en su área metropolitana cercana a los 4,92 millones, según una estimación de 2015. Es la capital del estado de Nueva Gales del Sur y fue el asentamiento de la primera colonia británica en Australia. Fue fundada en 1788 en la cala de Sídney por Arthur Phillip, almirante de la Primera Flota de Gran Bretaña,"
+    }
+  ],
+  "Tokyo" : [
+    {
+      "Latitud": 35.652832,
+      "Longitud": 139.839478,
+      "Bandera": "Roja y Blanco",
+      "Moneda" : "Yen",
+      "Geografía": "???",
+      "Landmarks": "Monte Fuji",
+      "Industrias": "Automobiles",
+      "Animales": "???",
+      "Gente": "Shoguns",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion" : "Shinto",
+      "Líder": "???",
+      "Extra": "???",
+      "Descripcion": "Tokyo, oficialmente Metrópolis de Tokio, es la capital de facto de Japón, ubicada en el centro este de la isla de Honshu, concretamente en la región de Kantō. En conjunto es una de las 47 prefecturas de Japón."
+
     }
   ]
 }

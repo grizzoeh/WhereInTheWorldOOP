@@ -1,0 +1,26 @@
+[
+    {
+        "Ladron": "Ihor Ihorovitch",
+        "Recorrido_Ladron": ["Roma", "Londres", "Nueva York", "San Marino","Estambul", "Oslo", "Buenos Aires"],
+        "Ciudades_Despiste": ["Lima", "Montreal", "Ciudad de Mexico", "Paris"],
+        "Objeto_Robado": "Anillo del Papa"
+    },
+    {
+        "Ladron": "Len Bulk",
+        "Recorrido_Ladron": ["Oslo","Londres", "Nueva Delhi", "Moscu", "Atenas", "Roma", "Nueva York"],
+        "Ciudades_Despiste": ["Lima", "Montreal", "Estambul", "Tokyo", "Rio de Janeiro"],
+        "Objeto_Robado": "Casco Vikingo"
+    },
+    {
+        "Ladron": "Scar Graynolt",
+        "Recorrido_Ladron": ["Roma", "Nueva York", "San Marino", "Paris", "Oslo", "Sidney", "Tokyo"],
+        "Ciudades_Despiste": ["Atenas","Bagdad","Londres","Lima", "Buenos Aires"],
+        "Objeto_Robado": "Anillo del Papa"
+    },
+    {
+        "Ladron": "Carmen Sandiego",
+        "Recorrido_Ladron": ["Baghdad", "Sidney","Tokyo", "Pekin", "Atenas", "San Marino", "Nueva Delhi"],
+        "Ciudades_Despiste": ["Rio de Janeiro", "Buenos Aires", "Nueva York", "Oslo", "Atenas"],
+        "Objeto_Robado": "Tablilla babilónica"
+    }
+]
