@@ -10,6 +10,7 @@ import edu.fiuba.algo3.modelo.Ciudad;
 import edu.fiuba.algo3.modelo.Juego;
 import edu.fiuba.algo3.modelo.Ladron;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import edu.fiuba.algo3.vista.Vista;
 import javafx.animation.KeyFrame;
 import javafx.animation.PauseTransition;
 import javafx.animation.Timeline;
@@ -17,6 +18,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -68,6 +70,8 @@ public class ControladorPrincipal {
     Button btnEmitirOrden;
     @FXML
     Button btnCancelarOrden;
+    @FXML
+    Button btnMenuPrincipal;
     /* VBox */
     @FXML
     VBox vboxViajar;
@@ -176,8 +180,11 @@ public class ControladorPrincipal {
         }
     }
 
-    public void handleMenuPrincipal() {
-
+    public void handleMenuPrincipal() throws Exception {
+        Vista vistaRegistro = new Vista("/escenas/vistaInicio.fxml");
+        var scene = new Scene(vistaRegistro.escena());
+        this.stage = (Stage) this.btnMenuPrincipal.getScene().getWindow();
+        this.stage.setScene(scene);
     }
 
     public void handleSalirEdificio() {

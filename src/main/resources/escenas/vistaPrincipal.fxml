@@ -93,7 +93,7 @@
                            </font>
                         </Label>
                         <Button fx:id="btnIniciar" disable="true" layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleIniciar" prefHeight="25.0" prefWidth="119.0" text="Iniciar Partida" />
-                        <Button layoutX="130.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleMenuPrincipal" prefHeight="25.0" prefWidth="119.0" text="Menu Principal" />
+                        <Button fx:id="btnMenuPrincipal" layoutX="130.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleMenuPrincipal" prefHeight="25.0" prefWidth="119.0" text="Menu Principal" />
                         <TextField fx:id="txtNombrePolicia" layoutX="64.0" layoutY="112.0" onKeyTyped="#handleIntroduccionNombre" prefHeight="25.0" prefWidth="253.0" />
                      </children>
                   </AnchorPane>
