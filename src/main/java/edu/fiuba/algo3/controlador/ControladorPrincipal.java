@@ -20,6 +20,8 @@ import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -29,6 +31,7 @@ import javafx.util.Duration;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import java.io.File;
+import java.io.FileInputStream;
 
 public class ControladorPrincipal {
 
@@ -106,7 +109,8 @@ public class ControladorPrincipal {
     ChoiceBox cmbCaracteristica;
     @FXML
     ChoiceBox cmbVehiculo;
-
+    @FXML
+    ImageView imgContexto;
     Parent vista;
     private Juego juego;
 
@@ -388,4 +392,7 @@ public class ControladorPrincipal {
         this.cerrarVBox(vboxOrden);
     }
 
+    public void actualizarImgContexto(Image image){
+    this.imgContexto.setImage(image);
+}
 }

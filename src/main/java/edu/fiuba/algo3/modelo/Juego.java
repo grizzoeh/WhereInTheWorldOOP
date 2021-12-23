@@ -1,5 +1,7 @@
 package edu.fiuba.algo3.modelo;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +11,7 @@ import edu.fiuba.algo3.controlador.ControladorPrincipal;
 import edu.fiuba.algo3.modelo.edificios.Edificio;
 import edu.fiuba.algo3.modelo.lectoresDeArchivos.*;
 import edu.fiuba.algo3.modelo.policia.Policia;
+import javafx.scene.image.Image;
 
 public class Juego {
 
@@ -55,7 +58,7 @@ public class Juego {
         this.ciudadActual = this.mision.inicioRecorrido();
     }
 
-    public void viajarA(Ciudad unaCiudad) {
+    public void viajarA(Ciudad unaCiudad) throws FileNotFoundException {
         double distancia = this.ciudadActual.distanciaA(unaCiudad);
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
         if (!this.reloj.quedaTiempo()) {
@@ -70,6 +73,10 @@ public class Juego {
             this.controladorInterfazGrafica.mostrarInfo(this.ciudadActual.obtenerDescripcion());
         }
         this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
+        this.controladorInterfazGrafica.actualizarImgContexto(ciudadActual.calcularImg());
+        Image input = this.ciudadActual.calcularImg();
+        this.controladorInterfazGrafica.actualizarImgContexto(input);
+
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
     }
 
@@ -191,6 +198,5 @@ public class Juego {
     public void establecerInterfazGrafica(ControladorPrincipal controladorInterfazGrafica) {
         this.controladorInterfazGrafica = controladorInterfazGrafica;
     }
-
 }
 

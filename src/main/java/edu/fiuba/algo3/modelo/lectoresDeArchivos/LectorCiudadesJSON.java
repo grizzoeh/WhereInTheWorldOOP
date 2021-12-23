@@ -42,7 +42,7 @@ public class LectorCiudadesJSON implements LectorCiudades{
                 String lider = (String) JSONCiudad.get("Lider");
                 String extra = (String) JSONCiudad.get("Extra");
                 String descripcion = (String) JSONCiudad.get("Descripcion");
-
+                String ruta = (String) JSONCiudad.get("Ruta");
                 Coordenadas coordenadas = new Coordenadas(latitud, longitud);
                 ArrayList<Edificio> edificios = new ArrayList<Edificio>();
                 if (esDespiste){
@@ -55,7 +55,7 @@ public class LectorCiudadesJSON implements LectorCiudades{
                     edificios.add(new Banco());
                 }
 
-                Ciudad ciudad = new Ciudad(nombreCiudad, coordenadas, bandera, moneda, geografia, landmarks, industrias, animales, gente, lenguaje, arte, religion, lider, extra, edificios, descripcion);
+                Ciudad ciudad = new Ciudad(nombreCiudad, coordenadas, bandera, moneda, geografia, landmarks, industrias, animales, gente, lenguaje, arte, religion, lider, extra, edificios, descripcion, ruta);
                 resultado.add(ciudad);
             }
         }

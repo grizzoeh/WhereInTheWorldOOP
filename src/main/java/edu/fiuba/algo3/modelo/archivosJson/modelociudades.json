@@ -15,7 +15,8 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
-      "Descripcion": "Atenas"
+      "Descripcion": "Atenas",
+      "RutaVista": "src/main/resources/escenas/img/ciudad1.PNG"
     }
   ],
   "Bagdad": [
@@ -34,7 +35,8 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
-      "Descripcion": "Descripcion Bagdad"
+      "Descripcion": "Descripcion Bagdad",
+      "RutaVista": "src/main/resources/escenas/img/ciudad6.PNG"
     }
   ],
 
@@ -45,7 +47,7 @@
       "Bandera": "Verde, Amarillo y Rojo",
       "Moneda": "Franco",
       "Geografía": "???",
-      "Landmarks": "Rio Níger, Sahara"
+      "Landmarks": "Rio Níger, Sahara",
       "Industrias": "Arroz",
       "Animales": "???",
       "Gente": "Tuaregs",
@@ -54,7 +56,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "Timbuktu",
-      "Descripcion": "Descripcion Bamako"
+      "Descripcion": "Descripcion Bamako",
+      "RutaVista": "src/main/resources/escenas/img/ciudad7.PNG"
     }
   ],
 
@@ -74,7 +77,8 @@
       "Religion": "Budismo",
       "Líder": "???",
       "Extra": "Ciudad Vieja",
-      "Descripcion": "Descripcion Bangkok"
+      "Descripcion": "Descripcion Bangkok",
+      "RutaVista": "src/main/resources/escenas/img/ciudad15.jpg"
     }
   ],
 
@@ -94,7 +98,495 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Descripcion Lima"
+      "Descripcion": "Descripcion Lima",
+      "RutaVista": "src/main/resources/escenas/img/ciudad3.PNG"
     }
-  ]
+  ],
+
+  "Budapest": [
+    { 
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco y Verde",
+      "Moneda": "Forints",
+      "Geografía": "???",
+      "Landmarks": "Alpold Plains, Danube River",
+      "Industrias": "Grapes",
+      "Animales": "???",
+      "Gente": "Croation, Gypsies",
+      "Lenguaje": "???",
+      "Arte": "Magyar Art",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Neighbors Austria",
+      "RutaVista": "src/main/resources/escenas/img/ciudad2.PNG"
+    }
+  ],
+
+"Buenos Aires" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Sun Flag",
+      "Moneda": "Australs",
+      "Geografía": "???",
+      "Landmarks": "Parana River, Tierra del Fuego",
+      "Industrias": "Cattle",
+      "Animales": "???",
+      "Gente": "Gauchos",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "President",
+      "Extra": "Former Spanish Colony",
+      "RutaVista": "src/main/resources/escenas/img/ciudad12.jpg"
+  }
+  ],
+
+"Cairo" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "???",
+      "Moneda": "Libras",
+      "Geografía": "???",
+      "Landmarks": "Pharoahs Tomb, Sinai Desert",
+      "Industrias": "Limestone",
+      "Animales": "???",
+      "Gente": "Nubian",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Ancient Alexandria",
+      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+}
+  ],
+
+"Colombo" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Golden Lion",
+      "Moneda": "Rupees",
+      "Geografía": "???",
+      "Landmarks": "Gulf of Mannar",
+      "Industrias": "Citronella",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "Veddah Artifacts",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Ancient Taprobane",
+      "RutaVista": "src/main/resources/escenas/img/ciudad13.PNG"
+  }
+  ],
+
+"Istanbul" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Crescent y Star",
+      "Moneda": "Lira",
+      "Geografía": "???",
+      "Landmarks": "Black Sea, Mount Arafat",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Hittites",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "President",
+      "Extra": "Byzantine Empire, Constantinople",
+      "RutaVista": "src/main/resources/escenas/img/ciudad10.PNG"
+}
+  ],
+
+"Kathmandu" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Double Triangle",
+      "Moneda": "Rupees",
+      "Geografía":   "Mountains",
+      "Landmarks": "Baruntse, Himalayas",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Gurkhas",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion":    "Hindu",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad14.jpg"
+      }
+  ],
+
+"Kigali" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Yellow, y Verde",
+      "Moneda": "Francos",
+      "Geografía":   "Volcanoes",
+      "Landmarks": "???",
+      "Industrias": "Tin",
+      "Animales": "Black Mamba, Gorilla",
+      "Gente": "Pygmies, Tutsi",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+  }
+],
+
+"London" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco, y Blue",
+      "Moneda": "Libras",
+      "Geografía": "???",
+      "Landmarks": "Big Ben, Loch Ness, Thames",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Celts, Druids, Saxons",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad11.PNG"
+}
+  ],
+"Mexico City" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Verde, Blanco, y Roja",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Mount Popocatepetl, Sierra Madre",
+      "Industrias": "???",
+      "Animales": "Gila Monster",
+      "Gente": "Aztecs, Mayas, Toltecs",
+      "Lenguaje": "???",
+      "Arte": "Yucatecan Jewelry",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad9.PNG"
+}
+  ],
+"Montreal" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Maple Leaf Flag",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Gaspe Peninsula, Lake Mistassini, Montgomery Falls, Prince Edward Island, Yukon",
+      "Industrias": "???",
+      "Animales": "Moose",
+      "Gente": "???",
+      "Lenguaje": "French",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Former French Colony",
+      "RutaVista": "src/main/resources/escenas/img/ciudad5.PNG"
+}
+  ],
+"Moroni" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Verde y Blanco",
+      "Moneda": "Francos",
+      "Geografía": "Island, Volcanoes",
+      "Landmarks": "Mount Karthala",
+      "Industrias": "Perfume",
+      "Animales": "Anjouan Scops Owl",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad7.PNG"
+}
+  ],
+"Moscow" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja",
+      "Moneda": "Rublos",
+      "Geografía": "???",
+      "Landmarks": "Lake Ladoga, Ural Mountains",
+      "Industrias": "???",
+      "Animales": "???",
+      "Gente": "Ivan the Terrible",
+      "Lenguaje": "Russian, Uralian",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Moldavia, Largest Country in the World",
+      "RutaVista": "src/main/resources/escenas/img/ciudad17.PNG"
+}
+  ],
+"New Delhi" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco, y Verde",
+      "Moneda": "Rupias",
+      "Geografía": "???",
+      "Landmarks": "???",
+      "Industrias": "???",
+      "Animales": "Saw-Scaled Viper",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion" : "Sikh",
+      "Líder": "Primer Ministro",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+}
+
+  ],
+"New York" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco, y Blue",
+      "Moneda": "Dolares",
+      "Geografía": "???",
+      "Landmarks": "Grant's Tomb, Hudson River, United Nations, World Trade Center",
+      "Industrias": "Fashion, Stock Exchange",
+      "Animales": "???",
+      "Gente": "Henry Hudson",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Subways",
+      "RutaVista": "src/main/resources/escenas/img/ciudad9.PNG"
+}
+
+  ],
+"Oslo" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja y Blue Cross",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Barents Sea",
+      "Industrias": "Hydroelectricity",
+      "Animales": "???",
+      "Gente": "Vikings",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "King",
+      "Extra": "Nordic Skiing",
+      "RutaVista": "src/main/resources/escenas/img/ciudad17.PNG"
+}
+  ],
+"Paris" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco, y Blue",
+      "Moneda": "Francos",
+      "Geografía": "???",
+      "Landmarks": "Sienne",
+      "Industrias": "Fashion",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad4.jpg"
+}
+  ],
+"Peking" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja Flag",
+      "Moneda": "Yuans",
+      "Geografía": "???",
+      "Landmarks": "Forbidden City, Yellow Sea",
+      "Industrias": "???",
+      "Animales": "Giant Panda",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Shang Dynasty, Wuchang Uprising",
+      "RutaVista": "src/main/resources/escenas/img/ciudad15.PNG"
+}
+  ],
+"Port Moresby" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Yellow, Roja, y Black",
+      "Moneda" : "Kinas",
+      "Geografía" : "Volcanes",
+      "Landmarks": "Mount Karkar, Mount Manam",
+      "Industrias": "Gold",
+      "Animales": "???",
+      "Gente": "Taipans",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Primer Ministro",
+      "Extra": "New Ireland",
+      "RutaVista": "src/main/resources/escenas/img/ciudad3.PNG"
+}
+  ],
+"Reykjavik" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja y Blue",
+      "Moneda" : "Kronures",
+      "Geografía": "Hot Springs, Volcanoes",
+      "Landmarks": "???",
+      "Industrias": "Fish",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Isly Nation",
+      "RutaVista": "src/main/resources/escenas/img/ciudad13.PNG"
+}
+  ],
+"Rio de Janeiro" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Verde, Blue, y Yellow",
+      "Moneda": "Cruzeiros",
+      "Geografía": "???",
+      "Landmarks": "Amazon River",
+      "Industrias": "Coffee, Diamonds, Titanium",
+      "Animales": "Bushmaster, Golden Parakeet, Indigo Macaw, Thin-Spined Porcupine",
+      "Gente": "???",
+      "Lenguaje": "Portugues",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad18.PNG"
+}
+  ],
+"Rome" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Verde, Blanco, y Roja",
+      "Moneda": "Liras",
+      "Geografía": "???",
+      "Landmarks": "Colosseum, The Forum, Mount Etna, Tyrrhenian Sea",
+      "Industrias": "Textiles",
+      "Animales": "???",
+      "Gente": "Etruscans",
+      "Lenguaje": "Italian",
+      "Arte": "Renaissance Painting",
+      "Religion": "???",
+      "Líder": "Presidente",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad19.PNG"
+}
+  ],
+"San Marino" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Blue y Blanco",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Mount Titano",
+      "Industrias": "Ceramics, Postage Stamps",
+      "Animales": "???",
+      "Gente": "???",
+      "Lenguaje": "Italiano",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Serene Republic, Oldest State in Europe, Neighbors Italy",
+      "RutaVista": "src/main/resources/escenas/img/ciudad14.jpg"
+
+}
+  ],
+"Singapore" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja y Blanco",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Raffles Hotel, South China Sea, Straits of Malacca",
+      "Industrias": "Rubber",
+      "Animales": "Stonefish",
+      "Gente": "???",
+      "Lenguaje": "???",
+      "Arte": "Malayan Art",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "Former British Colony",
+      "RutaVista": "src/main/resources/escenas/img/ciudad15.PNG"
+}
+  ],
+"Sydney" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja, Blanco, y Blue",
+      "Moneda": "???",
+      "Geografía": "???",
+      "Landmarks": "Great Sandy Desert, Opera House, Outback",
+      "Industrias": "Wool",
+      "Animales": "Koala Bear, Tiger Snake, Wallaby, Wombat",
+      "Gente": "Aborigines, Captain Cook",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion": "???",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad1.PNG"
+}
+  ],
+"Tokyo" : [
+  {   
+      "Latitud": 37.983810,
+      "Longitud": 23.727539,
+      "Bandera": "Roja y Blanco",
+      "Moneda" : "Yen",
+      "Geografía": "???",
+      "Landmarks": "Mount Fuji",
+      "Industrias": "Automobiles",
+      "Animales": "???",
+      "Gente": "Shoguns",
+      "Lenguaje": "???",
+      "Arte": "???",
+      "Religion" : "Shinto",
+      "Líder": "???",
+      "Extra": "???",
+      "RutaVista": "src/main/resources/escenas/img/ciudad20.jpg"
+    
+}
+]
 }
