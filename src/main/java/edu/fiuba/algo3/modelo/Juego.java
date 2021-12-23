@@ -55,6 +55,9 @@ public class Juego {
     public void viajarA(Ciudad unaCiudad) {
         double distancia = this.ciudadActual.distanciaA(unaCiudad);
         this.reloj.pasarHoras((int)this.policia.duracionViajeconDistancia(distancia));
+        if (!this.reloj.quedaTiempo()) {
+            this.ladronEscapa();
+        }
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
         this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
@@ -64,7 +67,6 @@ public class Juego {
     public String policiaEntrarA(Edificio unEdificio) {
         if (mision.finalDelRecorrido(this.ciudadActual)) {
             this.ordenDeArresto.atraparLadron(this, this.mision);
-            return "El ladron ha sido atrapado!";
         }
         if (this.activarAtaques) {
             randomizarAtaques();
@@ -72,6 +74,11 @@ public class Juego {
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
         this.reloj.pasarHoras(horas);
+        if (!this.reloj.quedaTiempo()) {
+            this.ladronEscapa();
+        }
+        this.controladorInterfazGrafica.mostrarPista(pista);
+        this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
 
         return pista;
     }
@@ -81,10 +88,14 @@ public class Juego {
         int disparo = ThreadLocalRandom.current().nextInt(0, this.chanceDisparo);
         if (disparo == 1) {
             this.recibirDisparo();
+            this.controladorInterfazGrafica.recibirDisparo();
+            this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
             return;
         }
         if (punialada == 1) {
             this.recibirPunialada();
+            this.controladorInterfazGrafica.recibirPunialada();
+            this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
             return;
         }
     }
@@ -108,10 +119,12 @@ public class Juego {
         if (this.cantidadDeArrestos == 5 || this.cantidadDeArrestos == 15 || this.cantidadDeArrestos == 35) {
             this.policia.ascender();
         }
+        this.controladorInterfazGrafica.ladronAtrapado();
     }
 
-    public void ladronEscapa(){
+    public void ladronEscapa() {
         this.sospechososEscapados++;
+        this.controladorInterfazGrafica.ladronEscapa();
     }
 
     public Policia obtenerPolicia() { // Unicamente para las pruebas
@@ -165,7 +178,6 @@ public class Juego {
     public void establecerInterfazGrafica(ControladorPrincipal2 controladorInterfazGrafica) {
         this.controladorInterfazGrafica = controladorInterfazGrafica;
     }
-
 
 }
 

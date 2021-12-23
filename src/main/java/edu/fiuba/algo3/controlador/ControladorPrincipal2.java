@@ -19,13 +19,24 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class ControladorPrincipal2{
 
     Stage stage;
+    /* TextBox */
+    @FXML
+    TextArea txtPistas;
+    @FXML
+    TextArea txtInfoCiudad;
+    @FXML
+    TextArea txtPosiblesSospechosos;
     /* Labels */
     @FXML
     Label txtFechaYHora;
@@ -63,6 +74,10 @@ public class ControladorPrincipal2{
     VBox vboxDisparo;
     @FXML
     VBox vboxPunialada;
+    @FXML
+    VBox vboxLadronEscapa;
+    @FXML
+    VBox vboxLadronAtrapado;
     /* ChoiceBox */
     @FXML
     ChoiceBox cmbEdificios;
@@ -130,8 +145,11 @@ public class ControladorPrincipal2{
     }
 
     public void handleConfirmarEdificios() throws Exception{
-        this.cerrarVBox(this.vboxEdificios);
-        
+        Edificio edificioDestino = (Edificio) cmbEdificios.getValue();
+        if (edificioDestino != null) {
+            juego.policiaEntrarA(edificioDestino);
+            this.cerrarVBox(this.vboxEdificios);
+        }
     }
 
     public void handleCancelarEdificios() throws Exception{
@@ -180,7 +198,11 @@ public class ControladorPrincipal2{
     }
 
     public void handleEmitirOrden() throws Exception{
-
+        juego.OrdenActualizarSexo();
+        juego.OrdenActualizarHobby();
+        juego.OrdenActualizarCabello();
+        juego.OrdenActualizarSenia();
+        juego.OrdenActualizarVehiculo();
     }
 
     public void handleCancelarOrden() throws Exception{
@@ -194,8 +216,8 @@ public class ControladorPrincipal2{
     }
 
     public void recibirPunialada() {
-        this.vboxPunialada.setVisible(true);
         this.deshabilitarBotonesPrincipales();
+        this.vboxPunialada.setVisible(true);
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
@@ -231,6 +253,44 @@ public class ControladorPrincipal2{
 
     public void actualizarCiudadActual(String nombreCiudad) {
         this.txtCiudadActual.setText(nombreCiudad);
+    }
+
+    public void mostrarPista(String pista) {
+        this.txtPistas.setText(pista);
+    }
+
+    public void mostrarInfo(String info) {
+        this.txtInfoCiudad.setText(info);
+    }
+
+    public void ladronEscapa() {
+        this.vboxLadronEscapa.setVisible(true);
+        this.deshabilitarBotonesPrincipales();
+        try {
+            Thread.sleep(3000);
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+        this.mostrarPista("");
+        this.mostrarInfo("");
+        juego.iniciarNuevaMision();
+        this.cerrarVBox(this.vboxLadronEscapa);
+    }
+
+    public void ladronAtrapado() {
+        this.vboxLadronAtrapado.setVisible(true);
+        this.deshabilitarBotonesPrincipales();
+        try {
+            Thread.sleep(3000);
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+        this.mostrarPista("");
+        this.mostrarInfo("");
+        juego.iniciarNuevaMision();
+        this.cerrarVBox(this.vboxLadronAtrapado);
     }
 
 
