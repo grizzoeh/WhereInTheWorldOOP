@@ -41,6 +41,7 @@ public class LectorCiudadesJSON implements LectorCiudades{
                 String religion = (String) JSONCiudad.get("Religion");
                 String lider = (String) JSONCiudad.get("Lider");
                 String extra = (String) JSONCiudad.get("Extra");
+                String descripcion = (String) JSONCiudad.get("Descripcion");
 
                 Coordenadas coordenadas = new Coordenadas(latitud, longitud);
                 ArrayList<Edificio> edificios = new ArrayList<Edificio>();
@@ -54,7 +55,7 @@ public class LectorCiudadesJSON implements LectorCiudades{
                     edificios.add(new Banco());
                 }
 
-                Ciudad ciudad = new Ciudad(nombreCiudad, coordenadas, bandera, moneda, geografia, landmarks, industrias, animales, gente, lenguaje, arte, religion, lider, extra, edificios);
+                Ciudad ciudad = new Ciudad(nombreCiudad, coordenadas, bandera, moneda, geografia, landmarks, industrias, animales, gente, lenguaje, arte, religion, lider, extra, edificios, descripcion);
                 resultado.add(ciudad);
             }
         }

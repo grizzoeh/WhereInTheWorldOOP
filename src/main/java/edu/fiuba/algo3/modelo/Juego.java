@@ -43,6 +43,7 @@ public class Juego {
         this.ordenDeArresto =  new OrdenDeArresto();
         this.mision = policia.nuevaMision(this.lectorCiudades, this.ladrones);
         this.ciudadActual = this.mision.inicioRecorrido();
+        this.controladorInterfazGrafica.mostrarInfo("Agente "+this.policia.obtenerNombre()+", alguien se robo un@ "+this.mision.obtenerObjetoRobado()+" en "+this.mision.inicioRecorrido()+" y tu mision es seguirle la pista y atraparlo, buena suerte!");
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
         this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
     }
@@ -62,6 +63,12 @@ public class Juego {
         }
         this.mision.viajarA(unaCiudad);
         this.ciudadActual = unaCiudad;
+        if (this.mision.finalDelRecorrido(this.ciudadActual)) {
+            this.controladorInterfazGrafica.mostrarInfo("Parece que el sospechoso que buscas se encuentra en esta ciudad, busca en los edificios!");
+        }
+        else {
+            this.controladorInterfazGrafica.mostrarInfo(this.ciudadActual.obtenerDescripcion());
+        }
         this.controladorInterfazGrafica.actualizarCiudadActual(this.ciudadActual.obtenerNombre());
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
     }

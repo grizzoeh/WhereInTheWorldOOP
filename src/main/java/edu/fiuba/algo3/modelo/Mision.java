@@ -67,5 +67,9 @@ public class Mision {
     public Ciudad inicioRecorrido() {
         return this.recorridoLadron.get(0);
     }
+
+    public String obtenerObjetoRobado() {
+        return this.objetoRobado;
+    }
 }
 

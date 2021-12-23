@@ -48,4 +48,8 @@ public class Policia {
     public Mision nuevaMision(LectorCiudades lectorCiudades, RegistroLadrones registroLadrones) {
         return this.rango.asignarNuevaMision(lectorCiudades, registroLadrones);
     }
+
+    public String obtenerNombre() {
+        return this.nombre;
+    }
 }

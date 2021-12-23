@@ -20,9 +20,10 @@ public class Ciudad {
     private String religion;
     private String lider;
     private String extra;
+    private String descripcion;
 
 
-    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios){
+    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios, String descripcion){
         this.nombre = nombre;
         this.bandera = bandera;
         this.moneda = moneda;
@@ -38,6 +39,7 @@ public class Ciudad {
         this.extra = extra;
         this.edificios = edificios;
         this.coordenadas = coordenadas;
+        this.descripcion = descripcion;
     }
 
     public String obtenerNombre(){ return this.nombre; }
@@ -73,9 +75,11 @@ public class Ciudad {
     public String pistaDificilBiblioteca(){
         return this.lider.equals("???") ? this.lider : ("Le sospechose invstigó acerca del " + this.lider + " del pais al que se dirigia");
     }
-    public ArrayList<Edificio> obtenerEdificios(){
-
+    public ArrayList<Edificio> obtenerEdificios() {
         return this.edificios;
+    }
+    public String obtenerDescripcion() {
+        return this.descripcion;
     }
     @Override
     public String toString(){

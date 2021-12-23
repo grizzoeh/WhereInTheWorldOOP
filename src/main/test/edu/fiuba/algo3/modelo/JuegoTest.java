@@ -27,8 +27,8 @@ public class JuegoTest {
         edificios.add(new Aeropuerto());
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
+        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios, "");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
@@ -61,8 +61,8 @@ public class JuegoTest {
         edificios.add(new Aeropuerto());
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
+        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios, "");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
@@ -96,8 +96,8 @@ public class JuegoTest {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasMexico = new Coordenadas(19.432608, -99.133209);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
+        Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios, "");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(mexico);
@@ -127,8 +127,8 @@ public class JuegoTest {
         edificios.add(aeropuerto);
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
+        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios, "");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
@@ -162,7 +162,7 @@ public class JuegoTest {
     public void test05PoliciaRecibeCuchilladasYDuerme() {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ArrayList<Ciudad> ciudadesFalsas = new ArrayList<Ciudad>();
@@ -189,8 +189,8 @@ public class JuegoTest {
         ArrayList<Edificio> edificios = new ArrayList<Edificio>();
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasMexico = new Coordenadas(23.634501, -102.552784);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios, "");
+        Ciudad mexico = new Ciudad("Mexico City", coordenadasMexico, "Green, White, and Red", "???", "???", "Mount Popocatepetl", "???", "Gila Monster", "Aztecs", "???", "Yucatecan Jewelry", "???", "???", "???", edificios,"");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(mexico);
@@ -259,8 +259,8 @@ public class JuegoTest {
         edificios.add(new Aeropuerto());
         Coordenadas coordenadasMontreal = new Coordenadas(45.508888, -73.561668);
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
-        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios,"");
+        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios,"");
         ArrayList<Ciudad> ciudades = new ArrayList<Ciudad>();
         ciudades.add(montreal);
         ciudades.add(athens);
@@ -313,7 +313,7 @@ public class JuegoTest {
         edificios.add(banco);
         edificios.add(aeropuerto);
         edificios.add(biblioteca);
-        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios);
+        Ciudad montreal = new Ciudad("Montreal", coordenadasMontreal, "Maple Leaf Flag", "???", "???", "Gaspe Peninsula", "???", "Moose", "???", "French", "???", "???", "???", "Former French Colony", edificios,"");
         recorridoLadron.add(montreal);
 
         Coordenadas coordenadasAthens = new Coordenadas(37.983810, 23.727539);
@@ -324,7 +324,7 @@ public class JuegoTest {
         edificios2.add(banco2);
         edificios2.add(aeropuerto2);
         edificios2.add(biblioteca2);
-        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios2);
+        Ciudad athens = new Ciudad("Athens", coordenadasAthens, "Blue and White", "Drachmas", "???", "Aegean Sea", "Figs, Olives", "???", "Plato", "Greek", "???", "???", "Prime Minister", "Hellenic Republic", edificios2,"");
         recorridoLadron.add(athens);
 
         Coordenadas coordenadasCairo = new Coordenadas(30.044420, 31.235712);
@@ -335,7 +335,7 @@ public class JuegoTest {
         edificios3.add(banco3);
         edificios3.add(aeropuerto3);
         edificios3.add(biblioteca3);
-        Ciudad cairo = new Ciudad("Cairo", coordenadasCairo,"???", "Pounds", "???", "Pharoahs Tomb", "Limestone", "???", "???", "Nubian", "???", "???", "???", "Ancient Alexandria", edificios3);
+        Ciudad cairo = new Ciudad("Cairo", coordenadasCairo,"???", "Pounds", "???", "Pharoahs Tomb", "Limestone", "???", "???", "Nubian", "???", "???", "???", "Ancient Alexandria", edificios3,"");
 
         Coordenadas coordenadasNewYork = new Coordenadas(43.156168, -75.844994);
         ArrayList<Edificio> edificios4 = new ArrayList<Edificio>();
@@ -345,7 +345,7 @@ public class JuegoTest {
         edificios4.add(banco4);
         edificios4.add(aeropuerto4);
         edificios4.add(biblioteca4);
-        Ciudad newYork = new Ciudad("New York", coordenadasNewYork, "Red, White, and Blue", "Dollars", "???", "Grant's Tomb", "Fashion", "???", "Henry Hudson", "???", "???", "???", "???", "Subways", edificios4);
+        Ciudad newYork = new Ciudad("New York", coordenadasNewYork, "Red, White, and Blue", "Dollars", "???", "Grant's Tomb", "Fashion", "???", "Henry Hudson", "???", "???", "???", "???", "Subways", edificios4,"");
 
         Coordenadas coordenadasParis = new Coordenadas(48.856613, 2.352222);
         ArrayList<Edificio> edificios5 = new ArrayList<Edificio>();
@@ -356,7 +356,7 @@ public class JuegoTest {
         edificios5.add(aeropuerto5);
         edificios5.add(biblioteca5);
 
-        Ciudad paris = new Ciudad("Paris", coordenadasParis, "Red, White, and Blue", "Francs", "???", "Sienne", "Fashion","???","???","???","???","???","???","???", edificios5);
+        Ciudad paris = new Ciudad("Paris", coordenadasParis, "Red, White, and Blue", "Francs", "???", "Sienne", "Fashion","???","???","???","???","???","???","???", edificios5,"");
 
         recorridoLadron.add(montreal);
         recorridoLadron.add(athens);

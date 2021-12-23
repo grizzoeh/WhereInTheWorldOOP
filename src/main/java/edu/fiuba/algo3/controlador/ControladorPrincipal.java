@@ -17,10 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -41,6 +38,8 @@ public class ControladorPrincipal {
     TextArea txtInfoCiudad;
     @FXML
     TextArea txtPosiblesSospechosos;
+    @FXML
+    TextField txtNombrePolicia;
     /* Labels */
     @FXML
     Label txtFechaYHora;
@@ -48,9 +47,13 @@ public class ControladorPrincipal {
     Label txtCiudadActual;
     /* Button */
     @FXML
+    Button btnIniciar;
+    @FXML
     Button btnViajar;
     @FXML
     Button btnEdificios;
+    @FXML
+    Button btnSalirEdificio;
     @FXML
     Button btnOrden;
     @FXML
@@ -107,10 +110,19 @@ public class ControladorPrincipal {
     }
 
     public void handleIniciar() throws Exception {
-        this.juego = new Juego("", true);
+        this.juego = new Juego(this.txtNombrePolicia.getText(), true);
         this.juego.establecerInterfazGrafica(this);
         this.juego.iniciarNuevaMision();
         this.cerrarVBox(vboxInicio);
+    }
+
+    public void handleIntroduccionNombre() {
+        if (this.txtNombrePolicia.getText().equals("")) {
+            this.btnIniciar.setDisable(true);
+        }
+        else {
+            this.btnIniciar.setDisable(false);
+        }
     }
 
     public void handleViajar() throws Exception{
@@ -156,8 +168,24 @@ public class ControladorPrincipal {
         Edificio edificioDestino = (Edificio) cmbEdificios.getValue();
         if (edificioDestino != null) {
             juego.policiaEntrarA(edificioDestino);
+            this.btnEdificios.setVisible(false);
+            this.btnViajar.setVisible(false);
+            this.btnOrden.setVisible(false);
+            this.btnSalirEdificio.setVisible(true);
             this.cerrarVBox(this.vboxEdificios);
         }
+    }
+
+    public void handleMenuPrincipal() {
+
+    }
+
+    public void handleSalirEdificio() {
+        this.btnEdificios.setVisible(true);
+        this.btnViajar.setVisible(true);
+        this.btnOrden.setVisible(true);
+        this.btnSalirEdificio.setVisible(false);
+        this.txtPistas.setText("");
     }
 
     public void handleCancelarEdificios() throws Exception{
@@ -251,12 +279,13 @@ public class ControladorPrincipal {
     }
 
     public void recibirPunialada() {
-        this.deshabilitarBotonesPrincipales();
         this.vboxPunialada.setVisible(true);
+        this.btnSalirEdificio.setDisable(true);
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
+                            this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxPunialada);
                         }
                 )
@@ -266,11 +295,12 @@ public class ControladorPrincipal {
 
     public void recibirDisparo() {
         this.vboxDisparo.setVisible(true);
-        this.deshabilitarBotonesPrincipales();
+        this.btnSalirEdificio.setDisable(true);
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
+                            this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxDisparo);
                         }
                 )
@@ -300,7 +330,7 @@ public class ControladorPrincipal {
 
     public void ladronEscapa() {
         this.vboxLadronEscapa.setVisible(true);
-        this.deshabilitarBotonesPrincipales();
+        this.btnSalirEdificio.setDisable(true);
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
@@ -308,8 +338,13 @@ public class ControladorPrincipal {
                             this.mostrarPista("");
                             this.mostrarInfo("");
                             this.txtPosiblesSospechosos.setText("");
-                            juego.iniciarNuevaMision();
                             this.cerrarVBox(this.vboxLadronEscapa);
+                            this.btnSalirEdificio.setDisable(false);
+                            this.btnSalirEdificio.setVisible(false);
+                            this.btnEdificios.setVisible(true);
+                            this.btnViajar.setVisible(true);
+                            this.btnOrden.setVisible(true);
+                            juego.iniciarNuevaMision();
                         }
                 )
         );
@@ -318,6 +353,7 @@ public class ControladorPrincipal {
 
     public void ladronAtrapado() {
         this.vboxLadronAtrapado.setVisible(true);
+        this.btnSalirEdificio.setDisable(true);
         this.deshabilitarBotonesPrincipales();
         Timeline timeline = new Timeline(
                 new KeyFrame(
@@ -326,8 +362,13 @@ public class ControladorPrincipal {
                             this.mostrarPista("");
                             this.mostrarInfo("");
                             this.txtPosiblesSospechosos.setText("");
-                            juego.iniciarNuevaMision();
+                            this.btnSalirEdificio.setDisable(false);
+                            this.btnSalirEdificio.setVisible(false);
+                            this.btnEdificios.setVisible(true);
+                            this.btnViajar.setVisible(true);
+                            this.btnOrden.setVisible(true);
                             this.cerrarVBox(this.vboxLadronAtrapado);
+                            juego.iniciarNuevaMision();
                         }
                 )
         );

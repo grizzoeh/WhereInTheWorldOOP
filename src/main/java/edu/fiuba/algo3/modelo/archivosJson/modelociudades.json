@@ -14,7 +14,8 @@
       "Arte": "???",
       "Religion": "???",
       "Líder": "Primer Ministro",
-      "Extra": "República Helénica, Vecinos Yugoslavia"
+      "Extra": "República Helénica, Vecinos Yugoslavia",
+      "Descripcion": "Atenas"
     }
   ],
   "Bagdad": [
@@ -32,7 +33,8 @@
       "Arte": "???",
       "Religion": "???",
       "Líder": "Primer Ministro",
-      "Extra": "República Helénica, Vecinos Yugoslavia"
+      "Extra": "República Helénica, Vecinos Yugoslavia",
+      "Descripcion": "Descripcion Bagdad"
     }
   ],
 
@@ -51,7 +53,8 @@
       "Arte": "???",
       "Religion": "???",
       "Líder": "Presidente",
-      "Extra": "Timbuktu"
+      "Extra": "Timbuktu",
+      "Descripcion": "Descripcion Bamako"
     }
   ],
 
@@ -70,7 +73,8 @@
       "Arte": "???",
       "Religion": "Budismo",
       "Líder": "???",
-      "Extra": "Ciudad Vieja"
+      "Extra": "Ciudad Vieja",
+      "Descripcion": "Descripcion Bangkok"
     }
   ],
 
@@ -89,7 +93,8 @@
       "Arte": "Arte Aymara",
       "Religion": "???",
       "Líder": "???",
-      "Extra": "???"
+      "Extra": "???",
+      "Descripcion": "Descripcion Lima"
     }
   ]
 }
