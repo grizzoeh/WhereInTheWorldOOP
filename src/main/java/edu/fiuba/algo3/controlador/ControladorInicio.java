@@ -25,7 +25,7 @@ public class ControladorInicio{
     }
 
     public void handleJugar() throws Exception{
-        Vista vistaRegistro = new Vista("/escenas/vistaRegistro.fxml");
+        Vista vistaRegistro = new Vista("/escenas/vistaPrincipal.fxml");
         var scene = new Scene(vistaRegistro.escena());
         this.stage = (Stage) btnJugar.getScene().getWindow();
         this.stage.setScene(scene);

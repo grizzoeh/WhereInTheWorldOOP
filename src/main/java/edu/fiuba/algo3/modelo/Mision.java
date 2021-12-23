@@ -1,6 +1,7 @@
 package edu.fiuba.algo3.modelo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Mision {
@@ -49,9 +50,9 @@ public class Mision {
         }
 
         ciudades.add(this.recorridoLadron.get(this.index + 1));
-        for( int i = 0; i < 3; i++){
+        for(int i = 0; ciudades.size() < 3; i++){
 
-            int randomNum = ThreadLocalRandom.current().nextInt(0, this.ciudadesFalsas.size()-1);
+            int randomNum = ThreadLocalRandom.current().nextInt(0, this.ciudadesFalsas.size());
             Ciudad ciudad = this.ciudadesFalsas.get(randomNum);
             if (ciudades.contains(ciudad)){
                 continue;
@@ -59,7 +60,7 @@ public class Mision {
 
             ciudades.add(ciudad);
         }
-
+        Collections.shuffle(ciudades);
         return ciudades;
     }
 
