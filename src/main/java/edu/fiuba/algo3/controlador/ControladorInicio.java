@@ -38,7 +38,7 @@ public class ControladorInicio{
     }
 
     public void handleJugar() throws Exception{
-        this.reproducir_sonido("src/main/resources/Sonidos/Cick.aiff");
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Vista vistaRegistro = new Vista("/escenas/vistaPrincipal.fxml");
         var scene = new Scene(vistaRegistro.escena());
         this.stage = (Stage) btnJugar.getScene().getWindow();
@@ -46,7 +46,7 @@ public class ControladorInicio{
     }
 
     public void handleTutorial() throws Exception{
-        this.reproducir_sonido("src/main/resources/Sonidos/Cick.aiff");
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Vista vistaTutorial = new Vista("/escenas/vistaTutorial.fxml");
         var scene = new Scene(vistaTutorial.escena());
         this.stage = (Stage) btnTutorial.getScene().getWindow();
@@ -54,7 +54,7 @@ public class ControladorInicio{
     }
 
     public void handleAcercaDe() throws Exception{
-        this.reproducir_sonido("src/main/resources/Sonidos/Cick.aiff");
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Vista vistaAcercaDe = new Vista("/escenas/vistaAcercaDe.fxml");
         var scene = new Scene(vistaAcercaDe.escena());
         this.stage = (Stage) btnAcercaDe.getScene().getWindow();
