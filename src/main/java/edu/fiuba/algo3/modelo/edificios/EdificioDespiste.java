@@ -1,6 +1,9 @@
 package edu.fiuba.algo3.modelo.edificios;
 
+import java.io.FileNotFoundException;
+
 import edu.fiuba.algo3.modelo.Ciudad;
+import javafx.scene.image.Image;
 
 public class EdificioDespiste implements Edificio {
     private int ingresos;
@@ -39,5 +42,11 @@ public class EdificioDespiste implements Edificio {
     @Override
     public String toString(){
         return this.nombreEdificio;
+    }
+
+    @Override
+    public Image calcularImg() throws FileNotFoundException {
+
+        return null;
     }
 }

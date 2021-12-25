@@ -1,6 +1,9 @@
 package edu.fiuba.algo3.modelo.edificios;
 
+import java.io.FileNotFoundException;
+
 import edu.fiuba.algo3.modelo.Ciudad;
+import javafx.scene.image.Image;
 
 public class Aeropuerto implements Edificio {
     private int ingresos;
@@ -36,6 +39,13 @@ public class Aeropuerto implements Edificio {
     public String toString(){
 
         return this.nombre;
+    }
+
+    @Override
+    public Image calcularImg() throws FileNotFoundException {
+
+        Image image = new Image(getClass().getResourceAsStream("/escenas/img/aeropuerto.PNG"));
+        return image;
     }
 
 }

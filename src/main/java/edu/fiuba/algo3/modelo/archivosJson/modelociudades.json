@@ -15,7 +15,8 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
-      "Descripcion": "Atenas es la capital de Grecia y actualmente la ciudad más grande, importante y poblada del país."
+      "Descripcion": "Atenas es la capital de Grecia y actualmente la ciudad más grande, importante y poblada del país.",
+      "RutaVista": "/escenas/img/ciudad1.PNG"
     }
   ],
   "Baghdad": [
@@ -34,7 +35,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Mesopotamia",
-      "Descripcion": "Bagdad es la capital y la ciudad más poblada de Irak. Su número de habitantes es de 8 765 000 (est. 2016), lo que la convierte en la mayor ciudad del país y en la tercera del mundo árabe, solo por detrás de El Cairo y Riad."
+      "Descripcion": "Bagdad es la capital y la ciudad más poblada de Irak. Su número de habitantes es de 8 765 000 (est. 2016), lo que la convierte en la mayor ciudad del país y en la tercera del mundo árabe, solo por detrás de El Cairo y Riad.",
+      "RutaVista": "/escenas/img/ciudad6.PNG"
     }
   ],
 
@@ -54,7 +56,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "Timbuktu",
-      "Descripcion": "Bamako o Bámako es la capital de Malí, se encuentra a orillas del río Níger en el sudoeste del país. Principal centro administrativo, importante puerto fluvial y un centro comercial para toda la región circundante, tiene la categoría de distrito a nivel nacional y está a su vez dividida en seis comunas dirigidas por sus respectivos alcaldes electos."
+      "Descripcion": "Bamako o Bámako es la capital de Malí, se encuentra a orillas del río Níger en el sudoeste del país. Principal centro administrativo, importante puerto fluvial y un centro comercial para toda la región circundante, tiene la categoría de distrito a nivel nacional y está a su vez dividida en seis comunas dirigidas por sus respectivos alcaldes electos.",
+      "RutaVista": "/escenas/img/ciudad7.PNG"
     }
   ],
 
@@ -74,7 +77,8 @@
       "Religion": "Budismo",
       "Líder": "???",
       "Extra": "Ciudad Vieja",
-      "Descripcion": "Bangkok es la capital y ciudad principal de Tailandia Aunque el nombre oficial de la capital no es Bangkok, es comúnmente empleado internacionalmente para referirse a la ciudad."
+      "Descripcion": "Bangkok es la capital y ciudad principal de Tailandia Aunque el nombre oficial de la capital no es Bangkok, es comúnmente empleado internacionalmente para referirse a la ciudad.",
+      "RutaVista": "/escenas/img/ciudad15.jpg"
     }
   ],
 
@@ -94,7 +98,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Lima es la capital y una megalópolis de la República del Perú.Se encuentra situada en la costa central del país, a orillas del océano Pacífico"
+      "Descripcion": "Lima es la capital y una megalópolis de la República del Perú.Se encuentra situada en la costa central del país, a orillas del océano Pacífico",
+      "RutaVista": "/escenas/img/ciudad3.PNG"
     }
   ],
 
@@ -114,7 +119,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Limita con Austria",
-      "Descripcion": "Budapest es la capital y ciudad más poblada de Hungría así como su principal centro industrial, comercial y de transportes."
+      "Descripcion": "Budapest es la capital y ciudad más poblada de Hungría así como su principal centro industrial, comercial y de transportes.",
+      "RutaVista": "/escenas/img/ciudad2.PNG"
     }
   ],
 
@@ -134,7 +140,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "Ex Colonia Española",
-      "Descripcion": "Buenos Aires es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país."
+      "Descripcion": "Buenos Aires es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país.",
+      "RutaVista": "/escenas/img/ciudad12.jpg"
     }
   ],
 
@@ -154,7 +161,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Antigua Alejandría",
-      "Descripcion": "El Cairo es la capital de Egipto y de su gobernación (muhafazah o provincia). Es la mayor ciudad del mundo árabe, de Oriente Próximo y de África"
+      "Descripcion": "El Cairo es la capital de Egipto y de su gobernación (muhafazah o provincia). Es la mayor ciudad del mundo árabe, de Oriente Próximo y de África",
+      "RutaVista": "/escenas/img/ciudad8.PNG"
     }
   ],
 
@@ -174,7 +182,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Antiguo Taprobano",
-      "Descripcion": "Colombo es la ciudad más poblada de Sri Lanka y su capital comercial. Está situada en la costa occidental de la isla en proximidades de Sri Jayawardenepura Kotte, la capital administrativa de Sri Lanka"
+      "Descripcion": "Colombo es la ciudad más poblada de Sri Lanka y su capital comercial. Está situada en la costa occidental de la isla en proximidades de Sri Jayawardenepura Kotte, la capital administrativa de Sri Lanka",
+      "RutaVista": "/escenas/img/ciudad13.PNG"
     }
   ],
 
@@ -194,7 +203,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "Impario Bizantino, Constantinopla",
-      "Descripcion": "Estambul, antiguamente conocida como Bizancio y Constantinopla, es la ciudad más poblada de Turquía y el centro histórico, cultural y económico del país"
+      "Descripcion": "Estambul, antiguamente conocida como Bizancio y Constantinopla, es la ciudad más poblada de Turquía y el centro histórico, cultural y económico del país",
+      "RutaVista": "/escenas/img/ciudad10.PNG"
     }
   ],
 
@@ -214,7 +224,8 @@
       "Religion":    "Hindu",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Katmandú es la capital y mayor ciudad de Nepal. Tiene una población de 1 003 285 habitantes, según censo de 2013. Situada en el valle del mismo nombre en Nepal central"
+      "Descripcion": "Katmandú es la capital y mayor ciudad de Nepal. Tiene una población de 1 003 285 habitantes, según censo de 2013. Situada en el valle del mismo nombre en Nepal central",
+      "RutaVista": "/escenas/img/ciudad14.jpg"
     }
   ],
 
@@ -234,7 +245,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Kigali es la capital de Ruanda, también su ciudad más poblada. Se encuentra situada en el centro geográfico del país, perteneciente a la provincia homónima."
+      "Descripcion": "Kigali es la capital de Ruanda, también su ciudad más poblada. Se encuentra situada en el centro geográfico del país, perteneciente a la provincia homónima.",
+      "RutaVista": "/escenas/img/ciudad8.PNG"
     }
   ],
 
@@ -254,7 +266,8 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "???",
-      "Descripcion": "Londres es la capital y mayor ciudad de Inglaterra y del Reino Unido. Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos"
+      "Descripcion": "Londres es la capital y mayor ciudad de Inglaterra y del Reino Unido. Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos",
+      "RutaVista": "/escenas/img/ciudad11.PNG"
     }
   ],
   "Ciudad de Mexico" : [
@@ -273,7 +286,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "La Ciudad de México (CDMX), anteriormente denominada el Distrito Federal (D. F.),es la capital de México Es una de las entidades federativas que, junto a treinta y un estados, conforman ese país."
+      "Descripcion": "La Ciudad de México (CDMX), anteriormente denominada el Distrito Federal (D. F.),es la capital de México Es una de las entidades federativas que, junto a treinta y un estados, conforman ese país.",
+      "RutaVista": "/escenas/img/ciudad9.PNG"
     }
   ],
   "Montreal" : [
@@ -292,7 +306,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Ex Colonia Francesa",
-      "Descripcion": "Montreal es la mayor ciudad de la provincia de Quebec, en Canadá y la segunda más poblada del país"
+      "Descripcion": "Montreal es la mayor ciudad de la provincia de Quebec, en Canadá y la segunda más poblada del país",
+      "RutaVista": "/escenas/img/ciudad5.PNG"
     }
   ],
   "Moroni" : [
@@ -311,7 +326,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Moroni es la ciudad más grande de Comoras y desde 1962 su capital. En 2003 se estimaban unos 60.200 habitantes. La ciudad está localizada en la costa oeste de la isla de Gran Comora. "
+      "Descripcion": "Moroni es la ciudad más grande de Comoras y desde 1962 su capital. En 2003 se estimaban unos 60.200 habitantes. La ciudad está localizada en la costa oeste de la isla de Gran Comora. ",
+      "RutaVista": "/escenas/img/ciudad7.PNG"
     }
   ],
   "Moscu" : [
@@ -330,7 +346,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Moldavia, El pais mas grande del mundo",
-      "Descripcion": "Moscú es la capital y la entidad federal más poblada de Rusia. La ciudad es un importante centro político, económico, cultural y científico de Rusia"
+      "Descripcion": "Moscú es la capital y la entidad federal más poblada de Rusia. La ciudad es un importante centro político, económico, cultural y científico de Rusia",
+      "RutaVista": "/escenas/img/ciudad17.PNG"
     }
   ],
   "Nueva Delhi" : [
@@ -349,7 +366,8 @@
       "Religion" : "Sikh",
       "Líder": "Primer Ministro",
       "Extra": "???",
-      "Descripcion": "Nueva Delhi es la capital de la República de la India y sede del poder ejecutivo, legislativo y judicial de su Gobierno. Está situada en la metrópolis de Delhi y es uno de sus nueve distritos."
+      "Descripcion": "Nueva Delhi es la capital de la República de la India y sede del poder ejecutivo, legislativo y judicial de su Gobierno. Está situada en la metrópolis de Delhi y es uno de sus nueve distritos.",
+      "RutaVista": "/escenas/img/ciudad8.PNG"
     }
   ],
   "Nueva York" : [
@@ -368,7 +386,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Subtes",
-      "Descripcion": "Nueva York es la ciudad más poblada de los Estados Unidos y una de las más pobladas del mundo. Desde finales del siglo XIX es uno de los centros de la economía mundial"
+      "Descripcion": "Nueva York es la ciudad más poblada de los Estados Unidos y una de las más pobladas del mundo. Desde finales del siglo XIX es uno de los centros de la economía mundial",
+      "RutaVista": "/escenas/img/ciudad9.PNG"
     }
   ],
   "Oslo" : [
@@ -387,7 +406,8 @@
       "Religion": "???",
       "Líder": "Rey",
       "Extra": "Ski Nordico",
-      "Descripcion": "Oslo, llamada Christiania de 1624 a 1897 y Kristiania de 1897 a 1925 (Cristianía en español), es la capital y la ciudad más poblada de Noruega, además de ser su centro político, económico y cultural."
+      "Descripcion": "Oslo, llamada Christiania de 1624 a 1897 y Kristiania de 1897 a 1925 (Cristianía en español), es la capital y la ciudad más poblada de Noruega, además de ser su centro político, económico y cultural.",
+      "RutaVista": "/escenas/img/ciudad17.PNG"
     }
   ],
   "Paris" : [
@@ -406,7 +426,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "París es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o Región Parisina), constituye el único departamento unicomunal del país."
+      "Descripcion": "París es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o Región Parisina), constituye el único departamento unicomunal del país.",
+      "RutaVista": "/escenas/img/ciudad4.jpg"
     }
   ],
   "Pekin" : [
@@ -425,7 +446,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Dinastia Shang, Levantamiento de Wuchang",
-      "Descripcion": "Pekin es uno de los cuatro municipios que, junto con las veintidós provincias, cinco regiones autónomas y dos regiones administrativas especiales, conforman la República Popular China"
+      "Descripcion": "Pekin es uno de los cuatro municipios que, junto con las veintidós provincias, cinco regiones autónomas y dos regiones administrativas especiales, conforman la República Popular China",
+      "RutaVista": "/escenas/img/ciudad15.PNG"
     }
   ],
   "Puerto Moresby" : [
@@ -444,7 +466,8 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "Nueva Irlanda",
-      "Descripcion": "Puerto Moresby es la capital de Papúa Nueva Guinea, y su mayor aglomeración de población contando su área metropolitana que se extiende por todo el Distrito Capital Nacional. La ciudad está situada en las costas del golfo de Papúa, en la costa sureste de la isla de Nueva Guinea."
+      "Descripcion": "Puerto Moresby es la capital de Papúa Nueva Guinea, y su mayor aglomeración de población contando su área metropolitana que se extiende por todo el Distrito Capital Nacional. La ciudad está situada en las costas del golfo de Papúa, en la costa sureste de la isla de Nueva Guinea.",
+      "RutaVista": "/escenas/img/ciudad3.PNG"
     }
   ],
   "Reikiavik" : [
@@ -463,7 +486,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Nacion Isla",
-      "Descripcion": "Reikiavik es la capital y ciudad más poblada de Islandia. Situada al sur de la bahía Faxaflói, en una zona donde abundan los géiseres"
+      "Descripcion": "Reikiavik es la capital y ciudad más poblada de Islandia. Situada al sur de la bahía Faxaflói, en una zona donde abundan los géiseres",
+      "RutaVista": "/escenas/img/ciudad13.PNG"
     }
   ],
   "Rio de Janeiro" : [
@@ -482,7 +506,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "???",
-      "Descripcion": "Río de Janeiro, fundada como São Sebastião do Rio de Janeiro, es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país. Es la segunda ciudad más poblada de Brasil después de São Paulo."
+      "Descripcion": "Río de Janeiro, fundada como São Sebastião do Rio de Janeiro, es una ciudad, municipio brasileño y capital del estado homónimo, ubicada en el sureste del país. Es la segunda ciudad más poblada de Brasil después de São Paulo.",
+      "RutaVista": "/escenas/img/ciudad18.PNG"
     }
   ],
   "Roma" : [
@@ -501,7 +526,8 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "???",
-      "Descripcion": "Roma es una ciudad italiana de 2 815 951 habitantes, capital de la región del Lacio y de Italia. Es el municipio más poblado de Italia y la tercera ciudad más poblada de la Unión Europea Por antonomasia, se la conoce desde la Antigüedad como la Urbe (Urbs). Tambien es llamada La Ciudad Eterna"
+      "Descripcion": "Roma es una ciudad italiana de 2 815 951 habitantes, capital de la región del Lacio y de Italia. Es el municipio más poblado de Italia y la tercera ciudad más poblada de la Unión Europea Por antonomasia, se la conoce desde la Antigüedad como la Urbe (Urbs). Tambien es llamada La Ciudad Eterna",
+      "RutaVista": "/escenas/img/ciudad19.PNG"
     }
   ],
   "San Marino" : [
@@ -520,7 +546,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Estado mas viejo de Europa, Vecino de Italia",
-      "Descripcion": "San Marino, oficialmente la Serenísima República de San Marino (en italiano: Serenissima Repubblica di San Marino),es una república parlamentaria y el Estado soberano más antiguo del mundo"
+      "Descripcion": "San Marino, oficialmente la Serenísima República de San Marino (en italiano: Serenissima Repubblica di San Marino),es una república parlamentaria y el Estado soberano más antiguo del mundo",
+      "RutaVista": "/escenas/img/ciudad14.jpg"
     }
   ],
   "Singapur" : [
@@ -539,7 +566,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Ex Colonia Britanica",
-      "Descripcion": "Singapur, oficialmente República de Singapur, es un país soberano insular de Asia, formado por sesenta y tres islas, cuya forma de gobierno es la república parlamentaria."
+      "Descripcion": "Singapur, oficialmente República de Singapur, es un país soberano insular de Asia, formado por sesenta y tres islas, cuya forma de gobierno es la república parlamentaria.",
+      "RutaVista": "/escenas/img/ciudad15.PNG"
     }
   ],
   "Sidney" : [
@@ -558,7 +586,8 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Sídney es la ciudad más grande y poblada de Australia y Oceanía, con una población en su área metropolitana cercana a los 4,92 millones, según una estimación de 2015. Es la capital del estado de Nueva Gales del Sur y fue el asentamiento de la primera colonia británica en Australia. Fue fundada en 1788 en la cala de Sídney por Arthur Phillip, almirante de la Primera Flota de Gran Bretaña,"
+      "Descripcion": "Sídney es la ciudad más grande y poblada de Australia y Oceanía, con una población en su área metropolitana cercana a los 4,92 millones, según una estimación de 2015. Es la capital del estado de Nueva Gales del Sur y fue el asentamiento de la primera colonia británica en Australia. Fue fundada en 1788 en la cala de Sídney por Arthur Phillip, almirante de la Primera Flota de Gran Bretaña.",
+      "RutaVista": "/escenas/img/ciudad1.PNG"
     }
   ],
   "Tokyo" : [
@@ -577,8 +606,8 @@
       "Religion" : "Shinto",
       "Líder": "???",
       "Extra": "???",
-      "Descripcion": "Tokyo, oficialmente Metrópolis de Tokio, es la capital de facto de Japón, ubicada en el centro este de la isla de Honshu, concretamente en la región de Kantō. En conjunto es una de las 47 prefecturas de Japón."
-
+      "Descripcion": "Tokyo, oficialmente Metrópolis de Tokio, es la capital de facto de Japón, ubicada en el centro este de la isla de Honshu, concretamente en la región de Kantō. En conjunto es una de las 47 prefecturas de Japón.",
+      "RutaVista": "/escenas/img/ciudad20.jpg"
     }
   ]
 }

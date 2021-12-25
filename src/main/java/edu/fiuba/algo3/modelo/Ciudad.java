@@ -1,8 +1,11 @@
 package edu.fiuba.algo3.modelo;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import edu.fiuba.algo3.modelo.edificios.Edificio;
+import javafx.scene.image.Image;
 
 public class Ciudad {
     private String nombre;
@@ -21,9 +24,10 @@ public class Ciudad {
     private String lider;
     private String extra;
     private String descripcion;
+    private String ruta;
 
 
-    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios, String descripcion){
+    public Ciudad(String nombre, Coordenadas coordenadas, String bandera, String moneda, String geografia, String landmarks, String industrias, String animales, String gente, String lenguaje, String arte, String religion, String lider, String extra, ArrayList<Edificio> edificios, String descripcion, String ruta){
         this.nombre = nombre;
         this.bandera = bandera;
         this.moneda = moneda;
@@ -40,6 +44,7 @@ public class Ciudad {
         this.edificios = edificios;
         this.coordenadas = coordenadas;
         this.descripcion = descripcion;
+        this.ruta = ruta;
     }
 
     public String obtenerNombre(){ return this.nombre; }
@@ -84,6 +89,12 @@ public class Ciudad {
     @Override
     public String toString(){
         return this.obtenerNombre();
+    }
+
+    public Image calcularImg() throws FileNotFoundException {
+
+        Image image = new Image(getClass().getResourceAsStream(this.ruta));
+        return image;
     }
 
 }
