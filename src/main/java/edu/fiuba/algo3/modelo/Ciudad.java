@@ -92,8 +92,8 @@ public class Ciudad {
     }
 
     public Image calcularImg() throws FileNotFoundException {
-        FileInputStream input = new FileInputStream(src/main/);
-        Image image = new Image(input);
+
+        Image image = new Image(getClass().getResourceAsStream(this.ruta));
         return image;
     }
 

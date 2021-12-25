@@ -80,7 +80,8 @@ public class Juego {
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
     }
 
-    public String policiaEntrarA(Edificio unEdificio) {
+    public String policiaEntrarA(Edificio unEdificio) throws FileNotFoundException {
+        this.ubicacionActual = unEdificio;
         if (mision.finalDelRecorrido(this.ciudadActual)) {
             this.ordenDeArresto.atraparLadron(this, this.mision);
             return "";
@@ -88,6 +89,7 @@ public class Juego {
         if (this.activarAtaques) {
             randomizarAtaques();
         }
+
         String pista = this.policia.policiaEntrarEnEdificioConMision(unEdificio, this.mision);
         int horas = unEdificio.calcularTiempo();
         this.reloj.pasarHoras(horas);
@@ -97,6 +99,8 @@ public class Juego {
         }
         this.controladorInterfazGrafica.mostrarPista(pista);
         this.controladorInterfazGrafica.actualizarFechaYHora(this.reloj.obtenerFechaYHora());
+        Image input = this.ubicacionActual.calcularImg();
+        this.controladorInterfazGrafica.actualizarImgContexto(input);
 
         return pista;
     }

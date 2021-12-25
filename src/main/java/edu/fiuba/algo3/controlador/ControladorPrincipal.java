@@ -393,6 +393,6 @@ public class ControladorPrincipal {
     }
 
     public void actualizarImgContexto(Image image){
-    this.imgContexto.setImage(image);
+    if (image != null) this.imgContexto.setImage(image);
 }
 }

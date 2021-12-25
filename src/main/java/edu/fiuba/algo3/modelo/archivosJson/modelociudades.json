@@ -16,7 +16,7 @@
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
       "Descripcion": "Atenas",
-      "RutaVista": "src/main/resources/escenas/img/ciudad1.PNG"
+      "RutaVista": "/escenas/img/ciudad1.PNG"
     }
   ],
   "Bagdad": [
@@ -36,7 +36,7 @@
       "Líder": "Primer Ministro",
       "Extra": "República Helénica, Vecinos Yugoslavia",
       "Descripcion": "Descripcion Bagdad",
-      "RutaVista": "src/main/resources/escenas/img/ciudad6.PNG"
+      "RutaVista": "/escenas/img/ciudad6.PNG"
     }
   ],
 
@@ -57,7 +57,7 @@
       "Líder": "Presidente",
       "Extra": "Timbuktu",
       "Descripcion": "Descripcion Bamako",
-      "RutaVista": "src/main/resources/escenas/img/ciudad7.PNG"
+      "RutaVista": "/escenas/img/ciudad7.PNG"
     }
   ],
 
@@ -78,7 +78,7 @@
       "Líder": "???",
       "Extra": "Ciudad Vieja",
       "Descripcion": "Descripcion Bangkok",
-      "RutaVista": "src/main/resources/escenas/img/ciudad15.jpg"
+      "RutaVista": "/escenas/img/ciudad15.jpg"
     }
   ],
 
@@ -99,7 +99,7 @@
       "Líder": "???",
       "Extra": "???",
       "Descripcion": "Descripcion Lima",
-      "RutaVista": "src/main/resources/escenas/img/ciudad3.PNG"
+      "RutaVista": "/escenas/img/ciudad3.PNG"
     }
   ],
 
@@ -119,7 +119,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Neighbors Austria",
-      "RutaVista": "src/main/resources/escenas/img/ciudad2.PNG"
+      "RutaVista": "/escenas/img/ciudad2.PNG"
     }
   ],
 
@@ -139,7 +139,7 @@
       "Religion": "???",
       "Líder": "President",
       "Extra": "Former Spanish Colony",
-      "RutaVista": "src/main/resources/escenas/img/ciudad12.jpg"
+      "RutaVista": "/escenas/img/ciudad12.jpg"
   }
   ],
 
@@ -159,7 +159,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Ancient Alexandria",
-      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+      "RutaVista": "/escenas/img/ciudad8.PNG"
 }
   ],
 
@@ -179,7 +179,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Ancient Taprobane",
-      "RutaVista": "src/main/resources/escenas/img/ciudad13.PNG"
+      "RutaVista": "/escenas/img/ciudad13.PNG"
   }
   ],
 
@@ -199,7 +199,7 @@
       "Religion": "???",
       "Líder": "President",
       "Extra": "Byzantine Empire, Constantinople",
-      "RutaVista": "src/main/resources/escenas/img/ciudad10.PNG"
+      "RutaVista": "/escenas/img/ciudad10.PNG"
 }
   ],
 
@@ -219,7 +219,7 @@
       "Religion":    "Hindu",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad14.jpg"
+      "RutaVista": "/escenas/img/ciudad14.jpg"
       }
   ],
 
@@ -239,7 +239,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+      "RutaVista": "/escenas/img/ciudad8.PNG"
   }
 ],
 
@@ -259,7 +259,7 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad11.PNG"
+      "RutaVista": "/escenas/img/ciudad11.PNG"
 }
   ],
 "Mexico City" : [
@@ -278,7 +278,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad9.PNG"
+      "RutaVista": "/escenas/img/ciudad9.PNG"
 }
   ],
 "Montreal" : [
@@ -297,7 +297,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Former French Colony",
-      "RutaVista": "src/main/resources/escenas/img/ciudad5.PNG"
+      "RutaVista": "/escenas/img/ciudad5.PNG"
 }
   ],
 "Moroni" : [
@@ -316,7 +316,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad7.PNG"
+      "RutaVista": "/escenas/img/ciudad7.PNG"
 }
   ],
 "Moscow" : [
@@ -335,7 +335,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Moldavia, Largest Country in the World",
-      "RutaVista": "src/main/resources/escenas/img/ciudad17.PNG"
+      "RutaVista": "/escenas/img/ciudad17.PNG"
 }
   ],
 "New Delhi" : [
@@ -354,7 +354,7 @@
       "Religion" : "Sikh",
       "Líder": "Primer Ministro",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad8.PNG"
+      "RutaVista": "/escenas/img/ciudad8.PNG"
 }
 
   ],
@@ -374,7 +374,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Subways",
-      "RutaVista": "src/main/resources/escenas/img/ciudad9.PNG"
+      "RutaVista": "/escenas/img/ciudad9.PNG"
 }
 
   ],
@@ -394,7 +394,7 @@
       "Religion": "???",
       "Líder": "King",
       "Extra": "Nordic Skiing",
-      "RutaVista": "src/main/resources/escenas/img/ciudad17.PNG"
+      "RutaVista": "/escenas/img/ciudad17.PNG"
 }
   ],
 "Paris" : [
@@ -413,7 +413,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad4.jpg"
+      "RutaVista": "/escenas/img/ciudad4.jpg"
 }
   ],
 "Peking" : [
@@ -432,7 +432,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Shang Dynasty, Wuchang Uprising",
-      "RutaVista": "src/main/resources/escenas/img/ciudad15.PNG"
+      "RutaVista": "/escenas/img/ciudad15.PNG"
 }
   ],
 "Port Moresby" : [
@@ -451,7 +451,7 @@
       "Religion": "???",
       "Líder": "Primer Ministro",
       "Extra": "New Ireland",
-      "RutaVista": "src/main/resources/escenas/img/ciudad3.PNG"
+      "RutaVista": "/escenas/img/ciudad3.PNG"
 }
   ],
 "Reykjavik" : [
@@ -470,7 +470,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Isly Nation",
-      "RutaVista": "src/main/resources/escenas/img/ciudad13.PNG"
+      "RutaVista": "/escenas/img/ciudad13.PNG"
 }
   ],
 "Rio de Janeiro" : [
@@ -489,7 +489,7 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad18.PNG"
+      "RutaVista": "/escenas/img/ciudad18.PNG"
 }
   ],
 "Rome" : [
@@ -508,7 +508,7 @@
       "Religion": "???",
       "Líder": "Presidente",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad19.PNG"
+      "RutaVista": "/escenas/img/ciudad19.PNG"
 }
   ],
 "San Marino" : [
@@ -527,7 +527,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Serene Republic, Oldest State in Europe, Neighbors Italy",
-      "RutaVista": "src/main/resources/escenas/img/ciudad14.jpg"
+      "RutaVista": "/escenas/img/ciudad14.jpg"
 
 }
   ],
@@ -547,7 +547,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "Former British Colony",
-      "RutaVista": "src/main/resources/escenas/img/ciudad15.PNG"
+      "RutaVista": "/escenas/img/ciudad15.PNG"
 }
   ],
 "Sydney" : [
@@ -566,7 +566,7 @@
       "Religion": "???",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad1.PNG"
+      "RutaVista": "/escenas/img/ciudad1.PNG"
 }
   ],
 "Tokyo" : [
@@ -585,7 +585,7 @@
       "Religion" : "Shinto",
       "Líder": "???",
       "Extra": "???",
-      "RutaVista": "src/main/resources/escenas/img/ciudad20.jpg"
+      "RutaVista": "/escenas/img/ciudad20.jpg"
     
 }
 ]
