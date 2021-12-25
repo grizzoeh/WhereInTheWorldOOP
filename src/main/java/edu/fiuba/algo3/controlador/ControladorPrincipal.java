@@ -118,10 +118,12 @@ public class ControladorPrincipal {
     }
 
     public void handleIniciar() throws Exception {
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.juego = new Juego(this.txtNombrePolicia.getText(), true);
         this.juego.establecerInterfazGrafica(this);
         this.juego.iniciarNuevaMision();
         this.cerrarVBox(vboxInicio);
+
     }
 
     public void handleIntroduccionNombre() {
@@ -134,6 +136,7 @@ public class ControladorPrincipal {
     }
 
     public void handleViajar() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.vboxViajar.setVisible(true);
         this.deshabilitarBotonesPrincipales();
         ArrayList<Ciudad> ciudades = this.juego.viajesDisponibles();
@@ -145,6 +148,7 @@ public class ControladorPrincipal {
     }
 
     public void handleConfirmarViajar() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Ciudad ciudadDestino = (Ciudad) cmbViajar.getValue();
         if (ciudadDestino != null) {
             juego.viajarA(ciudadDestino);
@@ -153,6 +157,7 @@ public class ControladorPrincipal {
     }
 
     public void handleCancelarViajar() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.cerrarVBox(this.vboxViajar);
     }
 
@@ -162,6 +167,7 @@ public class ControladorPrincipal {
     }
 
     public void handleEdificios() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.vboxEdificios.setVisible(true);
         this.deshabilitarBotonesPrincipales();
         ArrayList<Edificio> edificios = this.juego.edificiosDisponibles();
@@ -173,6 +179,7 @@ public class ControladorPrincipal {
     }
 
     public void handleConfirmarEdificios() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Edificio edificioDestino = (Edificio) cmbEdificios.getValue();
         if (edificioDestino != null) {
             juego.policiaEntrarA(edificioDestino);
@@ -185,6 +192,7 @@ public class ControladorPrincipal {
     }
 
     public void handleMenuPrincipal() throws Exception {
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         Vista vistaRegistro = new Vista("/escenas/vistaInicio.fxml");
         var scene = new Scene(vistaRegistro.escena());
         this.stage = (Stage) this.btnMenuPrincipal.getScene().getWindow();
@@ -192,6 +200,7 @@ public class ControladorPrincipal {
     }
 
     public void handleSalirEdificio() {
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.btnEdificios.setVisible(true);
         this.btnViajar.setVisible(true);
         this.btnOrden.setVisible(true);
@@ -200,10 +209,12 @@ public class ControladorPrincipal {
     }
 
     public void handleCancelarEdificios() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.cerrarVBox(this.vboxEdificios);
     }
 
     public void handleOrden() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.vboxOrden.setVisible(true);
         this.deshabilitarBotonesPrincipales();
         HashMap<String, ArrayList<String>> caracteristicas = this.juego.obtenerCaracteristicas();
@@ -245,6 +256,7 @@ public class ControladorPrincipal {
     }
 
     public void handleEmitirOrden() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         String sexo = (String) cmbSexo.getValue();
         String hobby = (String) cmbHobby.getValue();
         String cabello = (String) cmbCabello.getValue();
@@ -274,6 +286,7 @@ public class ControladorPrincipal {
     }
 
     public void handleCancelarOrden() throws Exception{
+        this.reproducir_sonido("src/main/resources/Sonidos/Cick.wav");
         this.cerrarVBox(this.vboxOrden);
     }
 
@@ -292,10 +305,12 @@ public class ControladorPrincipal {
     public void recibirPunialada() {
         this.vboxPunialada.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
+        this.reproducir_sonido("src/main/resources/Sonidos/Puñalada.wav");
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
+
                             this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxPunialada);
                         }
@@ -307,10 +322,12 @@ public class ControladorPrincipal {
     public void recibirDisparo() {
         this.vboxDisparo.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
+        this.reproducir_sonido("src/main/resources/Sonidos/Disparo.wav");
         Timeline timeline = new Timeline(
                 new KeyFrame(
                         Duration.seconds(5),
                         event -> {
+
                             this.btnSalirEdificio.setDisable(false);
                             this.cerrarVBox(this.vboxDisparo);
                         }
@@ -340,6 +357,7 @@ public class ControladorPrincipal {
     }
 
     public void ladronEscapa() {
+        this.reproducir_sonido("src/main/resources/Sonidos/Perder.wav");
         this.vboxLadronEscapa.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
         Timeline timeline = new Timeline(
@@ -363,6 +381,7 @@ public class ControladorPrincipal {
     }
 
     public void ladronAtrapado() {
+        this.reproducir_sonido("src/main/resources/Sonidos/Ganar.wav");
         this.vboxLadronAtrapado.setVisible(true);
         this.btnSalirEdificio.setDisable(true);
         this.deshabilitarBotonesPrincipales();
@@ -392,6 +411,11 @@ public class ControladorPrincipal {
         this.cerrarVBox(vboxOrden);
     }
 
+    public void reproducir_sonido(String ruta) {
+        String uriString = new File(ruta).toURI().toString();
+        MediaPlayer player = new MediaPlayer( new Media(uriString));
+        player.play();
+    }
     public void actualizarImgContexto(Image image){
     if (image != null) this.imgContexto.setImage(image);
 }
