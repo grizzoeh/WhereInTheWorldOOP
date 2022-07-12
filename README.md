@@ -1,4 +1,14 @@
 ![tp2](https://github.com/jmdieguez/algothief/actions/workflows/build.yml/badge.svg) [![codecov](https://codecov.io/gh/jmdieguez/algothief/branch/master/graph/badge.svg)](https://codecov.io/gh/jmdieguez/algothief)
+
+# Where in the World is Carmen Sandiego?
+
+Carmen Sandiego is a game in which the player is a detective that has track a thief down by following clues in countries all over the world.
+
+This is the implementation of this game, developed using Object-oriented programming, coded in Java.
+
+This project was part of the final assigment of the subject "Algorithms and Programming III", University of Buenos Aires.
+
+
 # TP2 Algoritmos 3: Algo Thief..
 
 Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA
