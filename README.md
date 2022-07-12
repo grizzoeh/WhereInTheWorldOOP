@@ -1,5 +1,5 @@
 ![tp2](https://github.com/jmdieguez/algothief/actions/workflows/build.yml/badge.svg) [![codecov](https://codecov.io/gh/jmdieguez/algothief/branch/master/graph/badge.svg)](https://codecov.io/gh/jmdieguez/algothief)
-# TP2 Algoritmos 3: Algo Thief
+# TP2 Algoritmos 3: Algo Thief..
 
 Trabajo Práctico número 2 de la materia Algoritmos y Programación III de FIUBA
 
