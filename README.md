@@ -2,7 +2,7 @@
 
 # Where in the World is Carmen Sandiego?
 
-Carmen Sandiego is a game in which the player is a detective that has track a thief down by following clues in countries all over the world.
+Carmen Sandiego is a game in which the player is a detective that has to track down a thief by following clues in countries all over the world.
 
 This is the implementation of this game, developed using Object-oriented programming, coded in Java.
 
